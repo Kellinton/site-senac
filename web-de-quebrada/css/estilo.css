@@ -28,7 +28,7 @@ body{
 
 /*topo banner*/
 .topo-corpo{
-    background-image: url(../img/banner1.png);
+    background-image: url(../img/banner-01.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 1000px;
@@ -92,7 +92,7 @@ body{
  
 /*logo*/
 .topo-corpo div:nth-child(1) h1{
-    background: url(../img/logo01.svg) no-repeat;
+    background: url(../img/logos/logo-01.svg) no-repeat;
     width: 200px;
     height: 118px;
     text-indent: -9999px;  
