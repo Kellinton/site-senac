@@ -1,1 +1,1 @@
-# web-de-quebrada-senac
+#A Web de quebrada é uma agência, que tem como objetivo desenvolver sites, criada durante as aulas no Senac.
