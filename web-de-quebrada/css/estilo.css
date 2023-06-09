@@ -179,12 +179,11 @@ body{
 /*serviços do banner*/
 .posicionamento{
     position: relative;
-    top: -1000px;
+    top: -200px;
 }
 .servicos-banner{
     display: flex;
     justify-content: space-around;  
-    margin-top: 800px;
 }
 .servicos-banner div{
     display: flex;
@@ -372,12 +371,9 @@ button:hover .text{
     letter-spacing: 1.4px;
     text-align: left;
 }
-.servicos-lista-container a{
-    position: relative;
-    bottom: 45px;
-    left: 45px;
+.servicos-lista-btn{
+    align-self: self-end;
 }
-
 
 .btnConfira {
     width: 100px;
@@ -573,6 +569,7 @@ footer{
     background-image: linear-gradient(to bottom,#161925, #000);
     width: 100%;
     height: 500px;
-    position: relative;
-    top: -1000px;
+    /* position: relative;
+    top: -1000px; */
 }
+
