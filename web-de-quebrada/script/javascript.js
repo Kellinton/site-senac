@@ -1,8 +1,8 @@
-$(".single-item").slick({
+$('.multiple-items').slick({
   infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   dots: true,
-  speed: 300,
+  infinite: true,
   autoplay: true,
-  autoplaySpeed: 2000,
-  arrows: true
 });
