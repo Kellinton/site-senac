@@ -358,14 +358,14 @@ button:hover .text{
 
 .tabela img{
     margin-bottom: 20px;
-    width: 30%;
-    height: 30%;
+    width: 32%;
+    height: 32%;
 }
 
 .tabela h3{
     margin-bottom: 20px;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: #161925;
 }
 
@@ -470,30 +470,61 @@ button:hover .text{
 .portfolio-cont{
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width:100%;
-    height: 500px;
+    height: 600px;
     background-color: #161925;
 }
-.portfolio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.portfolio div:nth-child(1){
-    margin-bottom: 25px;
-}
-.portfolio img{
-    width: 33%;
-    height: 33%;
-}
-.portfolio a{
+.portfolio-cont a{
     background-color: #FF850A;
     color: #161925;
 }
-.portfolio a:hover{
+.portfolio-cont a:hover{
     background-color: #c5670a;
     color: #161925;
 }
+
+.portfolio{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.portfolio div{
+    background-image: url(../img/portfolio01.png);
+    border-radius: 15px;
+    width: 300px;
+    height: 450px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.7s;
+}
+
+.portfolio div:hover{
+    background-image: url(../img/portfolio02.gif);
+    transform: translateY(-30px);
+    transition: all 0.7s;
+}
+.portfolio div:hover img{
+    display: none;
+}
+
+/*seta animacao*/
+.portfolio img {
+    animation: action 1s infinite  alternate;
+    -webkit-animation: action 1s infinite  alternate;
+}
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-12px); }
+}
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-12px); }
+}
+
 
 /*avaliaçoes-clientes*/
 
