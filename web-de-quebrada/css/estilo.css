@@ -11,6 +11,7 @@ paleta cores
     font-family: 'Poppins', sans-serif;
 
 }
+
 section{
     margin-bottom: 100px;
 }
@@ -291,16 +292,21 @@ button:hover .text{
 
 /*Serviços*/
 
+.servicos{
+    display: flex;
 
+}
+.servicos img{
+    width: 100%;
+    height: 100%;
+}
 .servicos-titulo{
     display: flex;
     flex-direction: column;
     align-self: flex-end;
     transform:translateY(50px)
 }
-.servicos{
-    display: flex;
-}
+
 .servicos-titulo h2{
     text-transform: uppercase;
     font-size: 2.0rem;
@@ -313,66 +319,63 @@ button:hover .text{
 
 .servicos-titulo p{
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 5px 0px 0px 100px;
     line-height: 1.5;
     letter-spacing: 1px;
+    color: #161925;
 }
 
-/*servicos bloco*/
-.servicos-lista-container{
-    text-align: center;
-    align-self: center;
-    transform:translateX(20px);
-    width: 50%;
-}
-.servicos-lista{
+/*Serviços tabela*/
+.servicos-tabela-cont{
     display: flex;
+    flex-direction: column;
+    text-align: left;  
+    width: 50%;
+    z-index: 1;
+}
+.servicos-tabela{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 20px;
-    width: 100%;
+    transform: translateX(100px);
     height: auto;
     padding: 5%;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
-    align-self: center;
     background-color: #FFFCF9;
 }
-.servicos img{
-    width: 100%;
-    height: 100%;
-}
-.servicos-lista div{
+.tabela{
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 4%;
-}
-
-.servicos-lista img{
     margin-bottom: 20px;
-    width: 50px;
-    height: 50px;
-    transform:translateX(-30px)
+}
+.tabela div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
 }
 
-.servicos-lista h3{
+.tabela img{
+    margin-bottom: 20px;
+    width: 30%;
+    height: 30%;
+}
+
+.tabela h3{
     margin-bottom: 20px;
     font-weight: 600;
-    font-size: 1.2rem;
-    color: #161925; 
-    text-align: start;
+    font-size: 1.3rem;
+    color: #161925;
 }
-.servicos-lista p{
+
+.tabela p{
     font-size: 1.0rem;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
-    flex-grow: 1;
     line-height: 1.1;
     letter-spacing: 1.4px;
-    text-align: left;
-}
-.servicos-lista-btn{
-    align-self: self-end;
+    color: #161925;
 }
 
 .btnConfira {
@@ -398,7 +401,7 @@ button:hover .text{
     width: 120px;
     height: auto;
 }
-/*servicos imagem*/
+
 
 /*Sobre*/
 
@@ -464,26 +467,30 @@ button:hover .text{
     align-items: center;
     margin-bottom: 20px;
 }
-.portfolio-container{
+.portfolio-cont{
     display: flex;
     align-items: center;
     width:100%;
-    height: 450px;
+    height: 500px;
     background-color: #161925;
 }
-
-.portfolio-container img{
-    width: 24%;
-    height: 24%;
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.portfolio-container a{
+.portfolio div:nth-child(1){
+    margin-bottom: 25px;
+}
+.portfolio img{
+    width: 33%;
+    height: 33%;
+}
+.portfolio a{
     background-color: #FF850A;
     color: #161925;
-    position: relative;
-    top: 25px;
-    left: 550px;
 }
-.portfolio-container a:hover{
+.portfolio a:hover{
     background-color: #c5670a;
     color: #161925;
 }
@@ -538,7 +545,7 @@ button:hover .text{
     height: 400px;
     border-bottom: solid 5px #161925;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.2);
 }
 .cliente-perfil {
     width: 150px;
