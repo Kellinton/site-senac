@@ -121,7 +121,7 @@ body{
 }
 
 .topo-rede-social a:nth-child(1){
-    background-image: url(../img/rede-social/linkedin.svg);
+    background-image: url(../img/rodape/Linkedin-rodape.svg);
 }
 .topo-rede-social a:nth-child(2){
     background-image: url(../img/rede-social/whatsapp.svg);
@@ -643,7 +643,95 @@ footer{
     background-image: linear-gradient(to bottom,#161925, #000);
     width: 100%;
     height: 500px;
-    /* position: relative;
-    top: -1000px; */
 }
 
+.rodape-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+}
+.rodape-info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.rodape-cont h3{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1.4rem;
+        color: #FFFCF9;
+}
+.rodape-cont p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #FFFCF9;
+}
+.rodape-1{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+.rodape-1 div:nth-child(1){
+    display: flex;
+    gap: 50px;  
+}
+.rodape-1-rede{
+    display: flex;
+}
+
+.rodape-1-rede a{
+    color: #FFFCF9;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: #161925;
+    border-radius: 50px;
+    display: block;
+    text-indent: -9999px;
+    margin: 5px;
+}
+
+.rodape-1-rede a:hover{
+    transform:translateY(-5px)
+}
+
+.rodape-1-rede a:nth-child(1){
+    background-image: url(../img/rodape/Linkedin-rodape.svg);
+}
+.rodape-1-rede a:nth-child(2){
+    background-image: url(../img/rodape/Whatsapp-rodape.svg);
+}
+.rodape-1-rede a:nth-child(3){
+    background-image: url(../img/rodape/Instagram-rodape.svg);
+}
+
+.rodape-2, .rodape-3{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 80px;
+}
+.rodape-2 h3, .rodape-3 h3{
+    margin-bottom: 25px;
+}
+
+
+.rodape-2 a, .rodape-3 a{
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #FFFCF9;
+}
+.rodape-2 a:hover, .rodape-3 a:hover{
+    color: #446688;
+}
+hr{
+    width: 100%;
+}
