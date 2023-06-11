@@ -193,7 +193,8 @@ body{
     background-color: #FFFCF9;
     width: 28%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;   
+    border-bottom: solid #161925; 
     padding: 25px;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
 }
@@ -567,7 +568,7 @@ button:hover .text{
 }
 .clientes div{
     background-color: #FFFCF9;
-    width: 400px;
+    width: 700px;
     height: 400px;
     border-bottom: solid 5px #161925;
     border-radius: 20px;
@@ -595,29 +596,18 @@ button:hover .text{
     opacity: .75;
     color: #000;
 }
-.clientes .slick-prev:before, .clientes .slick-next:before {
-    font-size: 40px;
-    color: #000;
-}
-.slick-prev {
-    left: 25px;
-    z-index: 1;
-}
-.slick-next {
-    right: 25px;
-    z-index: 1;
-}
+
 /*carroussel*/
 
 .cliente-perfil {
     width: 150px;
     height: 150px;
     position: relative;
-    left: 125px;
+    left: 250px;
 }
 .cliente-estrela {
    position: relative;
-   left:100px
+   left: 225px
 }
 .clientes h3{
     font-weight: 600;
@@ -627,12 +617,13 @@ button:hover .text{
     padding: 2%;
 }
 .clientes p{
-    font-weight: 500;
+    font-style: italic;
+    font-weight: 400;
     font-size: 1rem;
     line-height: 1.5;
     letter-spacing: 1px;
     text-align: left;
-    padding: 3%;
+    padding: 5% 5% 15% 5%;
 }
 
 /*teste*/
@@ -731,6 +722,8 @@ footer{
 }
 .rodape-2 a:hover, .rodape-3 a:hover{
     color: #446688;
+}
+
 }
 hr{
     width: 100%;
