@@ -9,7 +9,10 @@
 @media (max-width: 600px){
 
     /*menu*/
-    
+    .topo-corpo img{
+        width: 20%;
+        height: 5%;
+    }
     .topo-corpo div:nth-child(1) nav{      
        width: 50%;
        justify-content: space-around;
