@@ -1,0 +1,212 @@
+/* 1200px PC*/
+
+
+/* 601 até 900 para Notbook */
+@media (max-width: 900px){
+         
+}
+/* 0 até 600 para Celular INICIO*/
+@media (max-width: 600px){
+
+    /*menu*/
+    
+    .topo-corpo div:nth-child(1) nav{      
+       width: 50%;
+       justify-content: space-around;
+    }
+    .topo-rede-social{
+        display: none;
+     }
+     .topo-corpo div:nth-child(1) ul{
+        display: none;       
+    }
+    .topo-corpo div:nth-of-type(2) p{
+        font-size: 1.5rem;
+    }
+    .digitando-efeito {
+        font-size: 2.3rem;
+        color: #446688;
+    }
+    .topo-corpo strong{
+       display: none;
+    }
+    .topo-corpo div:nth-of-type(2) a{
+        width: 25%;
+        font-size: 0.6rem;
+        margin-top: 15%;
+    }
+    /*servicos div*/
+
+    .servicos-banner{
+        flex-direction: column; /*colcoar carroussel*/
+        align-items: center;
+    }
+    .servicos-banner div{    
+        width: 75%;
+    }
+
+    .servicos-banner div:nth-child(2){
+        transform: translateY(-50px);
+    }
+    .servicos-banner img{  
+        width: 50px;
+        height: 50px;
+    }
+    .servicos-banner h2{
+            font-weight: 200;
+            font-size: 1.7rem;
+            color: rgba(249, 249, 249, 0.745);
+            margin-top: 15px;
+        
+    }
+
+    .servicos-banner p{
+        font-size: 1.1rem;
+        font-weight: 200;
+        color: rgba(249, 249, 249, 0.745);
+        padding: 25px;  
+        flex-grow: 1; 
+        line-height: 1.1;
+        letter-spacing: 1px;
+    }
+
+    .servicos-banner button{
+        position: relative;
+        border: 0;
+        display: inline-block;
+        width: 10rem;
+        height: auto;
+        cursor: pointer;
+        outline: none;
+        vertical-align: middle;
+        background: transparent;
+    }
+    .text{
+        position: absolute;
+        inset: 0;
+        padding: 0.9rem 0;
+        margin-left: 1.85rem;
+        color: #FF850A;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+        font-weight: 700;
+    }
+    .circle{
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background: #FF850A;
+        border-radius: 1.625rem;
+        transition: all 0.4s ease-in-out;
+    }
+    .icon{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: #161925;
+    }
+    .arrow{
+        left: 0.625rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+        transition: all 0.4s ease-in-out;
+    }
+    .arrow::before{
+        content: "";
+        position: absolute;
+        top: -0.3rem;
+        right: 0.0625rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-top: 0.125rem solid #161925;
+        border-right: 0.125rem solid #161925;
+        transform: rotate(45deg);
+    }
+    button:hover .circle{
+        width: 100%;
+    }
+    button:hover .arrow{
+        background: #161925;
+        transform: translateX(1rem);
+    }
+    button:hover .text{
+        color: #161925;
+    }
+
+    /*servicos*/
+    .servicos{
+        display: flex;
+    
+    }
+    .servicos img{
+        width: 100%;
+        height: 85%;
+    }
+    .servicos-titulo{
+        align-self: flex-st;
+        transform:translateY(50px)
+    }
+    
+    .servicos-titulo h2{
+        text-transform: uppercase;
+        font-size: 1.0rem;
+        margin-left: 100px;
+    }
+    .servicos-titulo span{
+        font-weight: 800;
+        font-size: 1.0rem;
+    }
+    
+    .servicos-titulo p{
+        font-weight: 300;
+        font-size: 0.2rem;
+    }
+    
+    /*Serviços tabela*/
+    .servicos-tabela-cont{
+        display: flex;
+        flex-direction: column;
+        text-align: left;  
+        width: 75%;
+        height: 45%;
+    }
+    .servicos-tabela{
+        height: 68%;
+        padding: 5%;
+        width: 100%;
+    }
+    .tabela{
+        margin-bottom: 1%;
+    }
+    .tabela div{
+        align-items: center;
+        gap:1%;
+    }
+    
+    .tabela img{
+        align-self: flex-start;
+        margin-bottom: 7%;
+        width: 30%;
+        height: 30%;
+    }
+    
+    .tabela h3{
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 0.5rem;
+        color: #161925;
+    }
+    
+    .tabela p{
+        font-size: 0.4rem;
+    }
+    
+    .btnConfira {
+        display: none;
+    }
+    
+}

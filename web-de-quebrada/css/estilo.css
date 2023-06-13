@@ -151,14 +151,14 @@ body{
 .topo-corpo div:nth-of-type(2) a{
     background-color: #161925;
     box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
-    width: 400px;
+    width: 10%;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 1.2rem;  
+    font-size: 0.8rem;  
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
@@ -168,7 +168,7 @@ body{
     box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
     text-decoration: none;
     cursor: pointer;
-    margin-top: 100px;
+    margin-top: 5%;
     transition: all .10s ease-in-out;
     
 }
@@ -725,7 +725,7 @@ footer{
     color: #446688;
 }
 
-}
+
 hr{
     width: 100%;
 }
