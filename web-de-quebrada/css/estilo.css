@@ -12,9 +12,6 @@ paleta cores
 
 }
 
-section{
-    margin-bottom: 100px;
-}
 body{
    background-color: #FFFCF9;
   
@@ -57,13 +54,13 @@ body{
 
 .topo-corpo div:nth-child(1) ul a{
     position: relative;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-decoration: none;
     padding: 35px;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: #161925;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 }
 /*hover menu*/
 .ativo {
@@ -114,10 +111,11 @@ body{
     display: block;
     text-indent: -9999px;
     margin: 5px;
+    transition: all 0.6s;
 }
 
 .topo-rede-social a:hover{
-    transform:translateY(-5px)
+    transform:translateY(-10px)
 }
 
 .topo-rede-social a:nth-child(1){
@@ -194,7 +192,8 @@ body{
     width: 28%;
     height: auto;
     border-radius: 20px;   
-    border-bottom: solid #161925; 
+    border-bottom: solid #161925;
+    border-top: solid #161925; 
     padding: 25px;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
 }
@@ -336,15 +335,17 @@ button:hover .text{
     z-index: 1;
 }
 .servicos-tabela{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    transform: translateX(100px);
+    transform: translateX(20px);
     height: auto;
     padding: 5%;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
     background-color: #FFFCF9;
+    border-bottom: solid #161925;
 }
 .tabela{
     display: flex;
@@ -475,7 +476,7 @@ button:hover .text{
     flex-direction: column;
     width:100%;
     height: 600px;
-    background-color: #161925;
+    background-image: linear-gradient(to bottom,#161925, #000);
 }
 .portfolio-cont a{
     background-color: #FF850A;
