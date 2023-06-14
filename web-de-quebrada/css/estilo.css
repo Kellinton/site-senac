@@ -100,6 +100,7 @@ body{
 /*redes sociais do topo*/
 .topo-rede-social{
     display: flex;
+    align-self: center;
 }
 
 .topo-rede-social a{
@@ -189,7 +190,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #FFFCF9;
+    background-color: rgba(247, 244, 244, 0.3);
     width: 28%;
     height: auto;
     border-radius: 20px;   
