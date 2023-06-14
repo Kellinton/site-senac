@@ -34,11 +34,11 @@ body{
 }
 
 /*topo menu*/
-.topo-corpo div:nth-child(1) nav{
+.topo-corpo header nav{
     display: flex;
 
 }
-.topo-corpo div:nth-child(1){
+.topo-corpo header{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -46,14 +46,14 @@ body{
     background-image: linear-gradient(to right, transparent, transparent, #fff, #fff);
 }
 
-.topo-corpo div:nth-child(1) ul{
+.topo-corpo header ul{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0px 80px 0px 80px
 }
 
-.topo-corpo div:nth-child(1) ul a{
+.topo-corpo header ul a{
     position: relative;
     text-transform: capitalize;
     text-decoration: none;
@@ -68,11 +68,11 @@ body{
     color: #2b5876 !important;
     font-weight: 700!important;
 }
-.topo-corpo div:nth-child(1) ul a:hover{
+.topo-corpo header ul a:hover{
     color: #446688;
  }
  
- .topo-corpo div:nth-child(1) ul a:after{
+ .topo-corpo header ul a:after{
      content: "";
      position: absolute;
      background-color: #2b5876;
@@ -85,12 +85,12 @@ body{
      transition: 0.3s;
  }
  
- .topo-corpo div:nth-child(1) ul a:hover:after{
+ .topo-corpo header ul a:hover:after{
      width: 100%;
  }
  
 /*logo*/
-.topo-corpo div:nth-child(1) h1{
+.topo-corpo header h1{
     background: url(../img/logos/logo-01.svg) no-repeat;
     width: 200px;
     height: 118px;
@@ -132,14 +132,14 @@ body{
 
 
 /*topo botao,slogan*/
-.topo-corpo div:nth-of-type(2){
+.topo-corpo .slogan-cont{
     display: flex;
     align-items: center;
     flex-direction: column;
     transform:translateY(200px);
 }
 
-.topo-corpo div:nth-of-type(2) p, span{
+.topo-corpo .slogan-cont p, span{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 4.0rem;
@@ -150,7 +150,7 @@ body{
         text-transform: capitalize;
     }
 
-.topo-corpo div:nth-of-type(2) a{
+.topo-corpo .slogan-cont a{
     background-color: #161925;
     box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
     width: 10%;
@@ -174,9 +174,11 @@ body{
     transition: all .10s ease-in-out;
     
 }
-.topo-corpo div:nth-of-type(2) a:hover{
-    background-color: #05070b;
+.topo-corpo .slogan-cont a:hover{
+    background-color: #446688;
+    color: #FFFCF9;
 }
+
 /*serviços do banner*/
 .posicionamento{
     position: relative;
