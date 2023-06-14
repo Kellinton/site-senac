@@ -1,6 +1,11 @@
 /* 1200px PC*/
+
 @media (min-width: 900px){
+
     .topo-corpo .btnConfira{
+        display: none;
+    }
+    .menu-bar{
         display: none;
     }
 }
@@ -11,237 +16,269 @@
 /* 0 até 600 para Celular INICIO*/
 @media (max-width: 600px){
 
-    /*menu*/
-    .topo-corpo div:nth-child(1){
-        justify-content: between;
-
-    }
-    .topo-corpo .btnConfira{
-        display: block;
-    }
-
-    .abrir-menu{
-        background-image: url("../img/menu-hamburguer.svg");
+    /*banner*/
+    .topo-corpo{
+        background-image: url(../img/banner-01.png);
+        background-repeat: no-repeat;
         background-size: cover;
-        padding: 5%;
-        border: 0;
-        display: block;
+        height: 50vh;
+    }    
+    /*menu*/
+    .topo-corpo header h1{
+        background-image: url(../img/logos/logoteste.svg);
+        align-self: center;
     }
-   .topo-corpo .btnConfira {
-        width: 100px;
-        height: auto;
-        justify-content: center;
-        font-family: 'Poppins', sans-serif;  
-        letter-spacing: 1px;
-        color: #FFFCF9; 
-        background-color: #161925;
-        text-decoration: none;
-        box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-        cursor: pointer;   
-    }
-    .topo-corpo img{
-        width: 20%;
-        height: 5%;
-    }
-    .topo-corpo div:nth-child(1) nav{      
-       width: 50%;
-       justify-content: space-around;
-    }
-    .topo-rede-social{
+    .topo-rede-social a{
         display: none;
-     }
-     .topo-corpo div:nth-child(1) ul{
-        display: none;       
     }
-    .topo-corpo div:nth-of-type(2) p{
-        font-size: 1.5rem;
-    }
-
-
-    .digitando-efeito {
-        font-size: 2.3rem;
-        color: #446688;
-    }
-    .topo-corpo strong{
-       display: none;
-    }
-    .topo-corpo div:nth-of-type(2) a{
-        width: 25%;
-        font-size: 0.6rem;
-        margin-top: 15%;
-    }
-    /*servicos div*/
-
-    .servicos-banner{
-        flex-direction: column; /*colcoar carroussel*/
+    .topo-corpo header{
         align-items: center;
+        justify-content: space-around;
     }
-    .servicos-banner div{    
-        width: 75%;
-    }
-
-    .servicos-banner div:nth-child(2){
-        transform: translateY(-50px);
-    }
-    .servicos-banner img{  
-        width: 50px;
-        height: 50px;
-    }
-    .servicos-banner h2{
-            font-weight: 200;
-            font-size: 1.7rem;
-            color: rgba(249, 249, 249, 0.745);
-            margin-top: 15px;
+    .topo-corpo header .btnConfira{    
+        width: 10%;
+        font-size: 0.5rem;
         
     }
-
-    .servicos-banner p{
-        font-size: 1.1rem;
-        font-weight: 200;
-        color: rgba(249, 249, 249, 0.745);
-        padding: 25px;  
-        flex-grow: 1; 
-        line-height: 1.1;
-        letter-spacing: 1px;
-    }
-
-    .servicos-banner button{
-        position: relative;
-        border: 0;
-        display: inline-block;
-        width: 10rem;
-        height: auto;
-        cursor: pointer;
-        outline: none;
-        vertical-align: middle;
-        background: transparent;
-    }
-    .text{
-        position: absolute;
-        inset: 0;
-        padding: 0.9rem 0;
-        margin-left: 1.85rem;
-        color: #FF850A;
-        text-align: center;
-        transition: all 0.4s ease-in-out;
-        font-weight: 700;
-    }
-    .circle{
-        position: relative;
-        display: block;
+    .topo-corpo header ul{
+        display: none;
         margin: 0;
-        width: 3rem;
-        height: 3rem;
-        background: #FF850A;
-        border-radius: 1.625rem;
-        transition: all 0.4s ease-in-out;
     }
-    .icon{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        background: #161925;
+
+    /*topo botao,slogan*/
+    .topo-corpo .slogan-cont{
+        transform:translateY(100px);
     }
-    .arrow{
-        left: 0.625rem;
-        width: 1.125rem;
-        height: 0.125rem;
-        background: none;
-        transition: all 0.4s ease-in-out;
-    }
-    .arrow::before{
-        content: "";
-        position: absolute;
-        top: -0.3rem;
-        right: 0.0625rem;
-        width: 0.625rem;
-        height: 0.625rem;
-        border-top: 0.125rem solid #161925;
-        border-right: 0.125rem solid #161925;
-        transform: rotate(45deg);
-    }
-    button:hover .circle{
-        width: 100%;
-    }
-    button:hover .arrow{
-        background: #161925;
-        transform: translateX(1rem);
-    }
-    button:hover .text{
+    .topo-corpo .slogan-cont p, span{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 1.7rem;
         color: #161925;
     }
 
-    /*servicos*/
+    .topo-corpo .slogan-cont a{
+        display: none;
+    }
+
+    /*serviços do banner*/
+    .posicionamento{
+        position: relative;
+        top: -100px;
+    }
+    .servicos-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .servicos-banner div{
+        background-color: rgba(247, 244, 244, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        height: auto;
+        border-radius: 20px;   
+        border-bottom: solid #161925;
+        border-top: solid #161925; 
+        padding: 2px;
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    }
+    .servicos-banner h2{
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #161925;
+        margin-top: 15px;
+    
+    }
+
+    .servicos-banner p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color:#161925;
+    padding: 25px;  
+    flex-grow: 1; 
+    line-height: 1.1;
+    letter-spacing: 1px;
+    }
+
+    .servicos-banner button{
+    display: none;
+    }
+    /*teste de ocultar div*/
+    .servicos-banner div:nth-child(2){
+        display: none;
+    }
+    .servicos-banner div:nth-child(3){
+        display: none;
+    }
+/*teste de ocultar div*/
+
+
+
+/*Serviços*/
+
     .servicos{
         display: flex;
-    
     }
     .servicos img{
         width: 100%;
-        height: 85%;
+        height: 50%;     
     }
     .servicos-titulo{
-        align-self: flex-st;
-        transform:translateY(50px)
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        transform:translateY(5px)
     }
-    
+
     .servicos-titulo h2{
-        text-transform: uppercase;
         font-size: 1.0rem;
-        margin-left: 100px;
+        margin-left: 50px;
     }
     .servicos-titulo span{
         font-weight: 800;
         font-size: 1.0rem;
     }
-    
+
     .servicos-titulo p{
-        font-weight: 300;
-        font-size: 0.2rem;
+        font-size: 0.5rem;
+        margin: 0px 0px 0px 40px;
     }
-    
+
     /*Serviços tabela*/
     .servicos-tabela-cont{
         display: flex;
         flex-direction: column;
         text-align: left;  
-        width: 75%;
-        height: 45%;
+        width: 100%;
+        z-index: 1;
     }
     .servicos-tabela{
-        height: 68%;
-        padding: 5%;
-        width: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        transform: translateX(20px);
+        height: auto;
+        padding: 0%;
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+        background-color: #FFFCF9;
+        border-bottom: solid #161925;
     }
     .tabela{
-        margin-bottom: 1%;
+        display: flex;
+        margin-bottom: 20px;
     }
     .tabela div{
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        gap:1%;
+        padding: 1%;
     }
-    
+
     .tabela img{
-        align-self: flex-start;
-        margin-bottom: 7%;
-        width: 30%;
-        height: 30%;
+        margin-bottom: 20px;
+        width: 32%;
+        height: 32%;
     }
-    
+
     .tabela h3{
         margin-bottom: 20px;
         font-weight: 600;
-        font-size: 0.5rem;
+        font-size: 1.1rem;
         color: #161925;
     }
-    
+
     .tabela p{
-        font-size: 0.4rem;
+        font-size: 0.5rem;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.1;
+        letter-spacing: 1.4px;
+        color: #161925;
     }
-    
+
     .btnConfira {
-        display: none;
+       display: none;
     }
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*teste menu*/
+    #menu {
+        z-index: 2;
+      }
+      
+      #menu-bar {
+        width: 45px;
+        height: 40px;
+        margin: 30px 0 20px 20px;
+        cursor: pointer;
+      }
+      
+      .bar {
+        height: 5px;
+        width: 100%;
+        background-color: #161925;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+      }
+      
+      #bar1 {
+        transform: translateY(-4px);
+      }
+      
+      #bar3 {
+        transform: translateY(4px);
+      }
+      
+      .nav {
+        transition: 0.3s ease;
+        display: none;
+      }
+      
+      .nav ul {
+        padding: 0 22px;
+      }
+      
+      .nav li {
+        list-style: none;
+        padding: 12px 0;
+      }
+      
+      .nav li a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      
+      .nav li a:hover {
+        font-weight: bold;
+      }
+      
+      .menu-bg, #menu {
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
 }
+    /* .abrir-menu{
+        background-image: url("../img/menu-hamburguer.svg");
+        background-size: cover;
+        padding: 5%;
+        border: 0;
+        display: block;
+    } */

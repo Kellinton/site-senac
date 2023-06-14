@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web de Quebrada</title>
+
     <link rel="shortcut icon" href="img/logos/favicon-01.svg" type="image/x-icon">
+
     <!-- slick.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -35,7 +37,13 @@
       <header><!--type 1-->
         <a href="" class="btnConfira">Contratar</a><!--responsivo-->
         <h1>Logo</h1>
-        <button class="abrir-menu"></button>
+
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>                         <!--teste menu hamburguer-->
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+
         <nav>        
           <ul>
             <li><a href="#" class="ativo">Início</a></li>
