@@ -26,15 +26,12 @@
     /*menu*/
     .topo-corpo header h1{
         background-image: url(../img/logos/logoteste.svg);
-        align-self: center;
     }
     .topo-rede-social a{
         display: none;
     }
     .topo-corpo header{
-        align-items: center;
         justify-content: space-between;
-       
     }
     .topo-corpo header .btnConfira{    
         width: 15%;
