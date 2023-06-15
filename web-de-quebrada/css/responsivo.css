@@ -24,24 +24,23 @@
         height: 50vh;
     }    
     /*menu*/
+    .topo-corpo header{
+        justify-content: space-evenly;
+        padding: 2%;
+    }
     .topo-corpo header h1{
         background-image: url(../img/logos/logoteste.svg);
-    }
-    .topo-rede-social a{
-        display: none;
-    }
-    .topo-corpo header{
-        justify-content: space-between;
-    }
-    .topo-corpo header .btnConfira{    
-        width: 15%;
-        font-size: 0.5rem;
-        
+        width: 109px;
+        height: 60px;
     }
     .topo-corpo header ul{
         display: none;
         margin: 0;
     }
+    .topo-rede-social a{
+        display: none;
+    }
+
 
     /*topo botao,slogan*/
     .topo-corpo .slogan-cont{
@@ -55,7 +54,10 @@
     }
 
     .topo-corpo .slogan-cont a{
-        display: none;
+       width: 20%;
+       height: auto;
+       font-size: 0.4rem;
+       margin-top: 9%;
     }
 
     /*serviços do banner*/
@@ -68,32 +70,35 @@
         flex-direction: column;
         align-items: center;
     }
+    .servicos-banner img{
+        width: 30px;
+        height: 30px;
+    }
     .servicos-banner div{
         background-color: rgba(247, 244, 244, 0.8);
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 45%;
+        width: 35%;
         height: auto;
         border-radius: 20px;   
         border-bottom: solid #161925;
         border-top: solid #161925; 
-        padding: 2px;
+        padding: 5%;
         box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
     }
     .servicos-banner h2{
         font-weight: 600;
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         color: #161925;
         margin-top: 15px;
     
     }
 
     .servicos-banner p{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: 400;
-    color:#161925;
-    padding: 25px;  
+    color:#161925; 
     flex-grow: 1; 
     line-height: 1.1;
     letter-spacing: 1px;
@@ -222,8 +227,10 @@
       #menu-bar {
         width: 45px;
         height: 40px;
-        margin: 30px 0 20px 20px;
+        margin: 0px;
         cursor: pointer;
+        order: 1;
+
       }
       
       .bar {
