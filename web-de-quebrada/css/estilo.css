@@ -199,7 +199,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-   background-color: rgba(247, 244, 244, 0.3); 
+   background-color: rgba(247, 244, 244, 0.6); 
     width: 28%;
     height: auto;
     border-radius: 20px;   
@@ -615,6 +615,9 @@ button:hover .text{
     height: 150px;
     position: relative;
     left: 250px;
+    border: solid 5px var(--darkblue);
+    border-radius: 9999px;
+    padding: 0.2%;
 }
 .cliente-estrela {
    position: relative;
