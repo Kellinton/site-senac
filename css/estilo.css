@@ -143,13 +143,13 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    transform:translateY(200px);
+    margin-top: 10%;
 }
 
 .topo-corpo .slogan-cont p, span{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 4.0rem;
+    font-size: 3.0rem;
     color: var(--darkblue);
 }
 .digitando-efeito{
@@ -189,7 +189,7 @@ body{
 /*serviços do banner*/
 .posicionamento{
     position: relative;
-    top: -200px;
+    top: -100px;
 }
 .servicos-banner{
     display: flex;
