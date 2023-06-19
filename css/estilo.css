@@ -72,6 +72,9 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
+.topo-corpo header #menu-bar{
+    display: none;
+}
 /*hover menu*/
 .ativo {
     color: var(--lightblue) !important;
@@ -591,43 +594,16 @@ button:hover .text{
     border-radius: 20px;
     box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
 }
-
-/*carroussel*/
-.slick-dots li button:before {
-    font-family: slick;
-    font-size: 25px;
-    line-height: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    content: '•';
-    text-align: center;
-    opacity: .25;
-    color: #000;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.slick-dots li.slick-active button:before {
-    opacity: .75;
-    color: #000;
-}
-
-/*carroussel*/
-
 .cliente-perfil {
     width: 150px;
     height: 150px;
-    position: relative;
-    left: 250px;
+    margin-left: 37%;
     border: solid 5px var(--darkblue);
     border-radius: 9999px;
     padding: 0.2%;
 }
 .cliente-estrela {
-   position: relative;
-   left: 225px
+    margin-left: 35%;
 }
 .clientes h3{
     font-weight: 600;
@@ -645,7 +621,6 @@ button:hover .text{
     text-align: left;
     padding: 5% 5% 15% 5%;
 }
-
 /*teste*/
 
 /*rodape*/

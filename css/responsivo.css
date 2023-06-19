@@ -24,6 +24,9 @@
         height: 50vh;
     }    
     /*menu*/
+    .topo-corpo header #menu-bar{
+        display: block;
+    }
     .topo-corpo header{
         justify-content: space-evenly;
         padding: 2%;
@@ -119,15 +122,8 @@
     .servicos-banner button{
     display: none;
     }
-
-    /* .servicos-banner div:nth-child(2){
-        display: none;
-    }
-    .servicos-banner div:nth-child(3){
-        display: none;
-    } */
-
-
+          
+   
 
 /*Serviços*/
 
@@ -135,13 +131,12 @@
         display: flex;
     }
     .servicos img{
-        width: 100%;
-        height: 50%;     
+        display: none;   
     }
     .servicos-titulo{
         display: flex;
         flex-direction: column;
-        align-self: flex-end;
+        align-self: flex-start;
         transform:translateY(5px)
     }
 
@@ -155,7 +150,7 @@
     }
 
     .servicos-titulo p{
-        font-size: 0.5rem;
+        font-size: 0.4rem;
         margin: 0px 0px 0px 40px;
     }
 
@@ -166,9 +161,11 @@
         text-align: left;  
         width: 100%;
         z-index: 1;
+        background-color: red;
     }
     .servicos-tabela{
-        width: 70%;
+        width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -176,21 +173,40 @@
         transform: translateX(20px);
         height: auto;
         padding: 0%;
-        box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
-        background-color: #FFFCF9;
-        border-bottom: solid #161925;
+        box-shadow: none;
+        background-color: none;
+        border-bottom: none;
     }
     .tabela{
         display: flex;
-        margin-bottom: 20px;
+        flex-direction: column;
+        background-color: gray;
+        width: 100%;
+        margin-bottom: 0px;
+        
     }
     .tabela div{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1%;
+        padding: 20%;
+        width: 20%;
     }
-
+    .tabela div:nth-child(1){
+        display: flex;
+        align-self: flex-start;
+        background-color: #161925;
+    }
+    .tabela div:nth-child(2){
+        display: flex;
+        align-self: flex-end;
+        background-color: #23388c;
+    }
+    .tabela div:nth-child(3){
+        display: flex;
+        align-self: flex-start;
+        background-color: green;
+    }
     .tabela img{
         margin-bottom: 20px;
         width: 32%;
@@ -200,7 +216,7 @@
     .tabela h3{
         margin-bottom: 20px;
         font-weight: 600;
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         color: #161925;
     }
 
@@ -213,9 +229,10 @@
         color: #161925;
     }
 
-    .btnConfira {
-     
+    .tabela-btn .btnConfira{
+        display: none;
     }
+    
 
 
 
