@@ -40,6 +40,9 @@ body{
 
 /*topo menu*/
 
+.topo-corpo header .btn-contato-mobile{ /*responsivo*/
+    display: none;
+}
 .topo-corpo header nav{
     display: flex;
     
