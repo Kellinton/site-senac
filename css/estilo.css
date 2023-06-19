@@ -650,7 +650,7 @@ button:hover .text{
 footer{
     background-image: linear-gradient(to bottom,#161925, #000);
     width: 100%;
-    height: 500px;
+    height: 100%;
 }
 
 .rodape-cont{
@@ -658,7 +658,7 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 500px;
+    height: 100%;
     width: 100%;
 }
 
