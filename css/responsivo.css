@@ -130,8 +130,8 @@
     .servicos{
         display: flex;
     }
-    .servicos img{
-        display: none;   
+    .servicos .servicos-img {
+        display: none;
     }
     .servicos-titulo{
         display: flex;
@@ -141,17 +141,17 @@
     }
 
     .servicos-titulo h2{
-        font-size: 1.0rem;
+        font-size: 1.8rem;
         margin-left: 50px;
     }
     .servicos-titulo span{
         font-weight: 800;
-        font-size: 1.0rem;
+        font-size: 1.8rem;
     }
 
     .servicos-titulo p{
-        font-size: 0.4rem;
-        margin: 0px 0px 0px 40px;
+        font-size: 0.8rem;
+        margin: 0px 0px 0px 50px;
     }
 
     /*Serviços tabela*/
@@ -160,8 +160,6 @@
         flex-direction: column;
         text-align: left;  
         width: 100%;
-        z-index: 1;
-        background-color: red;
     }
     .servicos-tabela{
         width: 100%;
@@ -174,38 +172,38 @@
         height: auto;
         padding: 0%;
         box-shadow: none;
-        background-color: none;
         border-bottom: none;
     }
     .tabela{
         display: flex;
         flex-direction: column;
-        background-color: gray;
         width: 100%;
         margin-bottom: 0px;
+        gap: 100px;
         
     }
     .tabela div{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20%;
-        width: 20%;
+        padding: 5%;
+        width: 50%;
+        border-radius: 20px;
     }
     .tabela div:nth-child(1){
         display: flex;
         align-self: flex-start;
-        background-color: #161925;
+        border-right: solid 5px var(--darkblue)
     }
     .tabela div:nth-child(2){
         display: flex;
         align-self: flex-end;
-        background-color: #23388c;
+        border-left: solid 5px var(--darkblue)
     }
     .tabela div:nth-child(3){
         display: flex;
         align-self: flex-start;
-        background-color: green;
+        border-right: solid 5px var(--darkblue)
     }
     .tabela img{
         margin-bottom: 20px;
@@ -216,12 +214,12 @@
     .tabela h3{
         margin-bottom: 20px;
         font-weight: 600;
-        font-size: 0.8rem;
+        font-size: 1.5rem;
         color: #161925;
     }
 
     .tabela p{
-        font-size: 0.5rem;
+        font-size: 0.9rem;
         font-weight: 400;
         font-family: 'Poppins', sans-serif;
         line-height: 1.1;
