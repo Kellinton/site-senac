@@ -137,7 +137,7 @@
 /*Serviços*/
 
     .servicos{
-        display: flex;
+        display: flex;    
     }
     .servicos .servicos-img {
         display: none;
@@ -150,12 +150,12 @@
     }
 
     .servicos-titulo h2{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin-left: 50px;
     }
     .servicos-titulo span{
         font-weight: 800;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .servicos-titulo p{
@@ -169,17 +169,18 @@
         flex-direction: column;
         text-align: left;  
         width: 100%;
+
     }
     .servicos-tabela{
         width: 100%;
+        padding: 0;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         border-radius: 20px;
-        transform: translateX(20px);
+        transform: translateX(0px);
         height: auto;
-        padding: 0%;
         box-shadow: none;
         border-bottom: none;
     }
@@ -189,7 +190,6 @@
         width: 100%;
         margin-bottom: 0px;
         gap: 100px;
-        
     }
     .tabela div{
         display: flex;
@@ -197,7 +197,9 @@
         align-items: center;
         padding: 5%;
         width: 50%;
+        height: 300px;
         border-radius: 20px;
+   
     }
     .tabela div:nth-child(1){
         display: flex;
@@ -215,20 +217,22 @@
         border-right: solid 5px var(--darkblue)
     }
     .tabela img{
-        margin-bottom: 20px;
-        width: 32%;
-        height: 32%;
+        margin: 10% 0px 10% 0px;
+        width: 20%;
+        height: 20%;
     }
 
     .tabela h3{
-        margin-bottom: 20px;
+        text-align: left;
+        margin-bottom: 10px;
         font-weight: 600;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: #161925;
     }
 
     .tabela p{
-        font-size: 0.8rem;
+        text-align: left;
+        font-size: 1rem;
         font-weight: 400;
         font-family: 'Poppins', sans-serif;
         line-height: 1.1;
@@ -246,7 +250,7 @@
         width: 100%;
         margin-top: 100px;
         gap: 5px;
-        padding: 1%;
+        padding: 0;
     }
     .sobre img{
         width: 50%;
@@ -256,12 +260,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding: 5px;
-
+        padding: 2px;
+        width: 50%;
     }
     .sobre-info h2{
         text-transform: uppercase;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-top: 0;
     }
     .sobre-info span{
@@ -312,8 +316,7 @@
     /*avaliaçoes-clientes*/
 
     .clientes-cont{
-        display: flex;
-        
+        display: flex;     
     }
     .clientes-titulo{
         display: flex;
@@ -373,6 +376,12 @@
         text-align: left;
         padding: 10%;
     }
+    button.slick-next, button.slick-prev {
+        display: none!important;
+    }
+    button.slick-next.slick-arrow {
+        display: none;
+    }
     /*rodape*/
 
 footer{
@@ -391,32 +400,26 @@ footer{
 }
 
 .rodape-cont h3{
-        font-family: 'Poppins', sans-serif;
         font-weight: 600;
-        font-size: 1.2rem;
-        line-height: 1.5;
-        letter-spacing: 1px;
-        color: var(--white);
+        font-size: 0.7rem;
 }
 .rodape-cont p{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    letter-spacing: 1px;
+    font-size: 0.8rem;
     color: var(--white);
 }
 .rodape-info{
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 8px;
     width: 100%;
 }
 .rodape-1{
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 2%;
 }
 .rodape-1 div:nth-child(1){
     display: flex;
@@ -425,33 +428,9 @@ footer{
 .rodape-1-rede{
     display: flex;
     margin-top: 4%;
+    
 }
 
-.rodape-1-rede a{
-    color: var(--white);
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    background: var(--darkblue);
-    border-radius: 50px;
-    display: block;
-    text-indent: -9999px;
-   margin-right: 4%;
-}
-
-.rodape-1-rede a:hover{
-    transform:translateY(-5px)
-}
-
-.rodape-1-rede a:nth-child(1){
-    background-image: url(../img/rodape/Linkedin-rodape.svg);
-}
-.rodape-1-rede a:nth-child(2){
-    background-image: url(../img/rodape/Whatsapp-rodape.svg);
-}
-.rodape-1-rede a:nth-child(3){
-    background-image: url(../img/rodape/Instagram-rodape.svg);
-}
 
 .rodape-2, .rodape-3{
     width: 35%;
@@ -461,7 +440,7 @@ footer{
 
 }
 .rodape-2 h3, .rodape-3 h3{
-    font-size: 1.7rem;
+    font-size: 1rem;
     line-height: 1.5;
     letter-spacing: 1px;
     margin-bottom: 10%;
@@ -469,21 +448,7 @@ footer{
 
 
 .rodape-2 a, .rodape-3 a{
-    font-weight: 100;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    letter-spacing: 1px;
-    color: var(--white);
-}
-.rodape-2 img, .rodape-3 img{
-    width: 15%;
-    position: relative;
-    bottom: -10px;
-}
-.rodape-2 a:hover, .rodape-3 a:hover{
-    color: var(--lightblue);
+    font-size: 0.8rem;
 }
 
 
