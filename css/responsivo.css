@@ -146,7 +146,8 @@
         display: flex;
         flex-direction: column;
         align-self: flex-start;
-        transform:translateY(5px)
+        transform:translateY(5px);
+        margin-bottom: 10%;
     }
 
     .servicos-titulo h2{
@@ -189,7 +190,7 @@
         flex-direction: column;
         width: 100%;
         margin-bottom: 0px;
-        gap: 100px;
+        gap: 80px;
     }
     .tabela div{
         display: flex;
