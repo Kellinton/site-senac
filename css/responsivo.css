@@ -814,7 +814,7 @@ footer{
 
     .clientes-cont{
         flex-direction: column;
-        background-color: green;  
+       
     }
     .clientes-titulo{
         display: flex;
@@ -822,7 +822,7 @@ footer{
         margin-bottom: 1px;
         width: 75%;
         text-align: center;    
-        background-color: red;
+    
     }
     .clientes-titulo h2{
         text-transform: uppercase;
@@ -845,7 +845,7 @@ footer{
         display: flex;
         justify-content: center;
         width: 100%;
-        background-color: blue;
+        
     }
     .clientes div{
         background-color: var(--white);
