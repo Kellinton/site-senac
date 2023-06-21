@@ -813,27 +813,29 @@ footer{
     /*avaliaçoes-clientes*/
 
     .clientes-cont{
-        display: flex;     
+        flex-direction: column;
+        background-color: green;  
     }
     .clientes-titulo{
         display: flex;
         flex-direction: column;
-        margin-bottom: 20px;
-        width: 45%;
-        text-align: left;    
+        margin-bottom: 1px;
+        width: 75%;
+        text-align: center;    
+        background-color: red;
     }
     .clientes-titulo h2{
         text-transform: uppercase;
-        font-size: 1.5rem;
-        margin-bottom: 10px;
+        font-size: 1rem;
+        margin-bottom: 5px;
     }
     .clientes-titulo span{
         font-weight: 800;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .clientes-titulo p{
         font-weight: 400;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         margin-bottom: 50px;
     }
     .clientes-titulo a{
@@ -842,11 +844,12 @@ footer{
     .clientes{
         display: flex;
         justify-content: center;
-        width: 50%;
+        width: 100%;
+        background-color: blue;
     }
     .clientes div{
         background-color: var(--white);
-        width: 100%;
+        width: 75%;
         height: 250px;
         border-bottom: solid 5px var(--darkblue);
         border-radius: 20px;
