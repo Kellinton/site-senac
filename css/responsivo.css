@@ -274,7 +274,6 @@
     .sobre{
         display: flex;
         width: 100%;
-        margin-top: 100px;
         gap: 8px;
         flex-direction: column;
         align-items: center;
@@ -334,7 +333,7 @@
     }
     .portfolio-titulo h2{
         font-size: 1.1rem;
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .portfolio-titulo span{
         font-size: 1.1rem;
