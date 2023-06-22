@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /*font-family: 'Poppins', sans-serif;*/
 
-
+.tabela .img-tabela-responsive{
+    display: none;
+}
+.tabela .img-tabela-oficial{
+    display: block;
+}
 :root {
     --darkblue: #161925;
     --lightblue: #446688;

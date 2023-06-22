@@ -186,6 +186,14 @@
     }
 
     /*Serviços tabela*/
+    .tabela .img-tabela-responsive{
+        display: block;
+        width: 90px;
+        height: 20px;
+    }
+    .tabela .img-tabela-oficial{
+        display: none;
+    }
     .servicos-tabela-cont{
         display: flex;
         flex-direction: column;
@@ -222,51 +230,51 @@
         width: 50%;
         height: 120px;
         border-radius: 20px;
-   
+        box-shadow: 0 5px 15px 0 rgba(45, 54, 65, 0.6);
+        background-image: linear-gradient(to bottom,#161925, #000);
     }
     .tabela div:nth-child(1){
         display: flex;
         align-self: flex-start;
-        border-right: solid 5px var(--darkblue);
-        border-bottom: solid 5px var(--darkblue);
-        background-color: var(--orange);
+        border-right: solid 5px var(--white);
+        border-bottom: solid 5px var(--white);
+        background-color: var(--white);
     }
     .tabela div:nth-child(2){
         display: flex;
         align-self: flex-end;
-        border-left: solid 5px var(--darkblue);
-        border-bottom: solid 5px var(--darkblue);
-        background-color: var(--lightblue);
+        border-left: solid 5px var(--white);
+        border-bottom: solid 5px var(--white);
+        background-color: var(--white);
     }
     .tabela div:nth-child(3){
         display: flex;
         align-self: flex-start;
-        border-right: solid 5px var(--darkblue);
-        border-bottom: solid 5px var(--darkblue);
-        background-color: var(--green);
+        border-right: solid 5px var(--white);
+        border-bottom: solid 5px var(--white);
+        background-color: var(--white);
+        
     }
     .tabela img{
-        margin: 1% 0px 1% 0px;
-        width: 15%;
-        height: 15%;
+        margin-bottom: 5px;
     }
 
     .tabela h3{
         text-align: left;
         margin-bottom: 10px;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 1rem;
-        color: #161925;
+        color: #fff;
     }
 
     .tabela p{
         text-align: left;
         font-size: 0.7rem;
-        font-weight: 400;
+        font-weight: 200;
         font-family: 'Poppins', sans-serif;
         line-height: 1.1;
         letter-spacing: 1.4px;
-        color: #161925;
+        color: #fff;
     }
 
     .tabela-btn .btnConfira{
