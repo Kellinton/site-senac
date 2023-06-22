@@ -229,18 +229,21 @@
         align-self: flex-start;
         border-right: solid 5px var(--darkblue);
         border-bottom: solid 5px var(--darkblue);
+        background-color: var(--orange);
     }
     .tabela div:nth-child(2){
         display: flex;
         align-self: flex-end;
         border-left: solid 5px var(--darkblue);
         border-bottom: solid 5px var(--darkblue);
+        background-color: var(--lightblue);
     }
     .tabela div:nth-child(3){
         display: flex;
         align-self: flex-start;
         border-right: solid 5px var(--darkblue);
         border-bottom: solid 5px var(--darkblue);
+        background-color: var(--green);
     }
     .tabela img{
         margin: 1% 0px 1% 0px;
