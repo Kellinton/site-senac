@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /*font-family: 'Poppins', sans-serif;*/
 
@@ -26,13 +27,13 @@ body{
   
 }
 
-
 /*colocar transform no main*/
 .site{
     max-width: 1290px;
     width: 100%;
     margin: 0 auto;
 }
+
 
 /*topo banner*/
 .topo-corpo{
