@@ -1,3 +1,5 @@
+AOS.init();
+
 $('.multiple-items').slick({
   infinite: true,
   slidesToShow: 1,
