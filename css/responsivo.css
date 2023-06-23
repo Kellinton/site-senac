@@ -23,11 +23,34 @@
         height: 50vh;
     }    
     /*menu*/
-    .topo-corpo header #menu-bar{
+    .topo-corpo header #menu-abrir{
         display: block;
     }
+    .topo-corpo header .menu-list{
+        display: none;   
+    }
+    .topo-corpo header .menu-mobile{
+        display: block;
+        background-color: red;
+    }
+    .topo-corpo header .menu-mobile ul{
+      
+    }
+    
+    .topo-corpo header .menu-mobile ul a{
+        position: relative;
+        text-transform: capitalize;
+        text-decoration: none;
+        padding: 3px;
+        font-size: 1.3rem;
+        color: var(--darkblue);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+
     .topo-corpo header{
         justify-content: space-evenly;
+        align-items: center;
         padding: 0%;
         gap: 10px;
     }
@@ -42,17 +65,18 @@
     }
     .topo-corpo header .btn-contato-mobile{ /*responsivo*/
         display: block;
-        text-align: center;
-        height: auto;
+        width: 125px;
+        height: 30px;
         justify-content: center;
         font-family: 'Poppins', sans-serif;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 0.5rem;    
         text-transform: uppercase;
+        text-align: center;
+        padding: 10px;
         letter-spacing: 1px;
         color: var(--white);
-        background-color: var(--darkblue);
-        padding: 10px 50px;   
+        background-color: var(--darkblue);  
         border-radius: 50px;
         text-decoration: none;
         box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
@@ -533,7 +557,7 @@ footer{
         z-index: 2;
       }
       
-      #menu-bar {
+      #menu-abrir {
         width: 45px;
         margin: 0px;
         cursor: pointer;

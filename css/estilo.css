@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /*font-family: 'Poppins', sans-serif;*/
 
@@ -98,34 +97,34 @@ body{
     height: 100vh;
     box-sizing: border-box; 
 }
-.topo-corpo nav ul{
-    display: none;
-}
+
 /*topo menu*/
 
 .topo-corpo header .btn-contato-mobile{ /*responsivo*/
     display: none;
 }
-.topo-corpo header nav{
+.topo-corpo header {
     display: flex;
-    
+    justify-content: center; 
+    width: 100%;
+    background-image: linear-gradient(to right, transparent, transparent, #fff, #fff);
 }
-.topo-corpo header{
+.topo-corpo header .menu-list{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, transparent, transparent, #fff, #fff);
+   
 }
 
-.topo-corpo header ul{
+.topo-corpo header .menu-list ul{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0px 80px 0px 80px;
 }
 
-.topo-corpo header ul a{
+.topo-corpo header .menu-list ul a{
     position: relative;
     text-transform: capitalize;
     text-decoration: none;
@@ -135,7 +134,10 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
-.topo-corpo header #menu-bar{
+.topo-corpo header #menu-abrir{
+    display: none;
+}
+.topo-corpo header .menu-mobile{
     display: none;
 }
 /*hover menu*/
