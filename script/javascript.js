@@ -16,18 +16,18 @@ $('.servicos-carro').slick({
   autoplaySpeed: 2000,
 });
 
-window.onscroll = function(){
+// window.onscroll = function(){
 
-  var topo = window.scrollY || document.documentElement.scrollTop;
+//   var topo = window.scrollY || document.documentElement.scrollTop;
 
-  if(topo > 140){
-    console.log("Adicionar menu fixo" + topo);
-    document.getElementById("topoFixo").classList.add("menu-fixo");
-    document.getElementById("topoFixo").classList.remove("site");
-  }
-  else{
-    console.log ("Remover menu fixo");
-    document.getElementById("topoFixo").classList.remove("menu-fixo");
-    document.getElementById("topoFixo").classList.add("site");
-  }
-}
+//   if(topo > 140){
+//     console.log("Adicionar menu fixo" + topo);
+//     document.getElementById("topoFixo").classList.add("menu-fixo");
+//     document.getElementById("topoFixo").classList.remove("site");
+//   }
+//   else{
+//     console.log ("Remover menu fixo");
+//     document.getElementById("topoFixo").classList.remove("menu-fixo");
+//     document.getElementById("topoFixo").classList.add("site");
+//   }
+// }

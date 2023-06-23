@@ -2,9 +2,7 @@
 
 @media (min-width: 900px){
 
-    .topo-corpo .btnConfira{
-        display: none;
-    }
+    
     .menu-bar{
         display: none;
     }
@@ -173,7 +171,8 @@
 
     .servicos-titulo h2{
         font-size: 1.5rem;
-        margin-left: 50px;
+        margin-top: 100px;
+        margin-left: 10px;
     }
     .servicos-titulo span{
         font-weight: 800;
@@ -182,7 +181,6 @@
 
     .servicos-titulo p{
         font-size: 0.8rem;
-        margin: 0px 0px 0px 50px;
     }
 
     /*Serviços tabela*/
@@ -199,7 +197,6 @@
         flex-direction: column;
         text-align: left;  
         width: 100%;
-
     }
     .servicos-tabela{
         width: 100%;
@@ -213,7 +210,7 @@
         height: auto;
         box-shadow: none;
         border-bottom: none;
-   
+     
     }
     .tabela{
         display: flex;
@@ -221,6 +218,7 @@
         width: 100%;
         margin-bottom: 0px;
         gap: 8px;
+
     }
     .tabela div{
         display: flex;
@@ -228,7 +226,7 @@
         align-items: center;
         padding: 5%;
         width: 50%;
-        height: 120px;
+        height: 210px;
         border-radius: 20px;
         box-shadow: 0 5px 15px 0 rgba(45, 54, 65, 0.6);
         background-image: linear-gradient(to bottom,#161925, #000);
@@ -277,7 +275,7 @@
         color: #fff;
     }
 
-    .tabela-btn .btnConfira{
+    .tabela-btn{
         display: none;
     }
     
@@ -324,12 +322,12 @@
         font-weight: 700;
     }
     
-    .btnConfira-sobre{
-        width: 17%;
-        height: 2%;
-        padding: 2%;
-        border-radius: 50px;
-        text-align: center;
+    .sobre-btn{
+        width: 90px;
+        height: 20px;
+        font-weight: 400;
+        font-size: 0.8rem;
+        padding: 6px;   
     }
     
     /*Portfolio*/
@@ -344,7 +342,7 @@
     }
     .portfolio-titulo h2{
         font-size: 1.1rem;
-        margin-top: 50px;
+        margin-top: 100px;
     }
     .portfolio-titulo span{
         font-size: 1.1rem;
@@ -377,22 +375,13 @@
         display: none;
     }
      .btnConfira {
-        
-        height: auto;
-        justify-content: center;
-        font-family: 'Poppins', sans-serif;
+        width: 125px;     
+        height: 25px;
         font-weight: 600;
         font-size: 0.7rem;    
-        text-transform: uppercase;
         text-align: center;
-        letter-spacing: 1px;
-        color: var(--white);
-        padding: 10% 30% 10% 30%;   
-        border-radius: 50px;
-        background-color:var(--darkblue);
-        text-decoration: none;
-        box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-        cursor: pointer;   
+        letter-spacing: 0;
+        padding: 6px;   
     }
     /*avaliaçoes-clientes*/
 
@@ -548,8 +537,7 @@ footer{
         width: 45px;
         margin: 0px;
         cursor: pointer;
-        order: 1;
-
+       
       }
       
       .bar {
@@ -563,12 +551,20 @@ footer{
       
       #bar1 {
         transform: translateY(-4px);
+        width: 100%;
       }
-      
+      #bar2 {
+        width: 80%;
+      }
       #bar3 {
         transform: translateY(4px);
+        width: 60%;
       }
-      
+      #bar4 {
+        transform: translateY(8px);
+        width: 40%;
+      }
+
       .nav {
         transition: 0.3s ease;
         display: none;
