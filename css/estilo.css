@@ -82,7 +82,7 @@ body{
   
 }
 
-/*colocar transform no main*/
+
 .site{
     max-width: 1290px;
     width: 100%;
@@ -98,7 +98,9 @@ body{
     height: 100vh;
     box-sizing: border-box; 
 }
-
+.topo-corpo nav ul{
+    display: none;
+}
 /*topo menu*/
 
 .topo-corpo header .btn-contato-mobile{ /*responsivo*/

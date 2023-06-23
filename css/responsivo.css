@@ -537,8 +537,8 @@ footer{
         width: 45px;
         margin: 0px;
         cursor: pointer;
-       
-      }
+      
+      }    
       
       .bar {
         height: 5px;
@@ -569,7 +569,6 @@ footer{
         transition: 0.3s ease;
         display: none;
       }
-      
       .nav ul {
         padding: 0 22px;
       }
@@ -589,11 +588,6 @@ footer{
         font-weight: bold;
       }
       
-      .menu-bg, #menu {
-        top: 0;
-        left: 0;
-        position: absolute;
-      }
    
     }
     /* .abrir-menu{
