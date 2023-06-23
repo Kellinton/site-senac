@@ -3,9 +3,7 @@
 @media (min-width: 900px){
 
     
-    .menu-bar{
-        display: none;
-    }
+    
 }
 
 /* 601 até 900 para Notbook */
@@ -14,40 +12,19 @@
 
 
     /* 0 até 600 para Celular INICIO*/
-@media (max-width: 600px){
+@media screen and (max-width: 600px){
     /*banner*/
     .topo-corpo{
         background-image: url(../img/banner-01.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 50vh;
+        height: 100vh;
     }    
     /*menu*/
-    .topo-corpo header #menu-abrir{
-        display: block;
-    }
-    .topo-corpo header .menu-list{
-        display: none;   
-    }
-    .topo-corpo header .menu-mobile{
-        display: block;
-        background-color: red;
-    }
-    .topo-corpo header .menu-mobile ul{
-      
-    }
-    
-    .topo-corpo header .menu-mobile ul a{
-        position: relative;
-        text-transform: capitalize;
-        text-decoration: none;
-        padding: 3px;
-        font-size: 1.3rem;
-        color: var(--darkblue);
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-    }
 
+   .topo-corpo header .menu-list{
+    display: none;
+   }
     .topo-corpo header{
         justify-content: space-evenly;
         align-items: center;
@@ -58,10 +35,6 @@
         background-image: url(../img/logos/logoteste.svg);
         width: 109px;
         height: 60px;
-    }
-    .topo-corpo header ul{
-        display: none;
-        margin: 0;
     }
     .topo-corpo header .btn-contato-mobile{ /*responsivo*/
         display: block;
@@ -82,13 +55,7 @@
         box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
         cursor: pointer;     
     }
-
-    .topo-rede-social a{
-        display: none;
-    }
-
-
-    /*topo botao,slogan*/
+   /*topo botao,slogan*/
     .topo-corpo .slogan-cont{
         transform:translateY(100px);
     }
@@ -105,6 +72,11 @@
        font-size: 0.4rem;
        margin-top: 9%; */
        display: none; /*teste*/
+    }
+    
+    /*menu mobile*/
+    .topo-corpo header #menu-abrir{
+        display: block;
     }
 
     /*serviços do banner*/

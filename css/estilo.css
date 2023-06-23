@@ -103,6 +103,7 @@ body{
 .topo-corpo header .btn-contato-mobile{ /*responsivo*/
     display: none;
 }
+
 .topo-corpo header {
     display: flex;
     justify-content: center; 
@@ -134,12 +135,33 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
+
+/*menu mobile*/
+
+
+.topo-corpo header .menu-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+}
+.topo-corpo header .menu-mobile ul a{
+    position: relative;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 3px;
+    font-size: 1.3rem;
+    color: var(--darkblue);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.topo-corpo header .menu-mobile{ 
+    display: none;
+}
 .topo-corpo header #menu-abrir{
     display: none;
 }
-.topo-corpo header .menu-mobile{
-    display: none;
-}
+
 /*hover menu*/
 .ativo {
     color: var(--lightblue) !important;
@@ -752,3 +774,7 @@ footer{
 hr{
     width: 100%;
 }
+
+
+/*responsivo */
+
