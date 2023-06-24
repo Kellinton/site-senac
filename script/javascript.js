@@ -16,7 +16,14 @@ $('.servicos-carro').slick({
   autoplaySpeed: 2000,
 });
 
+
+
+
+
+
 //menu mobile
+
+// verifica se a classe open está presente no elemento com a classe menu-mobile. Se estiver presente, a classe é removida e o ícone do menu é alterado para "btn-abrirmenu.svg". Caso contrário, a classe open é adicionada, e o ícone do menu é alterado para "btn-fecharmenu.svg".
 function menuShow() {
   let menuMobile = document.querySelector('.menu-mobile');
   if (menuMobile.classList.contains('open')) {
@@ -27,6 +34,17 @@ function menuShow() {
       document.querySelector('.icon-menu').src = "img/menu/btn-fecharmenu.svg";
   }
 }
+
+//quando o botão "Toggle Menu" é clicado, a função toggleMenu() é chamada. Essa função seleciona o elemento <body> do documento HTML usando document.querySelector('body') e, em seguida, alterna a classe menu-aberto usando classList.toggle('menu-aberto'). A classe menu-aberto define a propriedade CSS overflow: hidden, o que impede o scroll quando essa classe é aplicada ao elemento <body>.
+function toggleMenu() { 
+  var bodyElement = document.querySelector('body');
+  bodyElement.classList.toggle('menu-aberto');
+}
+
+//menu mobile
+
+
+
 
 // window.onscroll = function(){
 

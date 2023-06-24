@@ -24,7 +24,9 @@
 *, *::before, *::after{
     box-sizing: border-box;
 }
-
+.menu-aberto { /*overflow hidden será aplicado no body quando o toggle alternar no clique do menu*/
+    overflow: hidden;
+  }
 /*botoes*/
 .slogan-btn, .tabela-btn, .sobre-btn, .clientes-btn {
     background-color: var(--darkblue);
@@ -155,7 +157,7 @@ body{
 }
 .topo-corpo header .mobile-menu-icon {
     display: none;
-    z-index: 1;
+    z-index: 2;
 }
 
 /*hover menu*/

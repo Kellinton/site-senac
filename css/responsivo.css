@@ -77,6 +77,7 @@
     }
     .topo-corpo header .menu-mobile{ 
         display: block;
+        
     }
     
     .topo-corpo header .mobile-menu-icon {
@@ -102,6 +103,7 @@
         padding-top: 5rem;
         gap: 20px;
     }
+
     /*configuração de quando o menu estiver aberto*/
     .open {
         display: flex;
@@ -113,6 +115,7 @@
         padding: 10%;
         position: absolute;    
         top: 0;
+        z-index: 1;
     }
     .open ul{
         display: flex;
@@ -128,6 +131,15 @@
         justify-content: center;
         padding-top: 4rem;
     }
+    /*efeito menu*/
+    .menu-mobile ul, .menu-mobile div{
+        opacity: 0;
+        transition: opacity 0.4s ease-out;
+      }
+      
+      .menu-mobile.open ul, .menu-mobile.open div{
+        opacity: 1;
+      }
     
     /*serviços do banner*/
     .posicionamento{
@@ -573,9 +585,6 @@ footer{
     font-size: 0.7rem;
 }
 
-
- 
-   
     }
     /* .abrir-menu{
         background-image: url("../img/menu-hamburguer.svg");
