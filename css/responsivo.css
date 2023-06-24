@@ -53,27 +53,18 @@
         cursor: pointer;     
     }
    /*topo botao,slogan*/
-    .topo-corpo .slogan-cont{
-        transform:translateY(100px);
-    }
-    .topo-corpo .slogan-cont p, span{
-        font-family: 'Poppins', sans-serif;
-        font-weight: 700;
-        font-size: 2rem;
-        color: #161925;
-    }
 
-    .topo-corpo .slogan-cont a{
-       width: 30%;
-       height: auto;
-       font-size: 0.6rem;
-       margin-top: 15%;
-       /* display: none;  */
+    .topo-corpo .slogan-cont{
+        display: none;
     }
     
     /*menu mobile*/
     .menu-item{
         display: none;
+    }
+    .mobile-menu .menu-item {
+        display: block;
+        padding-top: 3rem;
     }
     .nav-bar {
         padding: 1.5rem 4rem;
@@ -83,6 +74,9 @@
     }
     .topo-rede-social {
         display: none;
+    }
+    .topo-corpo header .menu-mobile{ 
+        display: block;
     }
     .topo-corpo header .mobile-menu-icon {
         display: block;

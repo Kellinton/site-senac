@@ -18,13 +18,13 @@ $('.servicos-carro').slick({
 
 //menu mobile
 function menuShow() {
-  let menuMobile = document.querySelector('.mobile-menu');
+  let menuMobile = document.querySelector('.menu-mobile');
   if (menuMobile.classList.contains('open')) {
       menuMobile.classList.remove('open');
-      document.querySelector('.icon').src = "assets/img/btn-abrirmenu.svg";
+      document.querySelector('.icon-menu').src = "img/menu/btn-abrirmenu.svg";
   } else {
       menuMobile.classList.add('open');
-      document.querySelector('.icon').src = "assets/img/btn-fecharmenu.svg";
+      document.querySelector('.icon-menu').src = "img/menu/btn-fecharmenu.svg";
   }
 }
 

@@ -139,12 +139,7 @@ body{
 /*menu mobile*/
 
 
-.topo-corpo header .menu-mobile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: red;
-}
+
 .topo-corpo header .menu-mobile ul a{
     position: relative;
     text-transform: capitalize;
