@@ -78,6 +78,7 @@
     .topo-corpo header .menu-mobile{ 
         display: block;
     }
+    
     .topo-corpo header .mobile-menu-icon {
         display: block;
     }
@@ -101,17 +102,33 @@
         padding-top: 5rem;
         gap: 20px;
     }
+    /*configuração de quando o menu estiver aberto*/
     .open {
         display: flex;
         flex-direction: column;
-        background-color: #FFFCF9;
+        align-items: center;
+        background-color: var(--white);
         height: 100vh;
         width: 100%;
         padding: 10%;
         position: absolute;    
         top: 0;
     }
-
+    .open ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .open .menu-item{ 
+        display: block;
+        padding-top: 4rem ;
+    }
+    .open .topo-rede-social{ 
+        display: flex;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+    
     /*serviços do banner*/
     .posicionamento{
         position: relative;
