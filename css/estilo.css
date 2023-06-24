@@ -110,7 +110,7 @@ body{
     width: 100%;
     background-image: linear-gradient(to right, transparent, transparent, #fff, #fff);
 }
-.topo-corpo header .menu-list{
+.topo-corpo header .nav-menu{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -118,14 +118,14 @@ body{
    
 }
 
-.topo-corpo header .menu-list ul{
+.topo-corpo header .nav-menu ul{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0px 80px 0px 80px;
 }
 
-.topo-corpo header .menu-list ul a{
+.topo-corpo header .nav-menu ul a{
     position: relative;
     text-transform: capitalize;
     text-decoration: none;
@@ -158,8 +158,9 @@ body{
 .topo-corpo header .menu-mobile{ 
     display: none;
 }
-.topo-corpo header #menu-abrir{
+.topo-corpo header .mobile-menu-icon {
     display: none;
+    z-index: 1;
 }
 
 /*hover menu*/

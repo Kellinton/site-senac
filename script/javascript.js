@@ -16,6 +16,18 @@ $('.servicos-carro').slick({
   autoplaySpeed: 2000,
 });
 
+//menu mobile
+function menuShow() {
+  let menuMobile = document.querySelector('.mobile-menu');
+  if (menuMobile.classList.contains('open')) {
+      menuMobile.classList.remove('open');
+      document.querySelector('.icon').src = "assets/img/btn-abrirmenu.svg";
+  } else {
+      menuMobile.classList.add('open');
+      document.querySelector('.icon').src = "assets/img/btn-fecharmenu.svg";
+  }
+}
+
 // window.onscroll = function(){
 
 //   var topo = window.scrollY || document.documentElement.scrollTop;
