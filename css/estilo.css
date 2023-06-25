@@ -15,13 +15,10 @@
     --orange: #FF850A;
 }
 
-*{
+*, *::before, *::after{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    
-}
-*, *::before, *::after{
     box-sizing: border-box;
 }
 .menu-aberto { /*overflow hidden será aplicado no body quando o toggle alternar no clique do menu*/
@@ -38,8 +35,7 @@
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 0.8rem;  
-    text-transform: uppercase;
+    font-size: 1rem;
     letter-spacing: 1px;
     color: var(--white);
     padding: 10px;   
@@ -50,10 +46,29 @@
     transition: all .10s ease-in-out;  
 }
 .slogan-btn{
-    margin-top: 5%;
-    width: 220px;
-    height: 40px;
-    padding: 12px;  
+    margin-top: 16%;
+    width: 300px;
+    height: 50px;
+    padding: 16px;
+}
+.slogan-btn2{
+    margin-top: 16%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    padding: 14px;
+    border: 5px solid var(--darkblue);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.slogan-btn-cont{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .btnConfira {
     width: 100%;
@@ -72,6 +87,14 @@
     text-decoration: none;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
     cursor: pointer;   
+}
+.tabela-btn:hover, .slogan-btn:hover, .sobre-btn:hover, .clientes-btn:hover{
+    background-color: var(--lightblue);
+    color: var(--white);
+}
+.slogan-btn2:hover{
+    background-color: var(--darkblue);
+    color: var(--white);
 }
 .btnConfira:hover{
     width: 100%;
@@ -94,6 +117,7 @@ body{
 /*topo banner*/
 .topo-corpo{
     background-image: url(../img/banner-01.png);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -233,24 +257,60 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 8%;
 }
-
+.topo-corpo .slogan-cont .words{
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    overflow: hidden;
+}
+.topo-corpo .slogan-cont .words span{
+    color: var(--lightblue);
+    display: block;
+    height: 100%;
+    animation: rotacao_words 7s infinite reverse;
+}
+@keyframes rotacao_words{
+    10%{ 
+        transform: translateY(-105%);
+    }
+    25%{ 
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-205%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-305%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-405%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
 .topo-corpo .slogan-cont p, span{
     font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
     font-weight: 700;
-    font-size: 3.0rem;
+    font-size: 4rem;
     color: var(--darkblue);
 }
-.digitando-efeito{
+/* .digitando-efeito{
         color: var(--lightblue);
         text-transform: capitalize;
-}
+} */
 
-.tabela-btn:hover, .slogan-btn:hover, .sobre-btn:hover, .clientes-btn:hover{
-    background-color: var(--lightblue);
-    color: var(--white);
-}
+
+
 
 /*serviços do banner*/
 .posicionamento{
