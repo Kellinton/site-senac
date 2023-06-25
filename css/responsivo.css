@@ -12,7 +12,7 @@
 
 
     /* 0 até 600 para Celular INICIO*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 730px){
     /*banner*/
     .topo-corpo{
         background-image: url(../img/banner-01.png);
@@ -33,42 +33,36 @@
         width: 109px;
         height: 60px;
     }
-    /* .topo-corpo header .btn-contato-mobile{
-        display: block;
-        width: 125px;
-        height: 30px;
-        justify-content: center;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        font-size: 0.5rem;    
-        text-transform: uppercase;
-        text-align: center;
-        padding: 10px;
-        letter-spacing: 1px;
-        color: var(--white);
-        background-color: var(--darkblue);  
-        border-radius: 50px;
-        text-decoration: none;
-        box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-        cursor: pointer;     
-    } */
-
+   
    /*topo botao,slogan*/
-    .topo-corpo .slogan-cont{    
-        margin-top: 35%;
-    }
-
-    .topo-corpo .slogan-cont p, span{
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-        font-size: 1.4rem;
-    }
-    .slogan-btn{
-        margin-top: 10%;
-        width: 150px;
-        height: 35px;
-        padding: 10px;  
-    }
+   .topo-corpo .slogan-cont{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25%;
+}
+.topo-corpo .slogan-cont .words{
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+    overflow: hidden;
+}
+.topo-corpo .slogan-cont p, span{
+    font-size: 2rem;
+}
+.slogan-btn-cont{
+    justify-content: center;
+}
+.slogan-btn{
+    font-size: 0.8rem;
+    margin-top: 16%;
+    width: 150px;
+    height: 40px;
+    padding: 12px;
+}
+.slogan-btn2{
+    display: none;
+}
   
     /*menu mobile*/
     .menu-item{
