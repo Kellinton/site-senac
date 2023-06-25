@@ -172,7 +172,7 @@ body{
     text-decoration: none;
     padding: 3px;
     font-size: 1.6rem;
-    color: var(--darkblue);
+    color: var(--white);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }

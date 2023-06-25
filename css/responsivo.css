@@ -15,21 +15,23 @@
 @media screen and (max-width: 730px){
     /*banner*/
     .topo-corpo{
-        background-image: linear-gradient(to bottom, transparent, #fff, #fff, #edeef1, #dcdee6,#b9bed3, #b9bed3, transparent);
+        background-image: url(../img/banner-mobile1.png);
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
+        
     }    
     /*menu*/
 
-
     .topo-corpo header{
+        background-image: none;
+        background-color: #161925;
         justify-content: center;
         align-items: center;
         padding: 0%;
     }
     .topo-corpo header h1{
-        background-image: url(../img/logos/logoteste.svg);
+        background-image: url(../img/logos/logodark.svg);
         width: 109px;
         height: 60px;
     }
@@ -49,6 +51,12 @@
 }
 .topo-corpo .slogan-cont p, span{
     font-size: 2rem;
+}
+.topo-corpo .slogan-cont .words span{
+    color: var(--white);
+}
+.topo-corpo .slogan-cont p {
+    color: var(--white);
 }
 .slogan-btn-cont{
     justify-content: center;
@@ -83,7 +91,7 @@
     }
     .topo-corpo header .menu-mobile{ 
         display: block;
-        
+        background-color: var(--darkblue);
     }
     
     .topo-corpo header .mobile-menu-icon {
@@ -154,45 +162,54 @@
     }
     .servicos-banner{
         align-items: center;
+        background-color: var(--white);
+ 
     }
     .servicos-banner div:nth-child(2){
         transform: translateY(0px);
     }
     .servicos-banner img{
+        margin-top: 15px;
         width: 40px;
         height: 40px;
     }
     .servicos-banner div{
         display: flex;
-        width: 80%;
-        border-radius: 20px;   
-        padding: 5%;
-        box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+        width: 50%;
+        height: 350px;
+        border-radius: 0px;  
+        padding: 0%;
+        margin-bottom: 5%;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    }
+    .servicos-banner div:nth-child(1){
+        display: none;
     }
     .servicos-banner div:nth-child(2){
-        display: none;
+        
     }
     .servicos-banner div:nth-child(3){
-        display: none;
+
     }
     .servicos-banner h2{
-        font-weight: 500;
-        font-size: 1.4rem;
+        font-weight: 700;
+        font-size: 0.9rem;
         color: #161925;
-        margin-top: 10px;
+        margin-top: 15px;
     
     }
 
     .servicos-banner p{
-    font-size: 0.9rem;
-    font-weight: 300;
+    font-size: 0.7rem;
+    font-weight: 400;
     }
 
     .servicos-banner button{
      display: block;
+     margin-bottom: 30px;
     }
     .text{
-        padding: 0.4rem 0;
+        padding: 0.3rem 0;
         margin-left: 1rem;
 
     }
@@ -200,11 +217,29 @@
         position: relative;
         display: block;
         margin: 0;
-        width: 2.5rem;
+        width: 2rem;
         height: 2rem;
         background: var(--darkblue);
         border-radius: 1.625rem;
         transition: all 0.4s ease-in-out;
+    }
+    .arrow{
+        left: 0.3rem;
+        width: 1rem;
+        height: 0.1rem;
+        background: none;
+        transition: all 0.4s ease-in-out;
+    }
+    .arrow::before{
+        content: "";
+        position: absolute;
+        top: -0.3rem;
+        right: 0.0625rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-top: 0.125rem solid var(--white);
+        border-right: 0.125rem solid var(--white);
+        transform: rotate(45deg);
     }
     .icon{
         position: absolute;
@@ -325,7 +360,7 @@
         margin-bottom: 10px;
         font-weight: 400;
         font-size: 1rem;
-        color: #fff;
+        color: var(--white);
     }
 
     .tabela p{
@@ -335,7 +370,7 @@
         font-family: 'Poppins', sans-serif;
         line-height: 1.1;
         letter-spacing: 1.4px;
-        color: #fff;
+        color: var(--white);
     }
 
     .tabela-btn{
