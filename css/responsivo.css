@@ -18,7 +18,7 @@
         background-image: url(../img/banner-mobile1.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 80vh;
         
     }    
     /*menu*/
@@ -269,7 +269,7 @@
 
     .servicos-titulo h2{
         font-size: 1.5rem;
-        margin-top: 100px;
+        margin-top: 0px;
         margin-left: 10px;
     }
     .servicos-titulo span{
