@@ -62,11 +62,13 @@
     justify-content: center;
 }
 .slogan-btn{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-top: 16%;
     width: 170px;
     height: 35px;
     padding: 9px;
+    background-color: var(--white);
+    color: var(--darkblue);
 }
 .slogan-btn2{
     display: none;
@@ -262,7 +264,7 @@
     .servicos-titulo{
         display: flex;
         flex-direction: column;
-        align-self: flex-start;
+        align-self: center;
         transform:translateY(5px);
         margin-bottom: 10%;
     }
@@ -270,7 +272,8 @@
     .servicos-titulo h2{
         font-size: 1.5rem;
         margin-top: 0px;
-        margin-left: 10px;
+        margin-left: 0px;
+        align-self: center;
     }
     .servicos-titulo span{
         font-weight: 800;
@@ -323,7 +326,7 @@
         flex-direction: column;
         align-items: center;
         padding: 5%;
-        width: 50%;
+        width: 80%;
         height: 210px;
         border-radius: 20px;
         box-shadow: 0 5px 15px 0 rgba(45, 54, 65, 0.6);
@@ -351,15 +354,14 @@
 
     .tabela h3{
         text-align: left;
-        margin-bottom: 10px;
         font-weight: 400;
-        font-size: 1rem;
+        font-size: 1.3rem;
         color: var(--white);
     }
 
     .tabela p{
         text-align: left;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         font-weight: 200;
         font-family: 'Poppins', sans-serif;
         line-height: 1.1;
