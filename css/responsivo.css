@@ -25,13 +25,13 @@
 
     .topo-corpo header{
         background-image: none;
-        background-color: #161925;
+        background-color: var(--white);
         justify-content: center;
         align-items: center;
         padding: 0%;
     }
     .topo-corpo header h1{
-        background-image: url(../img/logos/logodark.svg);
+        background-image: url(../img/logos/logoteste.svg);
         width: 109px;
         height: 60px;
     }
@@ -93,7 +93,7 @@
     }
     .topo-corpo header .menu-mobile{ 
         display: block;
-        background-color: var(--darkblue);
+        background-color: var(--white);
     }
     
     .topo-corpo header .mobile-menu-icon {
