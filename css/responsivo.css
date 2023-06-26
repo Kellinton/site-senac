@@ -330,22 +330,24 @@
         height: 210px;
         border-radius: 20px;
         box-shadow: 0 5px 15px 0 rgba(45, 54, 65, 0.6);
-        background-image: linear-gradient(to bottom,#191d2c, #11141f);
+        color: #161925;
     }
     .tabela div:nth-child(1){
         display: flex;
         align-self: flex-start;
         background-color: var(--white);
+        border-bottom: solid 10px var(--darkblue);
+     
     }
     .tabela div:nth-child(2){
         display: flex;
         align-self: flex-end;
-        background-color: var(--white);
+        border-bottom: solid 10px var(--green);
     }
     .tabela div:nth-child(3){
         display: flex;
         align-self: flex-start;
-        background-color: var(--white);
+        border-bottom: solid 10px var(--orange);
         
     }
     .tabela img{
@@ -366,7 +368,7 @@
         font-family: 'Poppins', sans-serif;
         line-height: 1.1;
         letter-spacing: 1.4px;
-        color: var(--white);
+        color: var(--darkblue);
     }
 
     .tabela-btn{
