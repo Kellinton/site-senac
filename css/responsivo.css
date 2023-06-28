@@ -15,9 +15,6 @@
 @media screen and (max-width: 730px){
     /*banner*/
     .topo-corpo{
-        background-image: url(../img/banner-mobile1.png);
-        background-repeat: no-repeat;
-        background-size: cover;
         height: 80vh;
         
     }    
@@ -53,10 +50,12 @@
     font-size: 2rem;
 }
 .topo-corpo .slogan-cont .words span{
-    color: var(--white);
+    color: var(--darkblue);
+    font-weight: 800;
 }
 .topo-corpo .slogan-cont p {
-    color: var(--white);
+    color: var(--darkblue);
+ font-weight: 400;
 }
 .slogan-btn-cont{
     justify-content: center;
@@ -67,7 +66,8 @@
     width: 170px;
     height: 35px;
     padding: 9px;
-    background-color: var(--white);
+    background-color: transparent;
+    border: solid 2px var(--darkblue);
     color: var(--darkblue);
 }
 .slogan-btn2{
@@ -329,7 +329,7 @@
         width: 80%;
         height: 210px;
         border-radius: 20px;
-        box-shadow: 0 5px 15px 0 rgba(45, 54, 65, 0.6);
+        box-shadow: 0 1px 10px 0 rgba(45, 54, 65, 0.2);
         color: #161925;
     }
     .tabela div:nth-child(1){
