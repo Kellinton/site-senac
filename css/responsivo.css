@@ -14,12 +14,16 @@
     /* 0 até 600 para Celular INICIO*/
 @media screen and (max-width: 730px){
     /*banner*/
+    body{
+    
+        
+    }
     .topo-corpo{
+        background-image: linear-gradient(to bottom, transparent, #fff, #000);
         height: 80vh;
         
     }    
     /*menu*/
-
     .topo-corpo header{
         background-image: none;
         background-color: var(--white);
@@ -50,12 +54,12 @@
     font-size: 2rem;
 }
 .topo-corpo .slogan-cont .words span{
-    color: var(--darkblue);
     font-weight: 800;
+    color: var(--darkblue);
 }
 .topo-corpo .slogan-cont p {
-    color: var(--darkblue);
  font-weight: 400;
+ color: var(--darkblue);
 }
 .slogan-btn-cont{
     justify-content: center;
