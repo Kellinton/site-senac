@@ -453,7 +453,7 @@
         font-size: 1.1rem;
     }
     .portfolio-titulo p{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     .portfolio-cont {
         height: 420px;
@@ -492,29 +492,28 @@
 
     .clientes-cont{
         flex-direction: column;
-       
+        gap: 20px;
     }
     .clientes-titulo{
         display: flex;
         flex-direction: column;
         margin-bottom: 1px;
         width: 75%;
-        text-align: center;    
-    
+        text-align: center;
     }
     .clientes-titulo h2{
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-bottom: 5px;
     }
     .clientes-titulo span{
         font-weight: 800;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .clientes-titulo p{
         font-weight: 400;
-        font-size: 0.7rem;
-        margin-bottom: 50px;
+        font-size: 0.9rem;
+        margin-bottom: 0px;
     }
     .clientes-titulo a{
         display: none;
@@ -523,7 +522,6 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        
     }
     .clientes div{
         background-color: var(--white);
@@ -550,7 +548,7 @@
     }
     .clientes p{
         font-weight: 300;
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         text-align: left;
         padding: 10%;
     }

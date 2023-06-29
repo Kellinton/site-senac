@@ -14,7 +14,9 @@
     --green: #31AF8B;
     --orange: #FF850A;
 }
-
+body{
+    overflow-x: hidden;
+}
 *, *::before, *::after{
     margin: 0;
     padding: 0;
@@ -690,7 +692,7 @@ button:hover .text{
     box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
 }
 .slick-next, .slick-prev{
-    display: none;
+    display: none!important;
 }
 .cliente-perfil {
     width: 150px;
