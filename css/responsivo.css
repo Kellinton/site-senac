@@ -287,8 +287,8 @@
     /*Serviços tabela*/
     .tabela .img-tabela-responsive{
         display: block;
-        width: 90px;
-        height: 20px;
+        width: 30%;
+        height: 30%;
     }
     .tabela .img-tabela-oficial{
         display: none;
@@ -326,9 +326,9 @@
         flex-direction: column;
         align-items: center;
         padding: 5%;
-        width: 80%;
-        height: 210px;
-        border-radius: 20px;
+        width: 70%;
+        height: 380px;
+        border-radius: 5px;
         box-shadow: 0 1px 10px 0 rgba(45, 54, 65, 0.2);
         color: #161925;
     }
@@ -342,12 +342,12 @@
     .tabela div:nth-child(2){
         display: flex;
         align-self: flex-end;
-        border-bottom: solid 10px var(--green);
+        border-bottom: solid 10px var(--orange);
     }
     .tabela div:nth-child(3){
         display: flex;
         align-self: flex-start;
-        border-bottom: solid 10px var(--orange);
+        border-bottom: solid 10px var(--green);
         
     }
     .tabela img{
@@ -356,14 +356,14 @@
 
     .tabela h3{
         text-align: left;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 1.3rem;
-        color: var(--white);
+        color: var(--darkblue);
     }
 
     .tabela p{
         text-align: left;
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-weight: 200;
         font-family: 'Poppins', sans-serif;
         line-height: 1.1;
@@ -406,25 +406,25 @@
     }
     .sobre-info p{
         font-weight: 300;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         text-align: justify;
         line-height: 1.5;
         letter-spacing: 0px;
         margin-bottom: 10%;
     }
     .sobre-info a{
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
     .sobre-info b{
         font-weight: 700;
     }
     
     .sobre-btn{
-        width: 90px;
-        height: 20px;
+        width: 100px;
+        height: 30px;
         font-weight: 400;
         font-size: 0.8rem;
-        padding: 6px;   
+        padding: 7px;   
     }
     
     /*Portfolio*/
@@ -458,11 +458,11 @@
         border-radius: 10px;
         width: 150px;
         height: 300px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .portfolio img {
-        width: 30px;
-        height: 30px; 
+        width: 50px;
+        height: 50px; 
        }
 
     .portfolio div:nth-child(3){
@@ -478,7 +478,7 @@
         font-size: 0.7rem;    
         text-align: center;
         letter-spacing: 0;
-        padding: 6px;   
+        padding: 7px;   
     }
     /*avaliaçoes-clientes*/
 
