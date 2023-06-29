@@ -801,6 +801,12 @@ footer{
     background-image: url(../img/rodape/Instagram-rodape.svg);
 }
 
+.rodape-contatos{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+}
 .rodape-2, .rodape-3{
     width: 35%;
     display: flex;
