@@ -686,8 +686,8 @@ button:hover .text{
     align-items: center;
     margin: 100px 0px;
     gap: 50px;
-
-    
+ 
+    padding: 2%;   
 }
 .clientes-titulo{
     display: flex;
@@ -695,7 +695,7 @@ button:hover .text{
     margin-bottom: 20px;
     width: 45%;
     text-align: left; 
- 
+
 }
 .clientes-titulo h2{
     text-transform: uppercase;
