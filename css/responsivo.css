@@ -511,7 +511,7 @@
     .clientes-titulo p{
         font-weight: 400;
         font-size: 0.9rem;
-        margin-bottom: 0px;
+        margin-bottom: 50px;
     }
     .clientes-titulo a{
         display: none;
@@ -522,23 +522,12 @@
         width: 100%;
     }
     .clientes div{
-        background-color: var(--white);
-        width: 75%;
+        width: 60%;
         height: 250px;
-        border-bottom: solid 5px var(--darkblue);
-        border-radius: 20px;
-        box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
     }
     .cliente-perfil {
-        width: 50px;
-        height: 50px;
-        margin-left: 40%;
-        border: solid 1px var(--darkblue);
-        padding: 0.2%;
-    }
-    .cliente-estrela {
-        margin-left: 32%;
-        width: 100px;
+        width: 25%;
+        border: solid 2px var(--darkblue);
     }
     .clientes h3{
         font-size: 1.3rem;
@@ -547,8 +536,6 @@
     .clientes p{
         font-weight: 300;
         font-size: 0.7rem;
-        text-align: left;
-        padding: 10%;
     }
     button.slick-next, button.slick-prev {
         display: none!important;
