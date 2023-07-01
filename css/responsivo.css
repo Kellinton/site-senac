@@ -12,22 +12,18 @@
 
 
     /* 0 até 600 para Celular INICIO*/
-@media screen and (max-width: 730px){
+@media screen and (max-width: 768px){
     /*banner*/
-    body{
-    
-        
-    }
+ 
     .topo-corpo{
         background-image: linear-gradient(to bottom, transparent, #fff, #000);
         height: 80vh;
-        
     }    
     /*menu*/
     .topo-corpo header{
         background-image: none;
         background-color: var(--white);
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         padding: 0%;
     }
@@ -271,18 +267,18 @@
         flex-direction: column;
         align-self: left;
         transform:translateY(5px);
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
 
     .servicos-titulo h2{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-top: 0px;
         margin-left: 0px;
         align-self: left;
     }
     .servicos-titulo span{
         font-weight: 800;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .servicos-titulo p{
@@ -292,8 +288,8 @@
     /*Serviços tabela*/
     .tabela .img-tabela-responsive{
         display: block;
-        width: 30%;
-        height: 30%;
+        width: 15%;
+        height: 15%;
     }
     .tabela .img-tabela-oficial{
         display: none;
@@ -301,8 +297,9 @@
     .servicos-tabela-cont{
         display: flex;
         flex-direction: column;
-        text-align: left;  
+        text-align: center;  
         width: 100%;
+        padding: 5%;
     }
     .servicos-tabela{
         width: 100%;
@@ -323,8 +320,8 @@
         flex-direction: column;
         width: 100%;
         margin-bottom: 0px;
-        gap: 50px;
-
+        gap: 100px;
+        padding: 5%;
     }
     .tabela div{
         display: flex;
@@ -332,51 +329,48 @@
         align-items: center;
         padding: 5%;
         width: 70%;
-        height: 320px;
+        height: auto;
         border-radius: 5px;
         box-shadow: 0 1px 10px 0 rgba(45, 54, 65, 0.2);
         color: #161925;
     }
     .tabela div:nth-child(1){
-        border-top: solid 5px var(--darkblue);
         display: flex;
         align-self: flex-start;
-        background-color: var(--white);
         border-bottom: solid 5px var(--darkblue);
      
     }
     .tabela div:nth-child(2){
-        border-top: solid 5px var(--orange);
         display: flex;
         align-self: flex-end;
         border-bottom: solid 5px var(--orange);
     }
     .tabela div:nth-child(3){
-        border-top: solid 5px var(--green);
         display: flex;
         align-self: flex-start;
         border-bottom: solid 5px var(--green);
         
     }
     .tabela img{
-        margin-bottom: 5px;
+        margin-bottom: 5%;
     }
 
     .tabela h3{
         text-align: left;
-        font-weight: 500;
-        font-size: 1.3rem;
+        font-weight: 600;
+        font-size: 1rem;
         color: var(--darkblue);
     }
 
     .tabela p{
         text-align: left;
-        font-size: 1rem;
-        font-weight: 200;
+        font-size: 0.8rem;
+        font-weight: 350;
         font-family: 'Poppins', sans-serif;
         line-height: 1.1;
         letter-spacing: 1.4px;
         color: var(--darkblue);
+
     }
 
     .tabela-btn{
@@ -390,23 +384,27 @@
         gap: 8px;
         flex-direction: column;
         align-items: center;
+        padding: 5%;
+        margin:0;
     }
     .sobre img{
-        width: 70%;
-        height: 70%;
-        display: none;
+        width: 60%;
+        height: 60%;
+       display: none;
     }
     .sobre-info{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding: 2px;
-        width: 75%;
+        width: 100%;
+        padding: 5%;
     }
     .sobre-info h2{
+        text-align: center;
         text-transform: uppercase;
         font-size: 1.3rem;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
+        margin-top: 0;
     }
     .sobre-info span{
         font-weight: 800;
@@ -414,40 +412,40 @@
     }
     .sobre-info p{
         font-weight: 300;
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         text-align: justify;
         line-height: 1.5;
         letter-spacing: 0px;
         margin-bottom: 10%;
     }
     .sobre-info a{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .sobre-info b{
-        font-weight: 700;
+        font-weight:700;
     }
     
     .sobre-btn{
-        width: 100px;
+        width: 110px;
         height: 30px;
         font-weight: 400;
         font-size: 0.8rem;
-        padding: 7px;   
+        padding: 5px;
+        align-self: flex-end!important;
     }
     
     /*Portfolio*/
     #portfolio{
+        
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .portfolio-titulo{
         width: 80%;
-  
     }
     .portfolio-titulo h2{
         font-size: 1.1rem;
-        margin-top: 100px;
     }
     .portfolio-titulo span{
         font-size: 1.1rem;

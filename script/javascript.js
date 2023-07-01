@@ -42,6 +42,7 @@ function menuShow() {
   }
 }
 
+
 //quando o botão "Toggle Menu" é clicado, a função toggleMenu() é chamada. Essa função seleciona o elemento <body> do documento HTML usando document.querySelector('body') e, em seguida, alterna a classe menu-aberto usando classList.toggle('menu-aberto'). A classe menu-aberto define a propriedade CSS overflow: hidden, o que impede o scroll quando essa classe é aplicada ao elemento <body>.
 function toggleMenu() { 
   var bodyElement = document.querySelector('body');
