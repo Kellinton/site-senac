@@ -1,3 +1,9 @@
+// Alerts provisórios
+window.alert('Site em 30%');
+window.confirm('Formulário sendo feito');
+
+
+// inicializador do AOS
 AOS.init();
 
 $('.multiple-items').slick({
@@ -61,3 +67,5 @@ function toggleMenu() {
 //     document.getElementById("topoFixo").classList.add("site");
 //   }
 // }
+
+

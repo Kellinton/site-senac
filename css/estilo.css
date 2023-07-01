@@ -47,12 +47,39 @@ body{
     cursor: pointer;
     transition: all .10s ease-in-out;  
 }
+
 .slogan-btn{
-    margin-top: 16%;
-    width: 400px;
+    position: relative;
+    margin-top: 10%;
+    width: 300px;
     height: 60px;
     padding: 18px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;  
+    font-weight: 400;
+}
+
+.slogan-btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    height: 100%;
+    background-color: #5e5f63;
+    opacity: 0.1;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+}
+.slogan-btn:hover::before{
+    width: 100%;
+    background-color: var(--lightblue);
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+.slogan-btn:hover {
+    color: var(--lightblue);
+    z-index: 2;
+    opacity: 1;
 }
 /* .slogan-btn2{
     margin-top: 16%;
@@ -97,7 +124,7 @@ body{
     color: var(--white);
     text-decoration: none;
 }
-.tabela-btn:hover, .slogan-btn:hover, .sobre-btn:hover, .clientes-btn:hover{
+.tabela-btn:hover, .sobre-btn:hover, .clientes-btn:hover{
     background-color: var(--lightblue);
     color: var(--white);
 }
