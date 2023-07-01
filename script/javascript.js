@@ -1,6 +1,7 @@
 // Alerts provisórios
-window.alert('Site em 30%');
-window.confirm('Formulário sendo feito');
+function formtxt(){
+window.alert('Formulário sendo feito');
+}
 
 
 // inicializador do AOS

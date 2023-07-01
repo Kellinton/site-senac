@@ -48,6 +48,7 @@ body{
     transition: all .10s ease-in-out;  
 }
 
+
 .slogan-btn{
     position: relative;
     margin-top: 10%;
@@ -55,7 +56,7 @@ body{
     height: 60px;
     padding: 18px;
     font-size: 1.2rem;  
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .slogan-btn::before{
@@ -63,24 +64,20 @@ body{
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 70px;
+    width: 60px;
     height: 100%;
-    background-color: #5e5f63;
-    opacity: 0.1;
-    border-radius: 50px;
+    background-color: var(--lightblue);
+    opacity: 0.2;
+    border-radius: 99999px;
     transition: all 0.4s ease-in-out;
 }
 .slogan-btn:hover::before{
     width: 100%;
     background-color: var(--lightblue);
-    opacity: 1;
+    opacity: 0.1;
     transition: all 0.4s ease-in-out;
 }
-.slogan-btn:hover {
-    color: var(--lightblue);
-    z-index: 2;
-    opacity: 1;
-}
+
 /* .slogan-btn2{
     margin-top: 16%;
     font-family: 'Poppins', sans-serif;
