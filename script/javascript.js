@@ -107,3 +107,24 @@ function toggleMenu() {
 // }
 
 
+//seta que faz a página voltar ao topo
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 20) {
+      $('#myLink').fadeIn();
+    } else {
+      $('#myLink').fadeOut();
+    }
+  });
+
+  $('#myLink').click(function(event) {
+    event.preventDefault();
+    $('html, body').animate({scrollTop: 0}, 800);
+  });
+});
+
+
+
+
+
+

@@ -14,9 +14,10 @@
     /* 0 até 600 para Celular INICIO*/
 @media screen and (max-width: 768px){
     /*banner*/
- 
+
     .topo-corpo{
         height: 80vh;
+        background-image: none;
     }    
     /*menu*/
     .topo-corpo header{
@@ -504,7 +505,6 @@
     /*rodape*/
 
 footer{
-    background-image: linear-gradient(to bottom,#161925, #000);
     width: 100%;
     height: 100%;
 }
