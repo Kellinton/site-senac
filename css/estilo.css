@@ -626,7 +626,7 @@ button:hover .text{
     flex-direction: column;
     width:100%;
     height: 600px;
-    background-image: linear-gradient(to bottom,#161925, #000);
+    background-image: linear-gradient(to bottom,#000000ef,#000);
 }
 .portfolio-cont a{
     background-color: var(--orange);
@@ -788,7 +788,7 @@ button:hover .text{
 /*rodape*/
 
 footer{
-    background-image: linear-gradient(to bottom,#161925, #000);
+    background-image: linear-gradient(to bottom,#000000ef,#000);
     width: 100%;
     height: 100%;
 }
