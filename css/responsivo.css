@@ -16,7 +16,6 @@
     /*banner*/
  
     .topo-corpo{
-        background-image: linear-gradient(to bottom, transparent, #fff, #000);
         height: 80vh;
     }    
     /*menu*/
@@ -38,7 +37,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 25%;
+    margin-top: 12%;
 }
 .topo-corpo .slogan-cont .words{
     display: flex;
@@ -66,13 +65,8 @@
     width: 170px;
     height: 35px;
     padding: 9px;
-    background-color: transparent;
-    border: solid 2px var(--darkblue);
-    color: var(--darkblue);
 }
-.slogan-btn2{
-    display: none;
-}
+
   
     /*menu mobile*/
     .menu-item{
@@ -182,7 +176,7 @@
         border-radius: 0px;  
         padding: 0%;
         margin-bottom: 5%;
-        box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+        box-shadow: none;
     }
     .servicos-banner div:nth-child(1){
         display: none;
@@ -210,47 +204,6 @@
      display: block;
      margin-bottom: 30px;
     }
-    .text{
-        padding: 0.3rem 0;
-        margin-left: 1rem;
-
-    }
-    .circle{
-        position: relative;
-        display: block;
-        margin: 0;
-        width: 2rem;
-        height: 2rem;
-        background: var(--darkblue);
-        border-radius: 1.625rem;
-        transition: all 0.4s ease-in-out;
-    }
-    .arrow{
-        left: 0.3rem;
-        width: 1rem;
-        height: 0.1rem;
-        background: none;
-        transition: all 0.4s ease-in-out;
-    }
-    .arrow::before{
-        content: "";
-        position: absolute;
-        top: -0.3rem;
-        right: 0.0625rem;
-        width: 0.625rem;
-        height: 0.625rem;
-        border-top: 0.125rem solid var(--white);
-        border-right: 0.125rem solid var(--white);
-        transform: rotate(45deg);
-    }
-    .icon{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        background:  var(--white);
-    }
-
    
 
 /*Serviços*/
@@ -265,16 +218,14 @@
         display: flex;
         width: 100%;
         flex-direction: column;
-        align-self: left;
-        transform:translateY(5px);
         margin-bottom: 5%;
+        text-align: left;
     }
 
     .servicos-titulo h2{
         font-size: 1.2rem;
         margin-top: 0px;
         margin-left: 0px;
-        align-self: left;
     }
     .servicos-titulo span{
         font-weight: 800;
@@ -283,6 +234,7 @@
 
     .servicos-titulo p{
         font-size: 0.8rem;
+        margin: 0;
     }
 
     /*Serviços tabela*/
@@ -299,7 +251,7 @@
         flex-direction: column;
         text-align: center;  
         width: 100%;
-        padding: 5%;
+        padding: 10%;
     }
     .servicos-tabela{
         width: 100%;
@@ -308,12 +260,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 20px;
         transform: translateX(0px);
         height: auto;
         box-shadow: none;
         border-bottom: none;
-     
+        background: none;
     }
     .tabela{
         display: flex;
@@ -321,7 +272,7 @@
         width: 100%;
         margin-bottom: 0px;
         gap: 100px;
-        padding: 5%;
+        padding: 0%;
     }
     .tabela div{
         display: flex;
@@ -332,7 +283,7 @@
         height: auto;
         border-radius: 5px;
         box-shadow: 0 1px 10px 0 rgba(45, 54, 65, 0.2);
-        color: #161925;
+        color: var(--darkblue);
     }
     .tabela div:nth-child(1){
         display: flex;
@@ -525,6 +476,13 @@
         width: 60%;
         height: 250px;
     }
+    .clientes .client{
+        
+        border-radius: 5px;
+        border-bottom: solid 5px #000;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    }
+    
     .cliente-perfil {
         width: 25%;
         border: solid 2px var(--darkblue);
