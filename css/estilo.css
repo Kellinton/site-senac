@@ -506,7 +506,7 @@ button:hover .text{
     height: 220px;
     border-radius: 7px;
     padding: 1%;
-    border-bottom: solid 5px var(--darkblue);
+   box-shadow: var(--shadow-card);
     color: var(--darkblue);
     margin-left: 0%;
     margin-right: 0%;
