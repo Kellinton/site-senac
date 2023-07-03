@@ -53,7 +53,10 @@ body{
 .tabela .img-tabela-oficial{
     display: block;
 }
-/*#endregion Displays
+#servicos-mobile{
+    display:none;
+}
+/*#endregion Displays*/
 
 /*#region Botoes*/
 .topo-btn, .slogan-btn, .tabela-btn, .sobre-btn, .clientes-btn {
@@ -487,6 +490,55 @@ button:hover .arrow{
 button:hover .text{
     color: var(--white);
 }
+
+/*Serviços-Mobile*/
+
+
+
+.servicos-mobile{
+    display: flex;
+    justify-content: space-around;
+    width: 100%; 
+}
+.servicos-mobile div{
+    width: 70%;
+    height: 220px;
+    border-radius: 7px;
+    padding: 1%;
+
+    color: var(--darkblue);
+}
+
+.servicos-mobile .servicos-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-bottom: solid 10px var(--darkblue);
+
+}
+
+
+.servicos-mobile img{  
+    width: 25px;
+    height: 25px;
+}
+.servicos-mobile h2{
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--darkblue);
+      
+}
+
+.servicos-mobile p{
+    font-size: 0.6rem;
+    font-weight: 350;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.1;
+    letter-spacing: 1.4px;
+    color: var(--darkblue);
+}
+
 
 /*Serviços*/
 

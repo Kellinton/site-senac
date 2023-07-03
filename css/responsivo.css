@@ -12,7 +12,7 @@
 /*banner*/
 
 .topo-corpo{
-    height: 80vh;
+    height: 20vh;
     background-image: none;
 }
 
@@ -20,9 +20,10 @@
 .topo-corpo header{
     background-image: none;
     background-color: var(--white);
+    box-shadow: var(--shadow-card2);
     justify-content: space-around;
     align-items: center;
-    padding: 0%;
+    padding: 2.5%;
 }
 .topo-corpo header .topo-btn{
     display: block;
@@ -35,7 +36,7 @@
 .topo-corpo header h1{
     background-image: url(../img/logos/logoteste.svg);
     width: 109px;
-    height: 60px;
+    height: 60px;  
 }
 .topo-corpo header .nav-menu{
     display: none;
@@ -43,7 +44,7 @@
 
 /*topo botao,slogan*/
 .topo-corpo .slogan-cont{
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: column;
     margin-top: 12%;
@@ -159,60 +160,15 @@
 
 /*Servicos Banner*/
 
-.posicionamento{
-    position: relative;
-    top: -100px;
-}
-.servicos-banner{
-    align-items: center;
-    background-color: var(--white);
-
-}
-.servicos-banner div:nth-child(2){
-    transform: translateY(0px);
-}
-.servicos-banner img{
-    margin-top: 15px;
-    width: 40px;
-    height: 40px;
-}
-.servicos-banner div{
-    display: flex;
-    width: 50%;
-    height: 350px;
-    border-radius: 0px;  
-    padding: 0%;
-    margin-bottom: 5%;
-    box-shadow: none;
-}
-.servicos-banner div:nth-child(1){
+#servicos{
     display: none;
 }
-.servicos-banner div:nth-child(2){
-    
-}
-.servicos-banner div:nth-child(3){
-
-}
-.servicos-banner h2{
-    font-weight: 700;
-    font-size: 0.9rem;
-    color: #161925;
-    margin-top: 15px;
-
+#servicos-mobile{
+    display:block;
 }
 
-.servicos-banner p{
-font-size: 0.7rem;
-font-weight: 400;
-}
 
-.servicos-banner button{
-    display: block;
-    margin-bottom: 30px;
-}
-
-/*Serviços*/
+/*Serviços-tabela*/
 
 .servicos{
     display: flex; 
@@ -277,7 +233,7 @@ font-weight: 400;
     flex-direction: column;
     width: 100%;
     margin-bottom: 0px;
-    gap: 100px;
+    gap: 50px;
     padding: 0%;
 }
 .tabela div{
@@ -285,7 +241,7 @@ font-weight: 400;
     flex-direction: column;
     align-items: center;
     padding: 5%;
-    width: 70%;
+    width: 100%;
     height: auto;
     border-radius: 7px;
     box-shadow: var(--shadow-card2);
@@ -491,8 +447,8 @@ font-weight: 400;
     width: 100%;
 }
 .clientes div{
-    width: 60%;
-    height: 250px;
+    width: 100%;
+    height: 300px;
 }
 .clientes .client{    
     border-radius: 7px;
