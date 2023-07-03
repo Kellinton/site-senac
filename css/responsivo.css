@@ -282,8 +282,8 @@
         padding: 5%;
         width: 70%;
         height: auto;
-        border-radius: 5px;
-        box-shadow: 0 1px 10px 0 rgba(45, 54, 65, 0.2);
+        border-radius: 7px;
+        box-shadow: var(--shadow-card2);
         color: var(--darkblue);
     }
     .tabela div:nth-child(1){
@@ -419,8 +419,8 @@
         margin-bottom: 20px;
     }
     .portfolio img {
-        width: 50px;
-        height: 50px; 
+        width: 35px;
+        height: 35px; 
        }
 
     .portfolio div:nth-child(3){
@@ -477,13 +477,11 @@
         width: 60%;
         height: 250px;
     }
-    .clientes .client{
-        
-        border-radius: 5px;
-        border-bottom: solid 5px #000;
-        box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    .clientes .client{    
+        border-radius: 7px;
+        border-bottom: solid 5px var(--darkblue); 
     }
-    
+ 
     .cliente-perfil {
         width: 25%;
         border: solid 2px var(--darkblue);

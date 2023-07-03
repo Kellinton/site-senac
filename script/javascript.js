@@ -4,8 +4,7 @@ window.alert('Formulário sendo feito');
 }
 
 
-// inicializador do AOS
-AOS.init();
+
 $('.clientesCarro').slick({
   dots: true,
   infinite: true,
@@ -126,5 +125,28 @@ $(document).ready(function() {
 
 
 
+//inicializador do carrousel a partir do tamanho da tela
+
+function initCarrossel() {
+  // Lógica para inicializar o carrossel aqui
+  console.log("Carrossel inicializado!");
+}
+
+function handleMediaQuery(mq) {
+  if (mq.matches) {
+      // Tamanho da tela atende à condição
+      initCarrossel();
+      document.getElementById("responsivo-carro").style.display = "block";
+  } else {
+      // Tamanho da tela não atende à condição
+      document.getElementById("responsivo-carro").style.display = "none";
+  }
+}
+
+var mediaQuery = window.matchMedia("(min-width: 768px)"); // Defina o tamanho de tela desejado
+
+handleMediaQuery(mediaQuery); // Verifica o tamanho da tela inicialmente
+
+mediaQuery.addListener(handleMediaQuery); // Verifica o tamanho da tela sempre que houver alteração
 
 

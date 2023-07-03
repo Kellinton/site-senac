@@ -1,0 +1,7 @@
+/*controle das açoes do AOS*/
+@media only screen and (min-width:768px) {
+    .aos-item { /*não aparecerá a animação para a div que receber esta classe*/
+      opacity: 1 !important;
+      transform: translate(0) scale(1) !important;
+    }
+}

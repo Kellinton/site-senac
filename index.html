@@ -26,6 +26,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
@@ -56,6 +57,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/aos.css">
     <!--responsivo-->
     <link rel="stylesheet" href="css/responsivo.css" />
   </head>
@@ -134,7 +136,7 @@
 
     <main>
       <!-- Serviços -->
-      <section>
+      <section id="responsivo-carro">
         <div data-aos="fade-up" class="servicos-banner site posicionamento">
           <div>
             <img src="img/servico-banner-01.svg" alt="" />
@@ -196,7 +198,7 @@
             </div>
             <div class="servicos-tabela">
               <div class="tabela">
-                <div data-aos="fade-right">
+                <div class="aos-item" data-aos="fade-right">
                   <img
                     src="img/servico-icon-01.svg"
                     alt="Lista"
@@ -215,7 +217,7 @@
                   </p>
                 </div>
 
-                <div data-aos="fade-left">
+                <div class="aos-item" data-aos="fade-left">
                   <img
                     src="img/servico-icon-02.svg"
                     alt="Marketing"
@@ -233,7 +235,7 @@
                   </p>
                 </div>
 
-                <div data-aos="fade-right">
+                <div class="aos-item" data-aos="fade-right">
                   <img
                     src="img/servico-icon-03.svg"
                     alt="Estrelas"
@@ -264,8 +266,8 @@
 
       <!-- Sobre -->
       <section id="sobre">
-        <div data-aos="fade-right" class="sobre site">
-          <img src="img/sobre-img-01.png" alt="" />
+        <div  class="sobre site">
+          <img data-aos="fade-right"src="img/sobre-img-01.png" alt="" />
 
           <div data-aos="fade-left" class="sobre-info">
             <h2>Um pouco <span>Sobre nós</span></h2>
@@ -478,6 +480,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--slick-->
     <!--pasta js-->
+    <script src="./script/aos.js"></script>
     <script src="./script/javascript.js"></script>
   </body>
 </html>

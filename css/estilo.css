@@ -5,6 +5,10 @@
     overflow-x: hidden;
     overflow-y: hidden;
 }
+#sobre{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 .tabela .img-tabela-responsive{
     display: none;
 }
@@ -17,6 +21,8 @@
     --white: #FFFCF9;
     --green: #31AF8B;
     --orange: #FF850A;
+    --shadow-card: 5px 5px 15px rgba(0,0,0,0.1);
+    --shadow-card2: 0 1px 10px 0 rgba(45, 54, 65, 0.2);
 }
 body{
     overflow-x: hidden;
@@ -33,7 +39,7 @@ body{
 /*botoes*/
 .slogan-btn, .tabela-btn, .sobre-btn, .clientes-btn {
     background-color: var(--darkblue);
-    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+    box-shadow: var(--shadow-card);
     width: 150px;
     height: auto;
     display: flex;
@@ -46,7 +52,7 @@ body{
     color: var(--white);
     padding: 10px;   
     border-radius: 50px;
-    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow-card);
     text-decoration: none;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
@@ -117,7 +123,7 @@ body{
     border-radius: 50px;
     background-color:var(--darkblue);
     text-decoration: none;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow-card);
     cursor: pointer;   
 }
 .tabela-btn a{
@@ -362,14 +368,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(247, 244, 244, 0.9); 
+    background-color: var(--white); 
     width: 28%;
     height: auto;
     border-radius: 20px;   
     border-bottom: solid 5px var(--darkblue);
     border-top: solid 5px var(--darkblue); 
-    padding: 25px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    padding: 1%;
+    box-shadow: var(--shadow-card);
 }
 
 .servicos-banner div:nth-child(2){
@@ -517,7 +523,7 @@ button:hover .text{
     transform: translateX(100px);
     height: auto;
     padding: 4% 8%;
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow-card);
     background-color: var(--white);
     border-bottom: solid var(--darkblue);
 }
@@ -643,7 +649,7 @@ button:hover .text{
 }
 .portfolio div{
     background-image: url(../img/portfolio01.png);
-    border-radius: 15px;
+    border-radius: 10px;
     width: 300px;
     height: 450px;
     margin-bottom: 30px;
@@ -728,8 +734,8 @@ button:hover .text{
     margin-left: 0.5%;
     margin-right: 0.5%;
     border-radius: 10px;
-    border-bottom: solid 5px #000;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    border-bottom: solid 5px var(--darkblue); 
+    box-shadow: var(--shadow-card);
 }
 
 .cliente-perfil {
@@ -771,16 +777,17 @@ button:hover .text{
 }
 
 .slick-dots li button:before {
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: transparent;
-    border: 1px solid #000;
+    border: 1px solid var(--darkblue);
     border-radius: 15%;
     display: inline-block;
-    height: 10px;
+    height: 7px;
     width: 30px;
+    opacity: 0.1;
 }
 .slick-dots li.slick-active button:before {
-    background-color: rgb(26, 24, 24);
+    background-color: var(--darkblue);
 }
 
 
