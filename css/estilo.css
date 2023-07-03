@@ -44,7 +44,9 @@ body{
 
 /*#region Displays*/
 
-
+.topo-corpo header .topo-btn{
+    display: none;
+}
 .tabela .img-tabela-responsive{
     display: none;
 }
@@ -54,7 +56,7 @@ body{
 /*#endregion Displays
 
 /*#region Botoes*/
-.slogan-btn, .tabela-btn, .sobre-btn, .clientes-btn {
+.topo-btn, .slogan-btn, .tabela-btn, .sobre-btn, .clientes-btn {
     background-color: var(--darkblue);
     box-shadow: var(--shadow-card);
     width: 150px;

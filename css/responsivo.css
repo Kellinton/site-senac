@@ -20,9 +20,17 @@
 .topo-corpo header{
     background-image: none;
     background-color: var(--white);
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     padding: 0%;
+}
+.topo-corpo header .topo-btn{
+    display: block;
+    width: 125px;
+    height: auto;
+    padding: 10px;
+    font-size: 0.8rem;
+    text-align: center;
 }
 .topo-corpo header h1{
     background-image: url(../img/logos/logoteste.svg);
