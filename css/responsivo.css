@@ -29,6 +29,9 @@
     width: 109px;
     height: 60px;
 }
+.topo-corpo header .nav-menu{
+    display: none;
+}
 
 /*topo botao,slogan*/
 .topo-corpo .slogan-cont{
@@ -55,15 +58,9 @@
  color: var(--darkblue);
 }
 .slogan-btn-cont{
-    justify-content: center;
+    display: none;
 }
-.slogan-btn{
-    font-size: 0.9rem;
-    margin-top: 16%;
-    width: 170px;
-    height: 35px;
-    padding: 9px;
-}
+
 
 /*menu mobile*/
 .menu-item{
