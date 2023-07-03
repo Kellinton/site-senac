@@ -1,20 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /*font-family: 'Poppins', sans-serif;*/
 
-#servico{
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-#sobre{
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-.tabela .img-tabela-responsive{
-    display: none;
-}
-.tabela .img-tabela-oficial{
-    display: block;
-}
 :root {
     --darkblue: #161925;
     --lightblue: #446688;
@@ -24,19 +10,48 @@
     --shadow-card: 5px 5px 15px rgba(0,0,0,0.1);
     --shadow-card2: 0 1px 10px 0 rgba(45, 54, 65, 0.2);
 }
-body{
-    overflow-x: hidden;
-}
+/*#region Global*/
 *, *::before, *::after{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-.menu-aberto { /*overflow hidden será aplicado no body quando o toggle alternar no clique do menu*/
-    overflow: hidden;
-  }
-/*botoes*/
+.site{
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+}
+body{
+    background-color: var(--white);
+   
+ }
+/*#endregion Global*/
+
+/*#region HiddenGlobal*/
+#servico{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#sobre{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+/*#endregion HiddenGlobal*/
+
+/*#region Displays*/
+.tabela .img-tabela-responsive{
+    display: none;
+}
+.tabela .img-tabela-oficial{
+    display: block;
+}
+/*#endregion Displays
+
+/*#region Botoes*/
 .slogan-btn, .tabela-btn, .sobre-btn, .clientes-btn {
     background-color: var(--darkblue);
     box-shadow: var(--shadow-card);
@@ -87,22 +102,22 @@ body{
     transition: all 0.4s ease-in-out;
 }
 
-/* .slogan-btn2{
-    margin-top: 16%;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    text-align: center;
-    width: 200px;
-    height: 50px;
-    padding: 14px;
-    border: 5px solid var(--darkblue);
-    border-radius: 50px;
-    cursor: pointer;
-    color: var(--darkblue);
-    text-decoration: none;
-} */
+    /* .slogan-btn2{
+        margin-top: 16%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        text-align: center;
+        width: 200px;
+        height: 50px;
+        padding: 14px;
+        border: 5px solid var(--darkblue);
+        border-radius: 50px;
+        cursor: pointer;
+        color: var(--darkblue);
+        text-decoration: none;
+    } */
 .slogan-btn-cont{
     display: flex;
     justify-content: center;
@@ -135,29 +150,20 @@ body{
     color: var(--white);
     transition: all 0.5s ease-in-out;
 }
-/* .slogan-btn2:hover{
-    background-color: var(--darkblue);
-    color: var(--white);
-} */
+    /* .slogan-btn2:hover{
+        background-color: var(--darkblue);
+        color: var(--white);
+    } */
 .btnConfira:hover{
     width: 100%;
     height: auto;
 }
+/*#endregion Botoes*/
 
-body{
-   background-color: var(--white);
-  
-}
-
-
-.site{
-    max-width: 1290px;
-    width: 100%;
-    margin: 0 auto;
-}
-
+/*#region Topo*/
 
 /*topo banner*/
+
 .topo-corpo{
     background-image: url(../img/banner-01.png);
     background-attachment: fixed;
@@ -207,8 +213,9 @@ body{
 
 /*menu mobile*/
 
-
-
+.menu-aberto { /*overflow hidden será aplicado no body quando o toggle alternar no clique do menu*/
+    overflow: hidden;
+  }
 .topo-corpo header .menu-mobile ul a{
     position: relative;
     text-transform: capitalize;
@@ -352,8 +359,9 @@ body{
         text-transform: capitalize;
 } */
 
+/*#endregion Topo*/
 
-
+/*#region Servicos*/
 
 /*serviços do banner*/
 .posicionamento{
@@ -565,8 +573,9 @@ button:hover .text{
     
 }
 
+/*#endregion Servicos*/
 
-
+/*#region Sobre*/
 
 /*Sobre*/
 
@@ -606,6 +615,10 @@ button:hover .text{
 .sobre-info b{
     font-weight: 700;
 }
+
+/*#endregion Sobre*/
+
+/*#region Portfolio*/
 
 /*Portfolio*/
 
@@ -682,6 +695,9 @@ button:hover .text{
     100% { transform: translateY(-12px); }
 }
 
+/*#endregion Portfolio*/
+
+/*#region Avaliacoes*/
 
 /*avaliaçoes-clientes*/
 
@@ -759,37 +775,10 @@ button:hover .text{
     letter-spacing: 1px;
     padding: 0% 10% 10% 10%;
 }
-.slick-next, .slick-prev{
-    display: none!important;
-}
-/*dots traçados*/
-.slick-dots li {
-    margin: 10px;
-}
 
-.slick-dots {
-    margin-top: 50px;
-}
+/*#endregion Avaliacoes*/ 
 
-.slick-dots li button:before, .slick-dots li.slick-active button:before {
-    color: transparent;
-    opacity: 1;
-}
-
-.slick-dots li button:before {
-    margin-top: 30px;
-    background-color: transparent;
-    border: 1px solid var(--darkblue);
-    border-radius: 15%;
-    display: inline-block;
-    height: 7px;
-    width: 30px;
-    opacity: 0.1;
-}
-.slick-dots li.slick-active button:before {
-    background-color: var(--darkblue);
-}
-
+/*#region Rodape*/
 
 /*rodape*/
 
@@ -915,12 +904,9 @@ hr{
     width: 100%;
 }
 
+/*#endregion Rodape*/
 
-/*formulário*/
-
-
-
-/*responsivo */
+/*#region seta-voltar-topo*/
 
 /*seta que faz a página voltar ao topo*/
 #myLink {
@@ -954,4 +940,55 @@ hr{
   #myLink:hover .seta-topo {
     transform: translateY(2px);
   }
+
+/*#endregion seta-voltar-topo*/
+
+/*#region Slick*/
+
+/*Dots Clientes */
+.slick-next, .slick-prev{
+    display: none!important;
+}
+/*dots traçados*/
+.slick-dots li {
+    margin: 10px;
+}
+
+.slick-dots {
+    margin-top: 50px;
+}
+
+.slick-dots li button:before, .slick-dots li.slick-active button:before {
+    color: transparent;
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    margin-top: 30px;
+    background-color: transparent;
+    border: 1px solid var(--darkblue);
+    border-radius: 15%;
+    display: inline-block;
+    height: 7px;
+    width: 30px;
+    opacity: 0.1;
+}
+.slick-dots li.slick-active button:before {
+    background-color: var(--darkblue);
+}
+
+
+/*#endregion Slick*/
+
+
+
+
+
+
+
+/*formulário*/
+
+
+
+/*responsivo */
 
