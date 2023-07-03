@@ -45,6 +45,7 @@ body{
 /*#region Displays*/
 
 .topo-corpo header .topo-btn{
+    background-color: var(--green);
     display: none;
 }
 .tabela .img-tabela-responsive{
@@ -497,31 +498,30 @@ button:hover .text{
 
 .servicos-mobile{
     display: flex;
-    justify-content: space-around;
-    width: 100%; 
+    justify-content: center;
+    width: 100%;
 }
 .servicos-mobile div{
-    width: 70%;
+    width: 80%;
     height: 220px;
     border-radius: 7px;
     padding: 1%;
-
+    border-bottom: solid 5px var(--darkblue);
     color: var(--darkblue);
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 .servicos-mobile .servicos-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    border-bottom: solid 10px var(--darkblue);
-
+    gap: 7px;
 }
 
-
 .servicos-mobile img{  
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 .servicos-mobile h2{
     font-weight: 600;
@@ -531,7 +531,7 @@ button:hover .text{
 }
 
 .servicos-mobile p{
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-weight: 350;
     font-family: 'Poppins', sans-serif;
     line-height: 1.1;

@@ -128,7 +128,7 @@
     padding: 10%;
     position: absolute;    
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 .open ul{
     display: flex;
@@ -301,7 +301,7 @@
     flex-direction: column;
     align-items: center;
     padding: 5%;
-    margin:0;
+    margin-bottom: 50px;
 }
 .sobre img{
     width: 60%;
@@ -334,20 +334,20 @@
     letter-spacing: 0px;
     margin-bottom: 10%;
 }
-.sobre-info a{
-    font-size: 0.9rem;
-}
+
 .sobre-info b{
     font-weight:700;
 }
 
 .sobre-btn{
-    width: 110px;
-    height: 30px;
-    font-weight: 400;
-    font-size: 0.8rem;
-    padding: 5px;
-    align-self: flex-end!important;
+    width: 125px;
+    height: 25px;
+    font-weight: 200;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0;
+    padding: 6px;
 }
 
 /*#endregion Sobre*/
