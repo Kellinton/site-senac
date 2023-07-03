@@ -12,8 +12,8 @@
 /*banner*/
 
 .topo-corpo{
-    height: 20vh;
-    background-image: none;
+    height: 50vh;
+    background-image: url(/img/banner-mobile1.png);
 }
 
 /*menu*/
@@ -44,7 +44,7 @@
 
 /*topo botao,slogan*/
 .topo-corpo .slogan-cont{
-    display: none;
+    display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 12%;
@@ -60,11 +60,11 @@
 }
 .topo-corpo .slogan-cont .words span{
     font-weight: 800;
-    color: var(--darkblue);
+    color: var(--white);
 }
 .topo-corpo .slogan-cont p {
  font-weight: 400;
- color: var(--darkblue);
+ color: var(--white);
 }
 .slogan-btn-cont{
     display: none;
