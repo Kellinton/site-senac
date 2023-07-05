@@ -1177,6 +1177,9 @@ button.slick-next.slick-arrow {
 
 
 /*topo botao,slogan*/
+.topo-corpo .slogan-cont{
+    margin-top: 10%;
+}
 .topo-corpo .slogan-cont .words{
     height: 60px;
 
@@ -1186,7 +1189,9 @@ button.slick-next.slick-arrow {
     font-size: 3rem;
 
 }
-
+.topo-corpo .slogan-btn{
+    margin-top: 15%;
+}
 /*#endregion Topo*/
 
 /*#region Servicos*/
@@ -1205,7 +1210,7 @@ button.slick-next.slick-arrow {
 
 .servicos-banner p{
     padding: 10px;  
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 
