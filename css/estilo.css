@@ -812,6 +812,7 @@ button:hover .text{
     margin-left: 0.5%;
     margin-right: 0.5%;
     border-radius: 10px;
+    border-bottom: solid 5px var(--darkblue);
     box-shadow: var(--shadow-card);
 }
 
