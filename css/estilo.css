@@ -1043,7 +1043,126 @@ hr{
 
 /*#endregion Slick*/
 
+/*#region Páginas*/
 
+/*Portfólio*/
+
+.port-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    padding: 5%;
+}
+
+
+.port-titulo h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+}
+.port-titulo span{
+    font-weight: 800;
+    font-size: 2.0rem;
+}
+.port-titulo p{
+
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.port-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 100px;
+    width: 40%;
+
+}
+
+.port{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.port h3{
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--white);
+    border: solid 2px var(--white);
+    border-radius: 10px;
+    padding: 3%;
+    box-shadow: inset 0px 0px 300px rgba(0,0,0,1);
+
+}
+
+.port div{
+    display: flex;
+    background-image: url(../img/port-img-dark-1.png);
+    border-radius: 5px;
+    width: 375px;
+    height: 525px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-card);
+}
+.port div:hover{
+    background-image: url(../img/port-img-1.png);
+}
+.port div:nth-child(2){
+    background-image: url(../img/port-img-dark-2.png);
+}
+.port div:hover:nth-child(2){
+    background-image: url(../img/port-img-2.png);
+}
+.port div:nth-child(3){
+    background-image: url(../img/port-img-dark-3.png);
+}
+.port div:hover:nth-child(3){
+    background-image: url(../img/port-img-3.png);
+}
+
+
+.port div:hover h3{
+    transition: ease 03s;
+    display: none;
+}
+.port div:nth-child(2){
+    transform: translateY(-50px);
+}
+.port div:hover img{
+    display: none;
+}
+
+/*seta animacao*/
+.port div{
+    -webkit-animation: action 7s infinite  alternate;
+    animation: action 7s infinite  alternate;  
+}
+.port div:nth-child(2){
+    -webkit-animation: action 3s infinite  alternate;
+    animation: action 3s infinite  alternate-reverse;  
+}
+.port div:nth-child(3){
+    -webkit-animation: action 7s infinite  alternate;
+    animation: action 7s infinite  alternate;  
+}
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-12px); }
+}
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-12px); }
+}
+
+
+/*#endregion Páginas*/
+/*Serviços*/
 
 
 
