@@ -1,7 +1,7 @@
 // Alerts provisórios
-function formtxt(){
-window.alert('Formulário sendo feito');
-}
+// function formtxt(){
+// window.alert('teste');
+// }
 
 
 //#region Carroseul//

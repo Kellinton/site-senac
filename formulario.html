@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web de Quebrada Forms </title>
+</head>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+<link rel="stylesheet" href="css/estiloforms.css">
+
+<body>
+  <main>
+    <!---Todo o nosso site-->
+    <section id="form">
+      <div class="site">
+        <div id="container">
+
+
+          <!---Nosso formulario--->
+          <form class="form" action="formulario.php" method="post" autocomplete="off">
+            <div id="tittle">
+              <span>Web de Quebrada</span>
+            </div>
+
+            <div id="inputs">
+
+              <!--Nome-->
+              <div class="input-box">
+                <label for="inome"></label>
+              <h1> Nome</h1>
+                <div class="input-filha">
+                  <input type="text" name="Nome" id="inome" placeholder="Nome Completo" size="30">
+                </div>
+              </div>
+              <!--Numero-->
+              <div class="input-box">
+                <label for="inumero"></label>
+              <h1> Número</h1>
+                <div class="brzinho">
+                  <input type="tel" name="tel" id="itel" placeholder="11-12345-6789" size="30">
+                
+                </div>
+                
+              </div>
+
+              <!--Email-->
+              <div class="input-box">
+                <label for="iemail"></label>
+             <h1>Email</h1>
+                <div class="input-filha">
+                  <input type="email" name="email" id="iemail" placeholder="Seu e-mail@email.com" size="30" >
+                </div>
+              </div>
+
+              <!--Ocupação-->
+              <div class="input-box">
+                <label for="iocup"></label>
+             <h1>Ocupação</h1>
+                <div class="input-filha">
+                  <input type="text" name="ocup" id="iocup" placeholder="Seu cargo" size="30">
+                </div>
+              </div>
+
+              <!--Nome da empresa-->
+              <div class="input-box">
+                <label for="iempresa"></label>
+                <h1>Nome Da Empresa</h1>
+                <div class="input-filha">
+                  <input type="text" name="Empresa" id="iempresa" placeholder="Nome da Empresa"  size="30">
+                </div>
+              </div>
+
+              <!--Area de atuaçao-->
+              <div class="input-box">
+                <label for="iarea"></label>
+               <h1> Área de atuação na empresa</h1>
+                <div class="input-filha">
+                  <input type="text" name="area" id="iarea" placeholder=" Área de atuação na empresa" size="30">
+                </div>
+              </div>
+
+              <div id="textarea">
+                <!--text area-->
+                <h1>Nos Conte sua necessidade</h1>
+                <textarea name="mens" id="mens" cols="30" rows="10" placeholder="Informe sua mensagem" size="60"></textarea>
+              </div>
+
+              <!--Btn enviar-->
+              <div id="enviar">
+                <button type="submit">Enviar</button>
+              </div>
+
+            </div>
+          </form>
+
+          <div>
+            <div id="img-logo">
+              <img src="img/form/logodark.svg" alt=".">
+              <h2>"Construindo Sua presença Online!"</h2>
+              <div>
+                <img src="img/form/senaclogo.png" alt=".">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
