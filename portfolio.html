@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+
+    <link
+      rel="shortcut icon"
+      href="img/logos/favicon-01.svg"
+      type="image/x-icon"
+    />
+
+    <!-- efeito animação divs -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Jquery, efeito do botao topo-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- slick.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Css-->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/aos.css">
+    <!--responsivo-->
+    <link rel="stylesheet" href="css/responsivo.css" />
+</head>
+<body>
+    
+       <!--#region Topo-->
+      
+        <header>
+          <a href="formulario.html" class="topo-btn" title="Formulário">Contratar</a>
+          <h1>Logo</h1>
+  
+          <div id="menu" class="menu-mobile">
+            <ul>
+              <li class="menu-item">
+                <a href="index.html" class="menu-link" title="Início">Início</a></li>
+              <li class="menu-item">
+                <a href="#servico" class="menu-link" title="Início">Serviços</a>
+              </li>
+              <li class="menu-item">
+                <a href="#sobre" class="menu-link" title="Sobre">Sobre</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link" title="Portfólio">Portfólio</a>
+              </li>
+            </ul>
+            <div class="topo-rede-social">
+              <a href="#" title="LinkedIn">LinkedIn</a>
+              <a href="#" title="WhatsApp">WhatsApp</a>
+              <a href="#" title="Instagram">Instagram</a>
+            </div>
+          </div>
+  
+          <div class="mobile-menu-icon">
+            <button onclick="menuShow(); toggleMenu()">
+              <img class="icon-menu" src="img/menu/btn-abrirmenu.svg" alt="" />
+            </button>
+          </div>
+          <nav class="nav-menu">
+            <ul>
+              <li class="menu-item">
+                <a href="index.html" class="menu-link" title="Início">Início</a>
+              </li>
+              <li class="menu-item">
+                <a href="#servico" class="menu-link" title="Serviços">Serviços</a>
+              </li>
+              <li class="menu-item">
+                <a href="#sobre" class="menu-link" title="Sobre">Sobre</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="ativo menu-link" title="Portfólio">Portfólio</a>
+              </li>
+            </ul>
+            <div class="topo-rede-social">
+              <a href="#" title="LinkedIn">LinkedIn</a>
+              <a href="#" title="WhatsApp">WhatsApp</a>
+              <a href="#" title="Instagram">Instagram</a>
+            </div>
+            
+          </nav>
+         
+        </header>
+
+         <!--#endregion Topo-->
+         
+        <main>
+            <!--#region Voltar-topo-->
+        <!--botão/voltar/topo-->
+        <a href="#" id="myLink" title="Voltar para o topo">
+            <img class="seta-topo" src="img/seta-topo.svg" alt="">
+        </a>
+        <!--#endregion Voltar-topo-->
+        </main>
+
+    <!--#region Rodape-->
+
+    <!--Rodapé-->
+    <footer>
+      <div class="site">
+        <div class="rodape-cont">
+          <div class="rodape-info">
+            <div class="rodape-1">
+              <!--1-->
+              <div>
+                <img src="img/rodape/logo-rodape.svg" alt="" />
+                <!-- <img src="img/rodape/senac-rodape.svg" alt=""> -->
+              </div>
+              <p>
+                “Construindo sua presença online, fortalecendo causas nobres”
+              </p>
+              <div class="rodape-1-rede">
+                <a href="#" title="LinkedIn">LinkedIn</a>
+                <a href="#" title="WhatsApp">WhatsApp</a>
+                <a href="#" title="Instagram">Instagram</a>
+              </div>
+            </div>
+            <div class="rodape-contatos">
+              <div class="rodape-2">
+                <!--2-->
+                <h3>Contato</h3>
+                <ul>
+                  <li>
+                    <a href="" title="Suporte"
+                      ><img
+                        src="img/rodape/contato-rodape.svg"
+                        alt=""
+                      />Suporte</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" title="E-mail"
+                      ><img src="img/rodape/email-rodape.svg" alt="" />E-mail</a
+                    >
+                  </li>
+                  <li>
+                    <a href=""  title="Localização - São Miguel"
+                      ><img src="img/rodape/localizacao-rodape.svg" alt="" />São
+                      Miguel</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="rodape-3">
+              <!--3-->
+              <h3>Menu</h3>
+              <ul>
+                <li>
+                  <a href=""  title="Home"
+                    ><img src="img/rodape/home-rodape.svg" alt="" />Home</a
+                  >
+                </li>
+                <li> 
+                  <a href="" title="Sobre"
+                    ><img src="img/rodape/sobre-rodape.svg" alt="" />Sobre
+                    nós</a
+                  >
+                </li>
+                <li>
+                  <a href="" title="Serviços"
+                    ><img
+                      src="img/rodape/servicos-rodape.svg"
+                      alt=""
+                    />Serviços</a
+                  >
+                </li>
+              </ul>
+            </div>
+            </div>
+          </div>
+          <hr />
+          <div class="rodape-4"> 
+            <h3>Web de Quebrada &copy; 2023</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--#endregion Rodape-->
+
+    <!--#region Script-->
+
+    <!--pasta js-->
+    <script src="./script/aos.js"></script>
+    <script src="./script/javascript.js"></script>
+
+    <!--#endregion Script-->
+</body>
+</html>

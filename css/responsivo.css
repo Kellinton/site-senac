@@ -12,12 +12,12 @@
 /*banner*/
 
 .topo-corpo{
-    height: 50vh;
-    
+    height: 35vh;
+    background-image: none;
 }
 
 /*menu*/
-.topo-corpo header{
+header{
     background-image: none;
     background-color: var(--white);
     box-shadow: var(--shadow-card2);
@@ -25,7 +25,7 @@
     align-items: center;
     padding: 2.5%;
 }
-.topo-corpo header .topo-btn{
+header .topo-btn{
     display: block;
     width: 125px;
     height: auto;
@@ -33,40 +33,17 @@
     font-size: 0.8rem;
     text-align: center;
 }
-.topo-corpo header h1{
+header h1{
     background-image: url(../img/logos/logoteste.svg);
     width: 109px;
     height: 60px;  
 }
-.topo-corpo header .nav-menu{
+header .nav-menu{
     display: none;
 }
 
 /*topo botao,slogan*/
 .topo-corpo .slogan-cont{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 12%;
-}
-.topo-corpo .slogan-cont .words{
-    display: flex;
-    flex-direction: column;
-    height: 35px;
-    overflow: hidden;
-}
-.topo-corpo .slogan-cont p, span{
-    font-size: 2rem;
-}
-.topo-corpo .slogan-cont .words span{
-    font-weight: 800;
-    color: var(--darkblue);
-}
-.topo-corpo .slogan-cont p {
- font-weight: 400;
- color: var(--darkblue);
-}
-.slogan-btn-cont{
     display: none;
 }
 
@@ -88,30 +65,30 @@
 .topo-rede-social {
     display: none;
 }
-.topo-corpo header .menu-mobile{ 
+ header .menu-mobile{ 
     display: block;
     background-color: var(--white);
 }
 
-.topo-corpo header .mobile-menu-icon {
+ header .mobile-menu-icon {
     display: block;
 }
-.topo-corpo header .mobile-menu-icon button {
+ header .mobile-menu-icon button {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
-.topo-corpo header .mobile-menu ul {
+ header .mobile-menu ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 1rem;
 }
-.topo-corpo header .mobile-menu .nav-item {
+ header .mobile-menu .nav-item {
     display: block;
     padding-top: 3rem;
 }
-.topo-corpo header .mobile-menu .topo-rede-social {
+ header .mobile-menu .topo-rede-social {
     display: flex;
     padding-top: 5rem;
     gap: 20px;
@@ -589,7 +566,7 @@ button.slick-next.slick-arrow {
 }
 
 /*menu*/
-.topo-corpo header{
+header{
     background-image: none;
     background-color: var(--white);
     box-shadow: var(--shadow-card2);
@@ -597,7 +574,7 @@ button.slick-next.slick-arrow {
     align-items: center;
     padding: 2.5%;
 }
-.topo-corpo header .topo-btn{
+header .topo-btn{
     display: block;
     width: 125px;
     height: auto;
@@ -605,12 +582,12 @@ button.slick-next.slick-arrow {
     font-size: 0.8rem;
     text-align: center;
 }
-.topo-corpo header h1{
+header h1{
     background-image: url(../img/logos/logoteste.svg);
     width: 109px;
     height: 60px;  
 }
-.topo-corpo header .nav-menu{
+header .nav-menu{
     display: none;
 }
 
@@ -660,30 +637,30 @@ button.slick-next.slick-arrow {
 .topo-rede-social {
     display: none;
 }
-.topo-corpo header .menu-mobile{ 
+header .menu-mobile{ 
     display: block;
     background-color: var(--white);
 }
 
-.topo-corpo header .mobile-menu-icon {
+header .mobile-menu-icon {
     display: block;
 }
-.topo-corpo header .mobile-menu-icon button {
+header .mobile-menu-icon button {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
-.topo-corpo header .mobile-menu ul {
+header .mobile-menu ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 1rem;
 }
-.topo-corpo header .mobile-menu .nav-item {
+header .mobile-menu .nav-item {
     display: block;
     padding-top: 3rem;
 }
-.topo-corpo header .mobile-menu .topo-rede-social {
+header .mobile-menu .topo-rede-social {
     display: flex;
     padding-top: 5rem;
     gap: 20px;
@@ -1172,11 +1149,11 @@ button.slick-next.slick-arrow {
 
 /*#region Topo*/
 
-.topo-corpo header .nav-menu ul{
+header .nav-menu ul{
     margin: 0;
 }
 
-.topo-corpo header .nav-menu ul a{
+header .nav-menu ul a{
     padding: 25px;
 }
 
@@ -1380,8 +1357,7 @@ button.slick-next.slick-arrow {
 }
 
 
-}
 /*#endregion Rodape*/
 
-
+}
 /*#endregion Media-1270*/

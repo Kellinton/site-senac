@@ -44,7 +44,7 @@ body{
 
 /*#region Displays*/
 
-.topo-corpo header .topo-btn{
+header .topo-btn{
     background-color: var(--green);
     display: none;
 }
@@ -170,30 +170,19 @@ body{
 
 /*#region Topo*/
 
-/*topo banner*/
-
-.topo-corpo{
-    background-image: url(../img/banner-01.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    box-sizing: border-box; 
-}
-
 /*topo menu*/
 
-.topo-corpo header .btn-contato-mobile{ /*responsivo*/
+header .btn-contato-mobile{ /*responsivo*/
     display: none;
 }
 
-.topo-corpo header {
+header {
     display: flex;
     justify-content: center; 
     width: 100%;
     background-image: linear-gradient(to right, transparent, transparent, #fff, #fff);
 }
-.topo-corpo header .nav-menu{
+header .nav-menu{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -201,14 +190,14 @@ body{
    
 }
 
-.topo-corpo header .nav-menu ul{
+header .nav-menu ul{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0px 80px 0px 80px;
 }
 
-.topo-corpo header .nav-menu ul a{
+header .nav-menu ul a{
     position: relative;
     text-transform: capitalize;
     text-decoration: none;
@@ -230,7 +219,7 @@ body{
 .menu-aberto { /*overflow hidden será aplicado no body quando o toggle alternar no clique do menu*/
     overflow: hidden;
   }
-.topo-corpo header .menu-mobile ul a{
+header .menu-mobile ul a{
     position: relative;
     text-transform: capitalize;
     text-decoration: none;
@@ -240,10 +229,10 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
-.topo-corpo header .menu-mobile{ 
+header .menu-mobile{ 
     display: none;
 }
-.topo-corpo header .mobile-menu-icon {
+header .mobile-menu-icon {
     display: none;
     z-index: 2;
 }
@@ -253,11 +242,11 @@ body{
     color: var(--lightblue) !important;
     font-weight: 700!important;
 }
-.topo-corpo header ul a:hover{
+header ul a:hover{
     color: var(--lightblue);
  }
  
- .topo-corpo header ul a:after{
+ header ul a:after{
      content: "";
      position: absolute;
      background-color: var(--lightblue);
@@ -270,16 +259,26 @@ body{
      transition: 0.3s;
  }
  
- .topo-corpo header ul a:hover:after{
+ header ul a:hover:after{
      width: 100%;
  }
  
 /*logo*/
-.topo-corpo header h1{
+header h1{
     background: url(../img/logos/logo-01.svg) no-repeat;
     width: 200px;
     height: 118px;
     text-indent: -9999px;  
+}
+
+/*topo banner*/
+.topo-corpo{
+    background-image: url(../img/banner-01.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    box-sizing: border-box; 
 }
 
 /*redes sociais do topo*/
@@ -317,7 +316,7 @@ body{
 
 
 /*topo botao,slogan*/
-.topo-corpo .slogan-cont{
+.slogan-cont{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -506,10 +505,12 @@ button:hover .text{
     height: 220px;
     border-radius: 7px;
     padding: 1%;
-   box-shadow: var(--shadow-card);
+    box-shadow: var(--shadow-card);
     color: var(--darkblue);
     margin-left: 0%;
     margin-right: 0%;
+    border-bottom: solid 5px var(--darkblue);
+    background-color: var(--white);
 }
 
 .servicos-mobile .servicos-card {
