@@ -180,14 +180,16 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
     text-align: left;
 }
 
 .servicos-titulo h2{
     font-size: 1.2rem;
-    margin-top: 0px;
+    margin-top: 15%;
     margin-left: 0px;
+    margin-bottom: 5%;
+    text-align: center;
 }
 .servicos-titulo span{
     font-weight: 800;
@@ -316,7 +318,7 @@
     padding: 5%;
 }
 .sobre-info h2{
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     font-size: 1.3rem;
     margin-bottom: 5%;
@@ -760,6 +762,8 @@ button.slick-next.slick-arrow {
     font-size: 1.3rem;
     margin-top: 0px;
     margin-left: 0px;
+    margin-bottom: 1%;
+    text-align: center;
 }
 .servicos-titulo span{
     font-weight: 800;
@@ -769,6 +773,7 @@ button.slick-next.slick-arrow {
 .servicos-titulo p{
     font-size: 1rem;
     margin: 0;
+    text-align: center;
 }
 
 /*Serviços tabela*/
@@ -888,7 +893,7 @@ button.slick-next.slick-arrow {
     padding: 5%;
 }
 .sobre-info h2{
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     font-size: 1.3rem;
     margin-bottom: 5%;
