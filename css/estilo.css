@@ -417,7 +417,7 @@ body{
 
 .servicos-banner p{
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 300;
     color:var(--darkblue);
     padding: 25px;  
     flex-grow: 1; 
@@ -745,8 +745,8 @@ button:hover .text{
 
 /*seta animacao*/
 .portfolio img {
-    animation: action 1s infinite  alternate;
     -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;  
 }
 @keyframes action {
     0% { transform: translateY(0); }
@@ -812,7 +812,6 @@ button:hover .text{
     margin-left: 0.5%;
     margin-right: 0.5%;
     border-radius: 10px;
-    border-bottom: solid 5px var(--darkblue); 
     box-shadow: var(--shadow-card);
 }
 

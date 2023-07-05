@@ -1376,8 +1376,8 @@ button.slick-next.slick-arrow {
 
 /*seta animacao*/
 .portfolio img {
-    animation: action 1s infinite  alternate;
     -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
 }
 @keyframes action {
     0% { transform: translateY(0); }
