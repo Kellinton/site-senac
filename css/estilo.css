@@ -325,6 +325,7 @@ header h1{
 .topo-corpo .slogan-cont .words{
     display: flex;
     flex-direction: column;
+    text-align: center;
     height: 70px;
     overflow: hidden;
 }
