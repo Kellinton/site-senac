@@ -4,7 +4,7 @@
 /*#region Media-600*/
 
 
-    /* 0 até 600 para Celular INICIO*/
+/* 0 até 600 para Celular INICIO*/
 @media screen and (max-width: 600px){
 
 /*#region Topo*/
@@ -548,6 +548,62 @@ button.slick-next.slick-arrow {
 }
 
 /*#endregion Slick*/
+
+/*#region Pagina-Portfolio*/
+
+/*portfolio*/
+
+
+.port-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    padding: 5%;
+}
+
+
+.port-titulo h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.port-titulo span{
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.port-titulo p{
+    text-align: center;
+    font-size: 0.8rem;
+    width: 65%;
+}
+
+.port-titulo{
+    align-items: center;
+    width: 100%;
+}
+.port h3{
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--white);
+    border: solid 2px var(--white);
+    border-radius: 10px;
+    padding: 3%;
+    box-shadow: inset 0px 0px 300px rgba(0,0,0,1);
+
+}
+.port div{
+    width: 170px;
+    height: 300px;
+
+}
+.port div:nth-child(3){
+    display: none;
+}      
+/*#endregion Pagina-Portfolio*/
    
 }
 
@@ -1121,7 +1177,63 @@ button.slick-next.slick-arrow {
 }
 
 /*#endregion Slick*/
-       
+
+/*#region Pagina-Portfolio*/
+
+/*portfolio*/
+
+
+.port-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    padding: 5%;
+}
+
+
+.port-titulo h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.port-titulo span{
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.port-titulo p{
+    text-align: center;
+    font-size: 0.8rem;
+    width: 65%;
+}
+
+.port-titulo{
+    align-items: center;
+    width: 100%;
+}
+.port h3{
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--white);
+    border: solid 2px var(--white);
+    border-radius: 10px;
+    padding: 3%;
+    box-shadow: inset 0px 0px 300px rgba(0,0,0,1);
+
+}
+.port div{
+    width: 270px;
+    height: 400px;
+
+}
+.port div:nth-child(3){
+    display: none;
+}      
+/*#endregion Pagina-Portfolio*/
+
 }
 
 
@@ -1330,7 +1442,7 @@ header .nav-menu ul a{
     display: flex;
     justify-content: center;
     width: 100%;
-   
+}
 .clientes{
     display: flex;
     justify-content: center;
@@ -1355,9 +1467,30 @@ header .nav-menu ul a{
 .rodape-cont p{
     font-size: 1rem;
 }
-
-
 /*#endregion Rodape*/
 
+/*#region Pagina-Portfolio*/
+
+/*portfolio*/
+
+.port-titulo p{
+    text-align: center;
+    font-size: 1rem;
+    width: 65%;
 }
+
+.port-titulo{
+    align-items: center;
+    width: 100%;
+}
+
+.port div{
+    width: 270px;
+    height: 525px;
+
+}
+
+/*#endregion Pagina-Portfolio*/
+}
+
 /*#endregion Media-1270*/
