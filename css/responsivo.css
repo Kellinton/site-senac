@@ -494,7 +494,7 @@ footer{
 }
 .rodape-1 div:nth-child(1){
     display: flex;
-    gap: 5px;  
+    gap: 20px;
 }
 .rodape-1 div:nth-child(1) img{
     width: 100%;

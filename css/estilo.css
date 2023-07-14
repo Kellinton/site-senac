@@ -891,7 +891,8 @@ footer{
 }
 .rodape-1 div:nth-child(1){
     display: flex;
-    gap: 50px;  
+    align-items: center;
+    gap: 50px;
 }
 .rodape-1-rede{
     display: flex;
