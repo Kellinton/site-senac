@@ -12,7 +12,7 @@
 /*banner*/
 
 .topo-corpo{
-    height: 35vh;
+    height: 50vh;
     background-image: none;
 }
 
@@ -46,8 +46,10 @@ header .nav-menu{
 .topo-corpo .slogan-cont{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     margin-top: 12%;
+    height: 50%;
 }
 .topo-corpo .slogan-cont .words{
     display: flex;
@@ -165,13 +167,14 @@ header .nav-menu{
 }
 #servicos-mobile{
     display:block;
+    height: 35vh;
 }
 
 
 /*Serviços-tabela*/
 
 .servicos{
-    display: flex; 
+    display: flex;
 }
 .servicos .servicos-img {
     display: none;
