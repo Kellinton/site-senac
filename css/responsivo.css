@@ -44,6 +44,29 @@ header .nav-menu{
 
 /*topo botao,slogan*/
 .topo-corpo .slogan-cont{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12%;
+}
+.topo-corpo .slogan-cont .words{
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+    overflow: hidden;
+}
+.topo-corpo .slogan-cont p, span{
+    font-size: 2rem;
+}
+.topo-corpo .slogan-cont .words span{
+    font-weight: 800;
+    color: var(--darkblue);
+}
+.topo-corpo .slogan-cont p {
+ font-weight: 400;
+ color: var(--darkblue);
+}
+.slogan-btn-cont{
     display: none;
 }
 
