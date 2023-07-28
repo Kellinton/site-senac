@@ -501,11 +501,7 @@ footer{
     font-size: 0.9rem;
 }
 .rodape-cont p{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
-    color: var(--white);
-    text-align: center;
+    display: none;
 }
 .rodape-info{
     display: flex;
@@ -519,7 +515,7 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2%;
+    padding: 5% 0%;
 }
 .rodape-1 div:nth-child(1){
     display: flex;

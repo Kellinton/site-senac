@@ -501,7 +501,7 @@ button:hover .text{
     width: 100%;
 }
 #arrowposition img{
-    height: 70px;
+    height: 50px;
     
 }
 /*Serviços-Mobile*/
@@ -683,7 +683,7 @@ button:hover .text{
     font-weight: 300;
     font-size: 1.3rem;
     line-height: 1.5;
-    letter-spacing: 1px;
+    text-align: justify;
 }
 .sobre-info a{
     align-self: center;
@@ -848,8 +848,8 @@ button:hover .text{
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5;
-    letter-spacing: 1px;
     padding: 0% 10% 10% 10%;
+    text-align: justify;
 }
 
 /*#endregion Avaliacoes*/ 
@@ -885,6 +885,7 @@ footer{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 1.4rem;
+    font-style: italic;
     line-height: 1.5;
     letter-spacing: 1px;
     color: var(--white);
