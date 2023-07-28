@@ -186,7 +186,7 @@ header .nav-menu{
     display: flex;
     width: 100%;
     flex-direction: column;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     text-align: left;
 }
 
@@ -194,7 +194,7 @@ header .nav-menu{
     font-size: 1.2rem;
     margin-top: 15%;
     margin-left: 0px;
-    margin-bottom: 5%;
+    margin-bottom: 0%;
     text-align: center;
 }
 .servicos-titulo span{
@@ -203,6 +203,7 @@ header .nav-menu{
 }
 
 .servicos-titulo p{
+    display: none;
     font-size: 0.8rem;
     margin: 0;
 }
@@ -322,6 +323,7 @@ header .nav-menu{
     justify-content: space-around;
     width: 100%;
     padding: 5%;
+    
 }
 .sobre-info h2{
     text-align: center;
@@ -341,6 +343,10 @@ header .nav-menu{
     line-height: 1.5;
     letter-spacing: 0px;
     margin-bottom: 10%;
+    padding: 5%;
+    border-radius: 5px;
+    border-bottom: 5px solid var(--darkblue);
+    box-shadow: var(--shadow-card2);
 }
 
 .sobre-info b{
@@ -951,7 +957,8 @@ header .mobile-menu .topo-rede-social {
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    padding: 5%;
+    padding: 2%;
+
 }
 .sobre-info h2{
     text-align: center;
@@ -971,6 +978,10 @@ header .mobile-menu .topo-rede-social {
     line-height: 1.5;
     letter-spacing: 0px;
     margin-bottom: 10%;
+    padding: 5%;
+    border-radius: 5px;
+    border-bottom: 5px solid var(--darkblue);
+    box-shadow: var(--shadow-card2);
 }
 
 .sobre-info b{
