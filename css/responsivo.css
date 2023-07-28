@@ -10,6 +10,9 @@
 /*#region Topo*/
 
 /*banner*/
+#arrowposition{
+    display:none;
+}
 
 .topo-corpo{
     height: 50vh;
@@ -642,6 +645,9 @@ button.slick-next.slick-arrow {
 /*#region Topo*/
 
 /*banner*/
+#arrowposition{
+    display:none;
+}
 
 .topo-corpo{
     height: 50vh;

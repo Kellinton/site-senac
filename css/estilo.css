@@ -37,6 +37,7 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
 body{
     overflow-x: hidden;
 }
@@ -273,6 +274,9 @@ header h1{
 
 /*topo banner*/
 .topo-corpo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-image: url(../img/banner-01.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -320,7 +324,7 @@ header h1{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 8%;
+
 }
 .topo-corpo .slogan-cont .words{
     display: flex;
@@ -491,7 +495,15 @@ button:hover .arrow{
 button:hover .text{
     color: var(--white);
 }
-
+#arrowposition{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#arrowposition img{
+    height: 70px;
+    
+}
 /*Serviços-Mobile*/
 
 
@@ -746,7 +758,7 @@ button:hover .text{
 }
 
 /*seta animacao*/
-.portfolio img {
+.portfolio img, #arrowposition img {
     -webkit-animation: action 1s infinite  alternate;
     animation: action 1s infinite  alternate;  
 }
