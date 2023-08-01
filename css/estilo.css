@@ -331,7 +331,8 @@ header h1{
     flex-direction: column;
     text-align: center;
     height: 70px;
-    overflow: hidden;
+    overflow-y: hidden;
+ 
 }
 .topo-corpo .slogan-cont .words span{
     color: var(--lightblue);
