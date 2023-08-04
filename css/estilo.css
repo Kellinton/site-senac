@@ -277,8 +277,7 @@ header h1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(../img/banner-01.png);
-    background-attachment: fixed;
+    background-image: url(../img/fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -398,9 +397,7 @@ header h1{
     background-color: var(--white); 
     width: 28%;
     height: auto;
-    border-radius: 20px;   
-    border-bottom: solid 5px var(--darkblue);
-    border-top: solid 5px var(--darkblue); 
+    border-radius: 10px;   
     padding: 1%;
     box-shadow: var(--shadow-card);
 }
@@ -610,7 +607,7 @@ button:hover .text{
     padding: 4% 8%;
     box-shadow: var(--shadow-card);
     background-color: var(--white);
-    border-bottom: solid var(--darkblue);
+
 }
 .tabela{
     display: flex;
