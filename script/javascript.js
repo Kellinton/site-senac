@@ -174,7 +174,46 @@ $(document).ready(function() {
 //#endregion Seta-voltar-topo//
 
 
+//#region página sobre//
 
+
+function show() {
+  var x = document.getElementById("divTeste");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function show1() {
+  var x = document.getElementById("divTeste1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function show2() {
+  var x = document.getElementById("divTeste2");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function show3() {
+  var x = document.getElementById("divTeste3");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+//#endregion página sobre//
 
 
 // window.onscroll = function(){
@@ -192,3 +231,22 @@ $(document).ready(function() {
 //     document.getElementById("topoFixo").classList.add("site");
 //   }
 // }
+
+
+function showForm() {
+  var formConteudo = document.getElementById('formConteudo');
+  formConteudo.style.display = 'block';
+  formConteudo.style.transform = 'translateX(0)';
+}
+
+document.getElementById('abrirFormBtn').addEventListener('click', showForm);
+
+
+// Adiciona um evento de clique no botão de fechar
+document.getElementById('fecharFormBtn').addEventListener('click', function() {
+  var formConteudo = document.getElementById('formConteudo');
+  formConteudo.style.transform = 'translateX(-100%)';
+  setTimeout(function() {
+    formConteudo.style.display = 'none';
+  }, 300);
+});

@@ -1,0 +1,281 @@
+
+/*Serviços*/
+main{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.servico div div{
+    display: flex;
+}
+#servicos-txt{
+}
+#texto1{
+font-size: 2rem;
+font-weight: bolder;
+
+
+}
+#texto2{
+font-size: 2rem;
+margin-top: 2px;
+font-weight: 800;
+
+}
+#texto3{
+font-size: 1.5rem;
+margin-top: 5%;
+font-weight: 600;
+}
+
+
+#e-comerce{
+    width: 50px;
+    height: 50px;
+}
+#site{
+    width: 50px;
+    height: 50px;
+}
+#apps{
+    width: 50px;
+    height: 50px;
+}
+#ux{
+    width: 50px;
+    height: 50px;
+}
+
+.caixa-teste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    width: 40%;
+    height: auto;
+    border-radius: 5px;
+    border-bottom: solid 5px var(--darkblue);
+    padding: 2%;
+    box-shadow: var(--shadow-card);
+    margin: 0 auto;    
+}
+#border1{
+    border-bottom: solid 5px var(--orange)!important;
+}
+#border2{
+    border-bottom: solid 5px var(--lightblue)!important;
+}
+#border3{
+    border-bottom: solid 5px var(--darkblue)!important;
+}
+#border4{
+    border-bottom: solid 5px var(--green)!important;
+}
+.caixa-teste h2{
+    font-weight: 600;
+    font-size: 1.7rem;
+    color:var(--darkblue);
+    margin-top: 15px;
+  
+}
+
+.caixa-teste p{
+font-size: 1.1rem;
+font-weight: 300;
+color:var(--darkblue);
+padding: 25px;  
+flex-grow: 1; 
+line-height: 1.1;
+letter-spacing: 1px;
+}
+
+.slogan-btn-cor1{
+    background-color: var(--orange)!important;
+    color: var(--darkblue)!important;
+}
+.slogan-btn-cor1::before{
+    background-color: orangered!important;
+}
+
+
+.slogan-btn-cor2{
+    background-color: var(--lightblue)!important;
+    color: var(--darkblue)!important;
+}
+.slogan-btn-cor2::before{
+    background-color: #3e5d7c!important;
+}
+.slogan-btn-cor3{
+    background-color: var(--darkblue)!important;
+    color: var(--white)!important;
+}
+
+.slogan-btn-cor4{
+    background-color: var(--green)!important;
+    color: var(--darkblue)!important;
+}
+.slogan-btn-cor4::before{
+    background-color:#1c5f4c!important;
+}
+#tabela{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5%;
+}
+.servicos-tabela{
+    background-color: pink;
+}
+
+
+/* .servico button{
+    background-color: var(--darkblue);
+    box-shadow: var(--shadow-card);
+    width: 150px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: var(--shadow-card);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-top: 180px;
+    margin-right: 45px;
+
+} */
+
+/* [data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+    height: 500px;
+} */
+
+
+   
+
+/*responsivo */
+
+@media (max-width:600px){
+    #servicos-txt{
+        text-align: center;
+        margin-bottom: 10%;
+    }
+ 
+    #texto1{
+    font-size: 1.5rem;   
+    }
+    #texto2{
+    font-size: 1.5rem;
+    
+    }
+    #texto3{
+    font-size: 1rem;
+    }
+    .caixa-teste {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--white);
+        width: 80%;
+        height: auto;
+        border-radius: 5px;
+        border-bottom: solid 5px var(--darkblue);
+        padding: 2%;
+        box-shadow: var(--shadow-card);
+        margin-bottom: 20%;    
+    }
+
+    .caixa-teste h2{
+        font-size: 1.2rem;
+    }
+    
+    .caixa-teste p{
+    font-size: 0.8rem;
+    }
+    
+#tabela{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5%;
+
+}
+.slogan-btn::before{
+    display: none;
+}
+.slogan-btn{
+    margin-top: 10%;
+    width: 150px!important;
+    height: 40px!important;
+    padding: 10px!important;
+    font-size: 1rem!important;  
+}
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px){
+    #servicos-txt{
+        text-align: center;
+        margin-bottom: 10%;
+    }
+ 
+    #texto1{
+    font-size: 1.5rem;   
+    }
+    #texto2{
+    font-size: 1.5rem;
+    
+    }
+    #texto3{
+    font-size: 1rem;
+    }
+    .caixa-teste {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--white);
+        width: 70%;
+        height: auto;
+        border-radius: 5px;
+        border-bottom: solid 5px var(--darkblue);
+        padding: 2%;
+        box-shadow: var(--shadow-card);
+        margin-bottom: 20%;    
+    }
+
+    .caixa-teste h2{
+        font-size: 1.2rem;
+    }
+    
+    .caixa-teste p{
+    font-size: 0.9rem;
+    }
+    
+#tabela{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5%;
+
+}
+.slogan-btn::before{
+    display: none;
+}
+.slogan-btn{
+    margin-top: 10%;
+    width: 150px!important;
+    height: 40px!important;
+    padding: 10px!important;
+    font-size: 1rem!important;  
+}
+
+}

@@ -1,0 +1,339 @@
+/* Responsivo 1429px baixo */
+
+@media screen and (max-width: 1429px) {
+  /* pgSobre */
+
+  .pgSobre h2 {
+    margin-left: 30px;
+  }
+
+  .colaboradores h2 {
+    margin-left: 30px;
+  }
+
+  .imgColaboradores {
+    display: flex;
+
+    justify-items: center;
+
+    justify-content: space-evenly;
+  }
+
+  .imgColaboradores div {
+    margin: 10px 0 10px 0;
+  }
+
+  .imgColaboradores div img {
+    width: 200px;
+
+    height: 300px;
+  }
+
+  .imgColaboradores p {
+    text-align: center;
+
+    font-family: var(--fonte-primaria);
+
+    font-size: 1.2rem;
+
+    position: relative;
+
+    left: 50px;
+
+    width: 110px;
+
+    border-radius: 50px;
+
+    bottom: 40px;
+
+    background-color: var(--white);
+
+    text-transform: uppercase;
+  }
+
+  .imgColaboradores button img {
+    width: 50px;
+
+    height: 50px;
+  }
+}
+
+/* Responsivo 920px baixo */
+
+@media screen and (max-width: 920px) {
+  /* pgSobre */
+
+  .pgSobre h2 {
+    margin-left: 30px;
+  }
+
+  .colaboradores h2 {
+    margin-left: 30px;
+  }
+
+  .imgColaboradores {
+    display: grid;
+
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-columns: repeat(2, 0fr);
+
+    justify-items: center;
+  }
+
+  .imgColaboradores div {
+    margin: 10px 0 10px 0;
+  }
+
+  .imgColaboradores div img {
+    width: 200px;
+
+    height: 300px;
+  }
+
+  .imgColaboradores p {
+    text-align: center;
+
+    font-family: var(--fonte-primaria);
+
+    font-size: 1.2rem;
+
+    position: relative;
+
+    left: 50px;
+
+    width: 110px;
+
+    border-radius: 50px;
+
+    bottom: 40px;
+
+    background-color: var(--white);
+
+    text-transform: uppercase;
+  }
+
+  .imgColaboradores button img {
+    width: 50px;
+
+    height: 50px;
+  }
+}
+
+/* Responsivo tela 730px baixo */
+
+@media screen and (max-width: 730px) {
+  .pgSobre {
+    display: table-row;
+  }
+
+  .pgSobre div {
+    margin-left: 30px;
+  }
+
+  /* pgSobre */
+
+  .pgSobre h2 {
+    margin-left: 30px;
+  }
+
+  .colaboradores h2 {
+    margin-left: 30px;
+  }
+
+  .imgColaboradores {
+    display: grid;
+
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-columns: repeat(2, 0fr);
+
+    justify-items: center;
+  }
+
+  .imgColaboradores div {
+    margin: 10px 0 10px 0;
+  }
+
+  .imgColaboradores div img {
+    width: 180px;
+
+    height: 250px;
+  }
+
+  .imgColaboradores p {
+    text-align: center;
+
+    font-family: var(--fonte-primaria);
+
+    font-size: 1rem;
+
+    position: relative;
+
+    left: 22px;
+
+    width: 100px;
+
+    border-radius: 50px;
+
+    bottom: 40px;
+
+    background-color: var(--white);
+
+    text-transform: uppercase;
+  }
+
+  .imgColaboradores button img {
+    width: 50px;
+
+    height: 50px;
+  }
+}
+
+/* Responsivo tela 420px baixo */
+
+@media screen and (max-width: 420px) {
+  .pgSobre {
+    display: inline;
+  }
+
+  .pgSobre div {
+    display: inline;
+  }
+
+  /* pgSobre */
+
+  .pgSobre h2 {
+    margin-left: 30px;
+
+    font-size: 30px;
+  }
+
+  .pgSobre div h3 {
+    font-family: var(--fonte-primaria);
+
+    font-size: 1.5rem;
+
+    font-weight: 500;
+
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    margin-right: 20px;
+  }
+
+  .pgSobre div p {
+    font-family: var(--fonte-primaria);
+
+    font-size: 12px;
+
+    line-height: 25px;
+
+    width: 300px;
+
+    text-align: center;
+  }
+
+  .pgSobre div :nth-child(2) {
+    margin-right: 0px;
+  }
+
+  .pgSobre div :nth-child(2) h3 {
+    margin: 40px 110px 15px 0;
+  }
+
+  /* Colaboradores */
+
+  .colaboradores h2 {
+    margin: 30px;
+
+    font-size: 30px;
+  }
+
+  .imgColaboradores {
+    display: grid;
+
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-columns: repeat(2, 0fr);
+
+    justify-items: center;
+
+    margin-top: 10px;
+  }
+
+  .imgColaboradores div {
+    margin: 10px 0 10px 0;
+  }
+
+  .imgColaboradores div img {
+    width: 160px;
+
+    height: 250px;
+  }
+
+  .imgColaboradores p {
+    text-align: center;
+
+    font-family: var(--fonte-primaria);
+
+    font-size: 1rem;
+
+    position: relative;
+
+    left: 32px;
+
+    width: 100px;
+
+    border-radius: 50px;
+
+    bottom: 40px;
+
+    background-color: var(--white);
+
+    text-transform: uppercase;
+  }
+
+  .imgColaboradores button img {
+    width: 50px;
+
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .imgColaboradores div img {
+    width: 130px;
+
+    height: 200px;
+  }
+
+  .imgColaboradores p {
+    text-align: center;
+
+    font-family: var(--fonte-primaria);
+
+    font-size: 1rem;
+
+    position: relative;
+
+    left: 17px;
+
+    width: 100px;
+
+    border-radius: 50px;
+
+    bottom: 40px;
+
+    background-color: var(--white);
+
+    text-transform: uppercase;
+  }
+
+  .imgColaboradores button img {
+    width: 50px;
+
+    height: 50px;
+  }
+}

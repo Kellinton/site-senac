@@ -1,4 +1,3 @@
-
 /* 601 até 900 para Notbook, 1200px PC*/
 
 /*#region Media-600*/
@@ -7,1529 +6,1475 @@
 /* 0 até 600 para Celular INICIO*/
 @media screen and (max-width: 600px){
 
-/*#region Topo*/
-
-/*banner*/
-#arrowposition{
-    display:none;
-}
-
-.topo-corpo{
-    height: 50vh;
-    background-image: none;
-}
-
-/*menu*/
-header{
-    background-image: none;
-    background-color: var(--white);
-    box-shadow: var(--shadow-card2);
-    justify-content: space-around;
-    align-items: center;
-    padding: 2.5%;
-}
-header .topo-btn{
-    display: block;
-    width: 125px;
-    height: auto;
-    padding: 10px;
-    font-size: 0.8rem;
-    text-align: center;
-}
-header h1{
-    background-image: url(../img/logos/logoteste.svg);
-    width: 109px;
-    height: 60px;  
-}
-header .nav-menu{
-    display: none;
-}
-
-/*topo botao,slogan*/
-.topo-corpo .slogan-cont{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 12%;
-    height: 50%;
-}
-.topo-corpo .slogan-cont .words{
-    display: flex;
-    flex-direction: column;
-    height: 35px;
-    overflow: hidden;
-}
-.topo-corpo .slogan-cont p, span{
-    font-size: 2rem;
-}
-.topo-corpo .slogan-cont .words span{
-    font-weight: 800;
-    color: var(--darkblue);
-}
-.topo-corpo .slogan-cont p {
- font-weight: 400;
- color: var(--darkblue);
-}
-.slogan-btn-cont{
-    display: none;
-}
-
-
-/*menu mobile*/
-.menu-item{
-    display: none;
-}
-.mobile-menu .menu-item {
-    display: block;
-    padding-top: 3rem;
-}
-.nav-bar {
-    padding: 1.5rem 4rem;
-}
-.nav-item {
-    display: none;
-}
-.topo-rede-social {
-    display: none;
-}
- header .menu-mobile{ 
-    display: block;
-    background-color: var(--white);
-}
-
- header .mobile-menu-icon {
-    display: block;
-}
- header .mobile-menu-icon button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
- header .mobile-menu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 1rem;
-}
- header .mobile-menu .nav-item {
-    display: block;
-    padding-top: 3rem;
-}
- header .mobile-menu .topo-rede-social {
-    display: flex;
-    padding-top: 5rem;
-    gap: 20px;
-}
-
-/*configuração de quando o menu estiver aberto*/
-.open {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--white);
-    height: 100vh;
-    width: 100%;
-    padding: 10%;
-    position: absolute;    
-    top: 0;
-    z-index: 2;
-}
-.open ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.open .menu-item{ 
-    display: block;
-    padding-top: 4rem ;
-}
-.open .topo-rede-social{ 
-    display: flex;
-    justify-content: center;
-    padding-top: 4rem;
-}
-
-/*efeito menu*/
-.menu-mobile ul, .menu-mobile div{
-    opacity: 0;
-    transition: opacity 0.4s ease-out;
-  }
-  
-  .menu-mobile.open ul, .menu-mobile.open div{
-    opacity: 1;
-  }
-/*#endregion Topo*/
-
-/*#region Servicos*/
-
-/*Servicos Banner*/
-
-#servicos{
-    display: none;
-}
-#servicos-mobile{
-    display:block;
-    height: 35vh;
-}
-
-
-/*Serviços-tabela*/
-
-.servicos{
-    display: flex;
-}
-.servicos .servicos-img {
-    display: none;
-}
-.servicos-titulo{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    margin-bottom: 5%;
-    text-align: left;
-}
-
-.servicos-titulo h2{
-    font-size: 1.2rem;
-    margin-top: 15%;
-    margin-left: 0px;
-    margin-bottom: 0%;
-    text-align: center;
-}
-.servicos-titulo span{
-    font-weight: 800;
-    font-size: 1.2rem;
-}
-
-.servicos-titulo p{
-    display: none;
-    font-size: 0.8rem;
-    margin: 0;
-}
-
-/*Serviços tabela*/
-.tabela .img-tabela-responsive{
-    display: block;
-    width: 15%;
-    height: 15%;
-}
-.tabela .img-tabela-oficial{
-    display: none;
-}
-.servicos-tabela-cont{
-    display: flex;
-    flex-direction: column;
-    text-align: center;  
-    width: 100%;
-    padding: 10%;
-}
-.servicos-tabela{
-    width: 100%;
-    padding: 0;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translateX(0px);
-    height: auto;
-    box-shadow: none;
-    border-bottom: none;
-    background: none;
-}
-.tabela{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 0px;
-    gap: 50px;
-    padding: 0%;
-}
-.tabela div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
-    width: 100%;
-    height: auto;
-    border-radius: 7px;
-    box-shadow: var(--shadow-card2);
-    color: var(--darkblue);
-}
-.tabela div:nth-child(1){
-    display: flex;
-    align-self: flex-start;
-    border-bottom: solid 5px var(--darkblue);
+    /*#region Topo*/
     
-}
-.tabela div:nth-child(2){
-    display: flex;
-    align-self: flex-end;
-    border-bottom: solid 5px var(--orange);
-}
-.tabela div:nth-child(3){
-    display: flex;
-    align-self: flex-start;
-    border-bottom: solid 5px var(--green);
+    /*banner*/
+    #arrowposition{
+        display:none;
+    }
     
-}
-.tabela img{
-    margin-bottom: 5%;
-}
-
-.tabela h3{
-    text-align: left;
-    font-weight: 600;
-    font-size: 1rem;
-    color: var(--darkblue);
-}
-
-.tabela p{
-    text-align: left;
-    font-size: 0.8rem;
-    font-weight: 350;
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.1;
-    letter-spacing: 1.4px;
-    color: var(--darkblue);
-
-}
-
-.tabela-btn{
-    display: none;
-}
-/*#endregion Servicos*/
-
-/*#region Sobre*/
-
-/*sobre*/
-.sobre{
-    display: flex;
-    width: 100%;
-    gap: 8px;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
-    margin-bottom: 50px;
-}
-.sobre img{
-    width: 60%;
-    height: 60%;
-    display: none;
-}
-.sobre-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    padding: 5%;
+    .topo-corpo{
+        height: 35vh;
+        justify-content: flex-start;
+    }
     
-}
-.sobre-info h2{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    margin-bottom: 5%;
-    margin-top: 0;
-}
-.sobre-info span{
-    font-weight: 800;
-    font-size: 1.3rem;
-}
-.sobre-info p{
-    font-weight: 300;
-    font-size: 0.8rem;
-    text-align: justify;
-    line-height: 1.5;
-    letter-spacing: 0px;
-    margin-bottom: 10%;
-    padding: 5%;
-    border-radius: 5px;
-    border-bottom: 5px solid var(--darkblue);
-    box-shadow: var(--shadow-card2);
-}
-
-.sobre-info b{
-    font-weight:700;
-}
-
-.sobre-btn{
-    width: 125px;
-    height: 25px;
+    /*menu*/
+    header{
+        background-image: none;
+        background-color: var(--white);
+        box-shadow: var(--shadow-card2);
+        justify-content: space-around;
+        align-items: center;
+        padding: 2.5%;
+    }
+    header .topo-btn{
+        display: block;
+        width: 125px;
+        height: auto;
+        padding: 10px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    header h1{
+        background-image: url(../img/logos/logoteste.svg);
+        width: 109px;
+        height: 60px;  
+    }
+    header .nav-menu{
+        display: none;
+    }
+    
+    /*topo botao,slogan*/
+    
+    .topo-corpo .slogan-cont{
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 8%;
+    }
+    .topo-corpo .slogan-cont .words{
+        display: flex;
+        flex-direction: column;
+        height: 35px;
+        overflow: hidden;
+    }
+    .topo-corpo .slogan-cont p, span{
+        font-size: 1.7rem;
+    }
+    .topo-corpo .slogan-cont .words span{
+        font-weight: 800;
+        color: var(--darkblue);
+    }
+    .topo-corpo .slogan-cont p {
     font-weight: 400;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 0;
-    padding: 6px;
-}
-
-/*#endregion Sobre*/
-
-/*#region Portfolio*/
-
-/*Portfolio*/
-#portfolio{
+    color: var(--darkblue);
+    }
+    .slogan-btn-cont{
+        display: none;
+    }
     
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.portfolio-titulo{
-    width: 80%;
-}
-.portfolio-titulo h2{
-    font-size: 1.1rem;
-}
-.portfolio-titulo span{
-    font-size: 1.1rem;
-}
-.portfolio-titulo p{
-    font-size: 0.8rem;
-}
-.portfolio-cont {
-    height: 420px;
-}
-.portfolio{
-    padding: 2%;
-}
-.portfolio div{
-    background-image: url(../img/portfolio01.png);
-    border-radius: 10px;
-    width: 150px;
-    height: 300px;
-    margin-bottom: 20px;
-}
-.portfolio img {
-    width: 35px;
-    height: 35px; 
+    
+    /*menu mobile*/
+    .menu-item{
+        display: none;
+    }
+    .mobile-menu .menu-item {
+        display: block;
+        padding-top: 3rem;
+    }
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .topo-rede-social {
+        display: none;
+    }
+     header .menu-mobile{ 
+        display: block;
+        background-color: var(--white);
+    }
+    
+     header .mobile-menu-icon {
+        display: block;
+    }
+     header .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+     header .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+     header .mobile-menu .nav-item {
+        display: block;
+        padding-top: 3rem;
+    }
+     header .mobile-menu .topo-rede-social {
+        display: flex;
+        padding-top: 5rem;
+        gap: 20px;
+    }
+    
+    /*configuração de quando o menu estiver aberto*/
+    .open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--white);
+        height: 100vh;
+        width: 100%;
+        padding: 10%;
+        position: absolute;    
+        top: 0;
+        z-index: 2;
+    }
+    .open ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .open .menu-item{ 
+        display: block;
+        padding-top: 4rem ;
+    }
+    .open .topo-rede-social{ 
+        display: flex;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+    
+    /*efeito menu*/
+    .menu-mobile ul, .menu-mobile div{
+        opacity: 0;
+        transition: opacity 0.4s ease-out;
+      }
+      
+      .menu-mobile.open ul, .menu-mobile.open div{
+        opacity: 1;
+      }
+    /*#endregion Topo*/
+    
+    /*#region Servicos*/
+    
+    /*Servicos Banner*/
+    
+    #servicos{
+        display: none;
+    }
+    #servicos-mobile{
+        display:block;
+    }
+    
+    
+    /*Serviços-tabela*/
+    
+    .servicos{
+        display: flex; 
+    }
+    .servicos .servicos-img {
+        display: none;
+    }
+    .servicos-titulo{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 5%;
+        text-align: left;
+    }
+    
+    .servicos-titulo h2{
+        font-size: 1.2rem;
+        margin-top: 15%;
+        margin-left: 0px;
+        margin-bottom: 0%;
+        text-align: center;
+    }
+    .servicos-titulo span{
+        font-weight: 800;
+        font-size: 1.2rem;
+    }
+    
+    .servicos-titulo p{
+        display: none;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+    
+    /*Serviços tabela*/
+    
+    .tabela .img-tabela-oficial{
+        width: 15%;
+        height: 15%;
+    }
+    .servicos-tabela-cont{
+        display: flex;
+        flex-direction: column;
+        text-align: center;  
+        width: 100%;
+        padding: 10%;
+    }
+    .servicos-tabela{
+        width: 100%;
+        padding: 0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(0px);
+        height: auto;
+        box-shadow: none;
+        border-bottom: none;
+        background: none;
+    }
+    .tabela{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0px;
+        gap: 50px;
+        padding: 0%;
+    }
+    .tabela div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        width: 100%;
+        height: auto;
+        border-radius: 7px;
+        box-shadow: var(--shadow-card2);
+        color: var(--darkblue);
+    }
+    .tabela div{
+        display: flex;
+        align-self: flex-start;
+        border-bottom: solid 5px var(--darkblue);
+        
     }
 
-.portfolio div:nth-child(3){
-    display: none;
-}
-.portfolio div:nth-child(4){
-    display: none;
-}
-    .btnConfira {
-    width: 125px;     
-    height: 25px;
-    font-weight: 600;
-    font-size: 0.7rem;    
-    text-align: center;
-    letter-spacing: 0;
-    padding: 7px;   
-}
-
-/*#endregion Portfolio*/
-
-/*#region Avaliacoes*/
-
-/*avaliaçoes-clientes*/
-
-.clientes-cont{
-    flex-direction: column;
-    gap: 20px;
-}
-.clientes-titulo{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1px;
-    width: 75%;
-    text-align: center;
-}
-.clientes-titulo h2{
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-}
-.clientes-titulo span{
-    font-weight: 800;
-    font-size: 1.5rem;
-}
-.clientes-titulo p{
-    font-weight: 400;
-    font-size: 0.9rem;
-    margin-bottom: 50px;
-}
-.clientes-titulo a{
-    display: none;
-}
-.clientes{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.clientes div{
-    width: 100%;
-    height: 300px;
-}
-.clientes .client{    
-    border-radius: 7px;
-    border-bottom: solid 5px var(--darkblue); 
-}
-
-.cliente-perfil {
-    width: 25%;
-    border: solid 2px var(--darkblue);
-}
-.clientes h3{
-    font-size: 1.3rem;
-    padding: 3%;
-}
-.clientes p{
-    font-weight: 300;
-    font-size: 0.7rem;
-}
-
-/*#endregion Avaliacoes*/
-
-/*#region Rodape*/
-
- /*rodape*/
-
-footer{
-    width: 100%;
-    height: 100%;
-}
-
-.rodape-cont{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.rodape-cont h3{
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-.rodape-cont p{
-    display: none;
-}
-.rodape-info{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 100%;
-    margin-bottom: 5%;
-}
-.rodape-1{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 5% 0%;
-}
-.rodape-1 div:nth-child(1){
-    display: flex;
-    gap: 20px;
-}
-.rodape-1 div:nth-child(1) img{
-    width: 100%;
-}
-
-.rodape-1-rede{
-    display: flex;
-    margin-top: 4%;
-    display: none; 
-}
-
-
-.rodape-contatos{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    gap: 110px;
-}
-.rodape-2, .rodape-3{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.rodape-2 h3, .rodape-3 h3{
-    font-size: 1.3rem;
-    line-height: 1.5;
-    letter-spacing: 1px;
-    margin-bottom: 5%;
-}
-.rodape-2 img, .rodape-3 img{
-    width: 25%;
-    height: 25%;
-}
-
-.rodape-2 a, .rodape-3 a{
-    font-size: 1rem;
-}
-
-/*#endregion Rodape*/
+    .tabela img{
+        margin-bottom: 5%;
+    }
     
-/*#region Slick */
-
-/*Dots,button Avaliacoes-Clientes*/
-
-button.slick-next, button.slick-prev {
-    display: none!important;
-}
-button.slick-next.slick-arrow {
-    display: none;
-}
-
-/*#endregion Slick*/
-
-/*#region Pagina-Portfolio*/
-
-/*portfolio*/
-
-
-.port-cont{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width:100%;
-    padding: 5%;
-}
-
-
-.port-titulo h2{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-}
-.port-titulo span{
-    font-weight: 800;
-    font-size: 1.3rem;
-}
-
-.port-titulo p{
-    text-align: center;
-    font-size: 0.8rem;
-    width: 65%;
-}
-
-.port-titulo{
-    align-items: center;
-    width: 100%;
-}
-.port h3{
-    font-weight: 400;
-    font-size: 1rem;
-    color: var(--white);
-    border: solid 2px var(--white);
-    border-radius: 10px;
-    padding: 3%;
-    box-shadow: inset 0px 0px 300px rgba(0,0,0,1);
-
-}
-.port div{
-    width: 170px;
-    height: 300px;
-
-}
-.port div:nth-child(3){
-    display: none;
-}      
-/*#endregion Pagina-Portfolio*/
-   
-}
-
-
-/*#endregion Media-600*/
-
-/*#region Media-900*/
-@media screen and (min-width: 601px) and (max-width: 900px){
-
-/*#region Topo*/
-
-/*banner*/
-#arrowposition{
-    display:none;
-}
-
-.topo-corpo{
-    height: 50vh;
-}
-
-/*menu*/
-header{
-    background-image: none;
-    background-color: var(--white);
-    box-shadow: var(--shadow-card2);
-    justify-content: space-around;
-    align-items: center;
-    padding: 2.5%;
-}
-header .topo-btn{
-    display: block;
-    width: 125px;
-    height: auto;
-    padding: 10px;
-    font-size: 0.8rem;
-    text-align: center;
-}
-header h1{
-    background-image: url(../img/logos/logoteste.svg);
-    width: 109px;
-    height: 60px;  
-}
-header .nav-menu{
-    display: none;
-}
-
-/*topo botao,slogan*/
-.topo-corpo .slogan-cont{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 12%;
-}
-.topo-corpo .slogan-cont .words{
-    display: flex;
-    flex-direction: column;
-    height: 35px;
-    overflow: hidden;
-}
-.topo-corpo .slogan-cont p, span{
-    font-size: 2rem;
-}
-.topo-corpo .slogan-cont .words span{
-    font-weight: 800;
-    color: var(--darkblue);
-}
-.topo-corpo .slogan-cont p {
- font-weight: 400;
- color: var(--darkblue);
-}
-.slogan-btn-cont{
-    display: none;
-}
-
-
-/*menu mobile*/
-.menu-item{
-    display: none;
-}
-.mobile-menu .menu-item {
-    display: block;
-    padding-top: 3rem;
-}
-.nav-bar {
-    padding: 1.5rem 4rem;
-}
-.nav-item {
-    display: none;
-}
-.topo-rede-social {
-    display: none;
-}
-header .menu-mobile{ 
-    display: block;
-    background-color: var(--white);
-}
-
-header .mobile-menu-icon {
-    display: block;
-}
-header .mobile-menu-icon button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-header .mobile-menu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 1rem;
-}
-header .mobile-menu .nav-item {
-    display: block;
-    padding-top: 3rem;
-}
-header .mobile-menu .topo-rede-social {
-    display: flex;
-    padding-top: 5rem;
-    gap: 20px;
-}
-
-/*configuração de quando o menu estiver aberto*/
-.open {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--white);
-    height: 100vh;
-    width: 50%;
-    padding: 10%;
-    position: absolute;    
-    top: 0;
-    right: 0;
-    z-index: 2;
-    box-shadow: 10px 10px 5000px rgba(0, 0, 0, 1);
-}
-.open ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.open .menu-item{ 
-    display: block;
-    padding-top: 4rem ;
-}
-.open .topo-rede-social{ 
-    display: flex;
-    justify-content: center;
-    padding-top: 4rem;
-}
-
-/*efeito menu*/
-.menu-mobile ul, .menu-mobile div{
-    opacity: 0;
-    transition: opacity 0.4s ease-out;
-  }
-  
-  .menu-mobile.open ul, .menu-mobile.open div{
-    opacity: 1;
-  }
-/*#endregion Topo*/
-
-/*#region Servicos*/
-
-/*Servicos Banner*/
-
-#servicos{
-    display: none;
-}
-#servicos-mobile{
-    display:block;
-}
-
-
-/*Serviços-tabela*/
-
-.servicos{
-    display: flex; 
-}
-.servicos .servicos-img {
-    display: none;
-}
-.servicos-titulo{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    margin-bottom: 5%;
-    text-align: left;
-}
-
-.servicos-titulo h2{
-    font-size: 1.3rem;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-bottom: 1%;
-    text-align: center;
-}
-.servicos-titulo span{
-    font-weight: 800;
-    font-size: 1.3rem;
-}
-
-.servicos-titulo p{
-    font-size: 1rem;
-    margin: 0;
-    text-align: center;
-}
-
-/*Serviços tabela*/
-.tabela .img-tabela-responsive{
-    display: block;
-    width: 20%;
-    height: 20%;
-}
-.tabela .img-tabela-oficial{
-    display: none;
-}
-.servicos-tabela-cont{
-    display: flex;
-    flex-direction: column;
-    text-align: center;  
-    width: 100%;
-    padding: 10%;
-}
-.servicos-tabela{
-    width: 100%;
-    padding: 0;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translateX(0px);
-    height: auto;
-    box-shadow: none;
-    border-bottom: none;
-    background: none;
-}
-.tabela{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 0px;
-    gap: 50px;
-    padding: 0%;
-}
-.tabela div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
-    width: 70%;
-    height: auto;
-    border-radius: 7px;
-    box-shadow: var(--shadow-card2);
-    color: var(--darkblue);
-}
-.tabela div:nth-child(1){
-    display: flex;
-    align-self: flex-start;
-    border-bottom: solid 5px var(--darkblue);
+    .tabela h3{
+        text-align: left;
+        font-weight: 600;
+        font-size: 1rem;
+        color: var(--darkblue);
+    }
     
-}
-.tabela div:nth-child(2){
-    display: flex;
-    align-self: flex-end;
-    border-bottom: solid 5px var(--orange);
-}
-.tabela div:nth-child(3){
-    display: flex;
-    align-self: flex-start;
-    border-bottom: solid 5px var(--green);
+    .tabela p{
+        text-align: left;
+        font-size: 0.8rem;
+        font-weight: 350;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.1;
+        letter-spacing: 1.4px;
+        color: var(--darkblue);
     
-}
-.tabela img{
-    margin-bottom: 5%;
-}
-
-.tabela h3{
-    text-align: left;
-    font-weight: 600;
-    font-size: 1.3rem;
-    color: var(--darkblue);
-}
-
-.tabela p{
-    text-align: left;
-    font-size: 1rem;
-    font-weight: 350;
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.1;
-    letter-spacing: 1.4px;
-    color: var(--darkblue);
-
-}
-
-.tabela-btn{
-    display: none;
-}
-/*#endregion Servicos*/
-
-/*#region Sobre*/
-
-/*sobre*/
-.sobre{
-    display: flex;
-    width: 100%;
-    gap: 8px;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
-    margin-bottom: 50px;
-}
-.sobre img{
-    width: 60%;
-    height: 60%;
-    display: none;
-}
-.sobre-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    padding: 2%;
-
-}
-.sobre-info h2{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    margin-bottom: 5%;
-    margin-top: 0;
-}
-.sobre-info span{
-    font-weight: 800;
-    font-size: 1.3rem;
-}
-.sobre-info p{
-    font-weight: 300;
-    font-size: 1rem;
-    text-align: justify;
-    line-height: 1.5;
-    letter-spacing: 0px;
-    margin-bottom: 10%;
-    padding: 5%;
-    border-radius: 5px;
-    border-bottom: 5px solid var(--darkblue);
-    box-shadow: var(--shadow-card2);
-}
-
-.sobre-info b{
-    font-weight:700;
-}
-
-.sobre-btn{
-    width: 125px;
-    height: 25px;
-    font-weight: 400;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 0;
-    padding: 6px;
-}
-
-/*#endregion Sobre*/
-
-/*#region Portfolio*/
-
-/*Portfolio*/
-#portfolio{
+    }
     
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.portfolio-titulo{
-    width: 80%;
-}
-.portfolio-titulo h2{
-    font-size: 1.3rem;
-}
-.portfolio-titulo span{
-    font-size: 1.3rem;
-}
-.portfolio-titulo p{
-    font-size: 1rem;
-}
-.portfolio-cont {
-    height: 420px;
-}
-.portfolio{
-    padding: 2%;
-}
-.portfolio div{
-    background-image: url(../img/portfolio01.png);
-    border-radius: 10px;
-    width: 175px;
-    height: 300px;
-    margin-bottom: 20px;
-}
-.portfolio img {
-    width: 35px;
-    height: 35px; 
+    .tabela-btn{
+        display: none;
+    }
+    /*#endregion Servicos*/
+    
+    /*#region Sobre*/
+    
+    /*sobre*/
+    .sobre{
+        display: flex;
+        width: 100%;
+        gap: 8px;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        margin-bottom: 50px;
+    }
+    .sobre img{
+        width: 60%;
+        height: 60%;
+        display: none;
+    }
+    .sobre-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        padding: 5%;
+    }
+    .sobre-info h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        margin-bottom: 5%;
+        margin-top: 0;
+    }
+    .sobre-info span{
+        font-weight: 800;
+        font-size: 1.3rem;
+    }
+    .sobre-info p{
+        font-weight: 300;
+        font-size: 0.8rem;
+        text-align: justify;
+        line-height: 1.5;
+        letter-spacing: 0px;
+        margin-bottom: 10%;
+        padding: 5%;
+
+    }
+    
+    .sobre-info b{
+        font-weight:700;
+    }
+    
+    .sobre-btn{
+        width: 125px;
+        height: 25px;
+        font-weight: 400;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0;
+        padding: 6px;
+    }
+    
+    /*#endregion Sobre*/
+    
+    /*#region Portfolio*/
+    
+    /*Portfolio*/
+    #portfolio{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-titulo{
+        width: 80%;
+    }
+    .portfolio-titulo h2{
+        font-size: 1.1rem;
+    }
+    .portfolio-titulo span{
+        font-size: 1.1rem;
+    }
+    .portfolio-titulo p{
+        font-size: 0.8rem;
+    }
+    .portfolio-cont {
+        height: 420px;
+    }
+    .portfolio{
+        padding: 2%;
+    }
+    .portfolio div{
+        background-image: url(../img/portfolio01.png);
+        border-radius: 10px;
+        width: 150px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .portfolio img {
+        width: 35px;
+        height: 35px; 
+        }
+    
+    .portfolio div:nth-child(3){
+        display: none;
+    }
+    .portfolio div:nth-child(4){
+        display: none;
+    }
+        .btnConfira {
+        width: 125px;     
+        height: 25px;
+        font-weight: 600;
+        font-size: 0.7rem;    
+        text-align: center;
+        letter-spacing: 0;
+        padding: 7px;   
+    }
+    
+    /*#endregion Portfolio*/
+    
+    /*#region Avaliacoes*/
+    
+    /*avaliaçoes-clientes*/
+    
+    .clientes-cont{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .clientes-titulo{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1px;
+        width: 75%;
+        text-align: center;
+    }
+    .clientes-titulo h2{
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    .clientes-titulo span{
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+    .clientes-titulo p{
+        font-weight: 400;
+        font-size: 0.9rem;
+        margin-bottom: 50px;
+    }
+    .clientes-titulo a{
+        display: none;
+    }
+    .clientes{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .clientes div{
+        width: 100%;
+        height: 300px;
+    }
+    .clientes .client{    
+        border-radius: 7px;
+        border-bottom: solid 5px var(--darkblue); 
+    }
+    
+    .cliente-perfil {
+        width: 25%;
+        border: solid 2px var(--darkblue);
+    }
+    .clientes h3{
+        font-size: 1.3rem;
+        padding: 3%;
+    }
+    .clientes p{
+        font-weight: 300;
+        font-size: 0.7rem;
+    }
+    
+    /*#endregion Avaliacoes*/
+    
+    /*#region Rodape*/
+    
+     /*rodape*/
+    
+    footer{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .rodape-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .rodape-cont h3{
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+    .rodape-cont p{
+        display: none;
+    }
+    .rodape-info{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .rodape-1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 5% 0%;
+    }
+    .rodape-1 div:nth-child(1){
+        display: flex;
+        gap: 20px;  
+    }
+    .rodape-1 div:nth-child(1) img{
+        width: 100%;
+    }
+    
+    .rodape-1-rede{
+        display: flex;
+        margin-top: 4%;
+    }
+    
+    
+    .rodape-contatos{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        gap: 110px;
+    }
+    .rodape-2, .rodape-3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .rodape-2 h3, .rodape-3 h3{
+        font-size: 1.3rem;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        margin-bottom: 5%;
+    }
+    .rodape-2 img, .rodape-3 img{
+        width: 25%;
+        height: 25%;
+    }
+    
+    .rodape-2 a, .rodape-3 a{
+        font-size: 1rem;
+    }
+    
+    /*#endregion Rodape*/
+        
+    /*#region Slick */
+    
+    /*Dots,button Avaliacoes-Clientes*/
+    
+    button.slick-next, button.slick-prev {
+        display: none!important;
+    }
+    button.slick-next.slick-arrow {
+        display: none;
+    }
+    
+    /*#endregion Slick*/
+    
+    /*#region Pagina-Contato*/
+    
+    /*contato*/
+    
+    
+      input{
+        width: 300px;
+    }
+    
+    textarea{
+        width: 300px;
+        height: 150px;
     }
 
+    .logoForm{
+        display: none;
+    }
+    .formBtn{
+        width: 100px;
+        height: 30px;
+        font-size: 0.9rem;
 
-.portfolio div:nth-child(4){
-    display: none;
-}
-    .btnConfira {
-    width: 125px;     
-    height: 25px;
-    font-weight: 600;
-    font-size: 0.7rem;    
-    text-align: center;
-    letter-spacing: 0;
-    padding: 7px;   
-}
-
-/*#endregion Portfolio*/
-
-/*#region Avaliacoes*/
-
-/*avaliaçoes-clientes*/
-
-.clientes-cont{
-    flex-direction: column;
-    gap: 20px;
-}
-.clientes-titulo{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1px;
-    width: 75%;
-    text-align: center;
-}
-.clientes-titulo h2{
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-}
-.clientes-titulo span{
-    font-weight: 800;
-    font-size: 1.5rem;
-}
-.clientes-titulo p{
-    font-weight: 400;
-    font-size: 0.9rem;
-    margin-bottom: 50px;
-}
-.clientes-titulo a{
-    display: none;
-}
-.clientes{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.clientes div{
-    width: 100%;
-    height: 300px;
-}
-.clientes .client{    
-    border-radius: 7px;
-    border-bottom: solid 5px var(--darkblue); 
-}
-
-.cliente-perfil {
-    width: 25%;
-    border: solid 2px var(--darkblue);
-}
-.clientes h3{
-    font-size: 1.3rem;
-    padding: 3%;
-}
-.clientes p{
-    font-weight: 300;
-    font-size: 0.7rem;
-}
-
-/*#endregion Avaliacoes*/
-
-/*#region Rodape*/
-
- /*rodape*/
-
-footer{
-    width: 100%;
-    height: 100%;
-}
-
-.rodape-cont{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.rodape-cont h3{
-    font-weight: 600;
-    font-size: 1.3rem;
-}
-.rodape-cont p{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
-    color: var(--white);
-    text-align: center;
-}
-.rodape-info{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 100%;
-    margin-bottom: 5%;
-}
-.rodape-1{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 2%;
-}
-.rodape-1 div:nth-child(1){
-    display: flex;
-    gap: 5px;  
-}
-.rodape-1 div:nth-child(1) img{
-    width: 100%;
-}
-
-.rodape-1-rede{
-    display: flex;
-    margin-top: 4%;
-    display: none; 
-}
-
-
-.rodape-contatos{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    gap: 110px;
-}
-.rodape-2, .rodape-3{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.rodape-2 h3, .rodape-3 h3{
-    font-size: 1.3rem;
-    line-height: 1.5;
-    letter-spacing: 1px;
-    margin-bottom: 5%;
-}
-.rodape-2 img, .rodape-3 img{
-    width: 20%;
-    height: 20%;
-}
-
-.rodape-2 a, .rodape-3 a{
-    font-size: 1.3rem;
-}
-
-/*#endregion Rodape*/
+    }
+    .formBtn:hover {
+       opacity: 1;
+    }
+    #fecharFormBtn {
+        background-color: var(--darkblue);
+        font-size: 1.7rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 9999px;
+        padding: 0%;
+        border: none;
+        color: white;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+    }
     
-/*#region Slick */
-
-/*Dots,button Avaliacoes-Clientes*/
-
-button.slick-next, button.slick-prev {
-    display: none!important;
-}
-button.slick-next.slick-arrow {
-    display: none;
-}
-
-/*#endregion Slick*/
-
-/*#region Pagina-Portfolio*/
-
-/*portfolio*/
-
-
-.port-cont{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width:100%;
-    padding: 5%;
-}
-
-
-.port-titulo h2{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-}
-.port-titulo span{
-    font-weight: 800;
-    font-size: 1.3rem;
-}
-
-.port-titulo p{
-    text-align: center;
-    font-size: 0.8rem;
-    width: 65%;
-}
-
-.port-titulo{
-    align-items: center;
-    width: 100%;
-}
-.port h3{
-    font-weight: 400;
-    font-size: 1rem;
-    color: var(--white);
-    border: solid 2px var(--white);
-    border-radius: 10px;
-    padding: 3%;
-    box-shadow: inset 0px 0px 300px rgba(0,0,0,1);
-
-}
-.port div{
-    width: 270px;
-    height: 400px;
-
-}
-.port div:nth-child(3){
-    display: none;
-}      
-/*#endregion Pagina-Portfolio*/
-
-}
-
-
-/*#endregion Media-900*/
-
-   
-/*#region Media-1270*/
-
-@media screen and (min-width: 901px) and (max-width: 1270px){
-
-/*#region Botoes*/
-.topo-btn, .slogan-btn, .tabela-btn, .sobre-btn, .clientes-btn {
-    width: 125px;
-    padding: 10px;
-}
-
-.slogan-btn{
-    margin-top: 5%;
-    width: 250px;
-    height: 45px;
-    padding: 10px;
-}
-
-/*#endregion Botoes*/
-
-/*#region Topo*/
-
-header .nav-menu ul{
-    margin: 0;
-}
-
-header .nav-menu ul a{
-    padding: 25px;
-}
-
-
-/*topo botao,slogan*/
-.topo-corpo .slogan-cont{
-    margin-top: 10%;
-}
-.topo-corpo .slogan-cont .words{
-    height: 60px;
-
-}
-
-.topo-corpo .slogan-cont p, span{
-    font-size: 3rem;
-
-}
-.topo-corpo .slogan-btn{
-    margin-top: 15%;
-}
-/*#endregion Topo*/
-
-/*#region Servicos*/
-
-/*serviços do banner*/
-
-.servicos-banner div{
-    width: 30%;
-}
-
-
-.servicos-banner h2{
-    font-size: 1.1rem;
-
-}
-
-.servicos-banner p{
-    padding: 10px;  
-    font-size: 1rem;
-}
-
-
-
-/*Serviços*/
-
-
-.servicos img{
-    width: 100%;
-    height: 100%;
-}
-
-.servicos-titulo h2{
-    font-size: 1.3rem;
-
-}
-.servicos-titulo span{
-    font-size: 1.3rem;
-}
-
-.servicos-titulo p{
-    font-size: 0.7rem;
-}
-
-/*Serviços tabela*/
-#servico{
-    max-width: 905px;
-}
-.servicos-tabela-cont{
-    width: 70%;
-
-}
-.servicos-tabela{
-    width: 100%;
-    padding: 4% 5%;
-    transform: translateX(45px);
-}
-.tabela{
-    display: flex;
-    margin-bottom: 10px;
-    width: 100%;
-    gap: 10px;
-}
-.tabela div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.tabela img{
-    margin-bottom: 10px;
-    width: 25%;
-    height: 25%;
-}
-
-.tabela h3{
-    margin-bottom: 10px;
-    font-size: 1rem;
-}
-
-.tabela p{
-    font-size: 0.8rem;
-}
-
-/*#endregion Servicos*/
-
-/*#region Sobre*/
-
-/*Sobre*/
-#sobre{
-    margin-top: 100px;
-    max-width: 905px;
-}
-
-.sobre img{
-    width: 50%;
-}
-
-.sobre-info h2{
-    font-size: 1.3rem;
-    margin-top: 0px;
-}
-.sobre-info span{
-    font-size: 1.3rem;
-}
-.sobre-info p{ 
-    font-size: 1rem;
-}
-
-/*#endregion Sobre*/
-
-/*#region Portfolio*/
-
-/*Portfolio*/
-#portfolio{
-    margin-top: 100px;
-}
-.portfolio-titulo h2{
-    font-size: 1.3rem;
-}
-.portfolio-titulo span{
-
-    font-size: 1.3rem;
-}
-
-
-.portfolio div{
-    width: 250px;
-    height: 450px;
-}
-.portfolio div:nth-child(4){
-    display: none;
-}
-
-/*#endregion Portfolio*/
-
-/*#region Avaliacoes*/
-
-/*avaliaçoes-clientes*/
-
-
-
-.clientes-titulo h2{
-    font-size: 1.3rem;
-
-}
-.clientes-titulo span{
-    font-size: 1.3rem;
-}
-.clientes-titulo p{
-    font-size: 1rem;
-}
-
-.clientes{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.clientes{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.client{
-    padding: 0.5%;
-}
-.client h3{
-    margin-top: 5%;
-    font-size: 1.3rem;
-}
-.client p{
-    font-size: 0.8rem;
-}
-
-/*#endregion Avaliacoes*/ 
-
-/*#region Rodape*/
-
-/*rodape*/
-.rodape-cont p{
-    font-size: 1rem;
-}
-/*#endregion Rodape*/
-
-/*#region Pagina-Portfolio*/
-
-/*portfolio*/
-
-.port-titulo p{
-    text-align: center;
-    font-size: 1rem;
-    width: 65%;
-}
-
-.port-titulo{
-    align-items: center;
-    width: 100%;
-}
-
-.port div{
-    width: 270px;
-    height: 525px;
-
-}
-
-/*#endregion Pagina-Portfolio*/
-}
-
-/*#endregion Media-1270*/
+    .map-titulo h2{
+        font-size: 1.3rem;
+    }
+    .map-titulo span{
+        font-size: 1.3rem;
+    }
+    .map-info iframe{
+        height: 250px;
+    }
+    /*#endregion Pagina-Contato*/
+       
+    }
+    
+    
+    /*#endregion Media-600*/
+    
+    /*#region Media-900*/
+    @media screen and (min-width: 601px) and (max-width: 900px){
+    
+    /*#region Topo*/
+
+    /*form*/
+    #formWrapper {
+        max-width: 100%; /* O formulário ocupará 100% da largura em telas menores */
+        height: 100%; /* O formulário ocupará 100% da altura em telas menores */
+      }
+    
+    /*banner*/
+    #arrowposition{
+        display:none;
+    }
+
+    .topo-corpo{
+        height: 40vh;
+        justify-content: flex-start;
+    }
+    
+    /*menu*/
+    header{
+        background-image: none;
+        background-color: var(--white);
+        box-shadow: var(--shadow-card2);
+        justify-content: space-around;
+        align-items: center;
+        padding: 2.5%;
+    }
+    header .topo-btn{
+        display: block;
+        width: 125px;
+        height: auto;
+        padding: 10px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    header h1{
+        background-image: url(../img/logos/logoteste.svg);
+        width: 109px;
+        height: 60px;  
+    }
+    header .nav-menu{
+        display: none;
+    }
+    
+    /*topo botao,slogan*/
+    .topo-corpo .slogan-cont{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 12%;
+    }
+    .topo-corpo .slogan-cont .words{
+        display: flex;
+        flex-direction: column;
+        height: 35px;
+        overflow: hidden;
+    }
+    .topo-corpo .slogan-cont p, span{
+        font-size: 2rem;
+    }
+    .topo-corpo .slogan-cont .words span{
+        font-weight: 800;
+        color: var(--darkblue);
+    }
+    .topo-corpo .slogan-cont p {
+     font-weight: 400;
+     color: var(--darkblue);
+    }
+    .slogan-btn-cont{
+        display: none;
+    }
+    
+    
+    /*menu mobile*/
+    .menu-item{
+        display: none;
+    }
+    .mobile-menu .menu-item {
+        display: block;
+        padding-top: 3rem;
+    }
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .topo-rede-social {
+        display: none;
+    }
+    header .menu-mobile{ 
+        display: block;
+        background-color: var(--white);
+    }
+    
+    header .mobile-menu-icon {
+        display: block;
+    }
+    header .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    header .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+    header .mobile-menu .nav-item {
+        display: block;
+        padding-top: 3rem;
+    }
+    header .mobile-menu .topo-rede-social {
+        display: flex;
+        padding-top: 5rem;
+        gap: 20px;
+    }
+    
+    /*configuração de quando o menu estiver aberto*/
+    .open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--white);
+        height: 100vh;
+        width: 50%;
+        padding: 10%;
+        position: absolute;    
+        top: 0;
+        right: 0;
+        z-index: 2;
+        box-shadow: 10px 10px 5000px rgba(0, 0, 0, 1);
+    }
+    .open ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .open .menu-item{ 
+        display: block;
+        padding-top: 4rem ;
+    }
+    .open .topo-rede-social{ 
+        display: flex;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+    
+    /*efeito menu*/
+    .menu-mobile ul, .menu-mobile div{
+        opacity: 0;
+        transition: opacity 0.4s ease-out;
+      }
+      
+      .menu-mobile.open ul, .menu-mobile.open div{
+        opacity: 1;
+      }
+    /*#endregion Topo*/
+    
+    /*#region Servicos*/
+    
+    /*Servicos Banner*/
+    
+    #servicos{
+        display: none;
+    }
+    #servicos-mobile{
+        display:block;
+    }
+    
+    
+    /*Serviços-tabela*/
+    
+    .servicos{
+        display: flex; 
+    }
+    .servicos .servicos-img {
+        display: none;
+    }
+    .servicos-titulo{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 5%;
+        text-align: left;
+    }
+    
+    .servicos-titulo h2{
+        font-size: 1.3rem;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 1%;
+        text-align: center;
+    }
+    .servicos-titulo span{
+        font-weight: 800;
+        font-size: 1.3rem;
+    }
+    
+    .servicos-titulo p{
+        font-size: 1rem;
+        margin: 0;
+        text-align: center;
+    }
+    
+    /*Serviços tabela*/
+  
+    .tabela .img-tabela-oficial{
+        width: 20%;
+        height: 20%;
+    }
+    .servicos-tabela-cont{
+        display: flex;
+        flex-direction: column;
+        text-align: center;  
+        width: 100%;
+        padding: 10%;
+    }
+    .servicos-tabela{
+        width: 100%;
+        padding: 0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(0px);
+        height: auto;
+        box-shadow: none;
+        border-bottom: none;
+        background: none;
+    }
+    .tabela{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0px;
+        gap: 50px;
+        padding: 0%;
+    }
+    .tabela div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        width: 100%;
+        height: auto;
+        border-radius: 7px;
+        box-shadow: var(--shadow-card2);
+        color: var(--darkblue);
+    }
+    .tabela div{
+
+        border-bottom: solid 5px var(--darkblue);
+        
+    }
+    
+    .tabela img{
+        margin-bottom: 5%;
+    }
+    
+    .tabela h3{
+        text-align: left;
+        font-weight: 600;
+        font-size: 1.3rem;
+        color: var(--darkblue);
+    }
+    
+    .tabela p{
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 350;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.1;
+        letter-spacing: 1.4px;
+        color: var(--darkblue);
+    
+    }
+    
+    .tabela-btn{
+        display: none;
+    }
+    /*#endregion Servicos*/
+    
+    /*#region Sobre*/
+    
+    /*sobre*/
+    .sobre{
+        display: flex;
+        width: 100%;
+        gap: 8px;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        margin-bottom: 50px;
+    }
+    .sobre img{
+        width: 60%;
+        height: 60%;
+        display: none;
+    }
+    .sobre-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        padding: 2%;
+    }
+    .sobre-info h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        margin-bottom: 5%;
+        margin-top: 0;
+    }
+    .sobre-info span{
+        font-weight: 800;
+        font-size: 1.3rem;
+    }
+    .sobre-info p{
+        font-weight: 300;
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.5;
+        letter-spacing: 0px;
+        margin-bottom: 10%;
+        padding: 5%;
+    }
+    
+    .sobre-info b{
+        font-weight:700;
+    }
+    
+    .sobre-btn{
+        width: 125px;
+        height: 25px;
+        font-weight: 400;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0;
+        padding: 6px;
+    }
+    
+    /*#endregion Sobre*/
+    
+    /*#region Portfolio*/
+    
+    /*Portfolio*/
+    #portfolio{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-titulo{
+        width: 80%;
+    }
+    .portfolio-titulo h2{
+        font-size: 1.3rem;
+    }
+    .portfolio-titulo span{
+        font-size: 1.3rem;
+    }
+    .portfolio-titulo p{
+        font-size: 1rem;
+    }
+    .portfolio-cont {
+        height: 420px;
+    }
+    .portfolio{
+        padding: 2%;
+    }
+    .portfolio div{
+        background-image: url(../img/portfolio01.png);
+        border-radius: 10px;
+        width: 175px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .portfolio img {
+        width: 35px;
+        height: 35px; 
+        }
+    
+    
+    .portfolio div:nth-child(4){
+        display: none;
+    }
+        .btnConfira {
+        width: 125px;     
+        height: 25px;
+        font-weight: 600;
+        font-size: 0.7rem;    
+        text-align: center;
+        letter-spacing: 0;
+        padding: 7px;   
+    }
+    
+    /*#endregion Portfolio*/
+    
+    /*#region Avaliacoes*/
+    
+    /*avaliaçoes-clientes*/
+    
+    .clientes-cont{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .clientes-titulo{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1px;
+        width: 75%;
+        text-align: center;
+    }
+    .clientes-titulo h2{
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    .clientes-titulo span{
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+    .clientes-titulo p{
+        font-weight: 400;
+        font-size: 0.9rem;
+        margin-bottom: 50px;
+    }
+    .clientes-titulo a{
+        display: none;
+    }
+    .clientes{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .clientes div{
+        width: 100%;
+        height: 300px;
+    }
+    .clientes .client{    
+        border-radius: 7px;
+        border-bottom: solid 5px var(--darkblue); 
+    }
+    
+    .cliente-perfil {
+        width: 25%;
+        border: solid 2px var(--darkblue);
+    }
+    .clientes h3{
+        font-size: 1.3rem;
+        padding: 3%;
+    }
+    .clientes p{
+        font-weight: 300;
+        font-size: 0.7rem;
+    }
+    
+    /*#endregion Avaliacoes*/
+    
+    /*#region Rodape*/
+    
+     /*rodape*/
+    
+    footer{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .rodape-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .rodape-cont h3{
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+    .rodape-cont p{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        color: var(--white);
+        text-align: center;
+    }
+    .rodape-info{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .rodape-1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2%;
+    }
+    .rodape-1 div:nth-child(1){
+        display: flex;
+        gap: 20px; 
+    }
+    .rodape-1 div:nth-child(1) img{
+        width: 100%;
+    }
+    
+    .rodape-1-rede{
+        display: flex;
+        margin-top: 4%;
+    }
+    
+    
+    .rodape-contatos{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        gap: 110px;
+    }
+    .rodape-2, .rodape-3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .rodape-2 h3, .rodape-3 h3{
+        font-size: 1.3rem;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        margin-bottom: 5%;
+    }
+    .rodape-2 img, .rodape-3 img{
+        width: 20%;
+        height: 20%;
+    }
+    
+    .rodape-2 a, .rodape-3 a{
+        font-size: 1.3rem;
+    }
+    
+    /*#endregion Rodape*/
+        
+    /*#region Slick */
+    
+    /*Dots,button Avaliacoes-Clientes*/
+    
+    button.slick-next, button.slick-prev {
+        display: none!important;
+    }
+    button.slick-next.slick-arrow {
+        display: none;
+    }
+    
+    /*#endregion Slick*/
+    
+    /*#region Pagina-Portfolio*/
+    
+    /*portfolio*/
+    
+    
+    .port-cont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width:100%;
+        padding: 5%;
+    }
+    
+    
+    .port-titulo h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    .port-titulo span{
+        font-weight: 800;
+        font-size: 1.3rem;
+    }
+    
+    .port-titulo p{
+        text-align: center;
+        font-size: 0.8rem;
+        width: 65%;
+    }
+    
+    .port-titulo{
+        align-items: center;
+        width: 100%;
+    }
+    .port h3{
+        font-weight: 400;
+        font-size: 1rem;
+        color: var(--white);
+        border: solid 2px var(--white);
+        border-radius: 10px;
+        padding: 3%;
+        box-shadow: inset 0px 0px 300px rgba(0,0,0,1);
+    
+    }
+    .port div{
+        width: 270px;
+        height: 400px;
+    
+    }
+    .port div:nth-child(3){
+        display: none;
+    }      
+    /*#endregion Pagina-Portfolio*/
+    
+    }
+    
+    
+    /*#endregion Media-900*/
+    
+       
+    /*#region Media-1270*/
+    
+    @media screen and (min-width: 901px) and (max-width: 1270px){
+    
+    /*#region Botoes*/
+    .topo-btn, .slogan-btn, .tabela-btn, .sobre-btn, .clientes-btn {
+        width: 125px;
+        padding: 10px;
+    }
+    
+    .slogan-btn{
+        margin-top: 5%;
+        width: 250px;
+        height: 45px;
+        padding: 10px;
+    }
+    
+    /*#endregion Botoes*/
+    
+    /*#region Topo*/
+    
+    header .nav-menu ul{
+        margin: 0;
+    }
+    
+    header .nav-menu ul a{
+        padding: 25px;
+    }
+    
+    .topo-corpo{
+        height: 55vh;
+    }
+    /*topo botao,slogan*/
+    .topo-corpo .slogan-cont{
+        margin-top: 10%;
+    }
+    .topo-corpo .slogan-cont .words{
+        height: 60px;
+    
+    }
+    
+    .topo-corpo .slogan-cont p, span{
+        font-size: 3rem;
+    
+    }
+    .topo-corpo .slogan-btn{
+        margin-top: 15%;
+    }
+    /*#endregion Topo*/
+    
+    /*#region Servicos*/
+    
+    /*serviços do banner*/
+    
+    .servicos-banner div{
+        width: 30%;
+    }
+    
+    
+    .servicos-banner h2{
+        font-size: 1.1rem;
+    
+    }
+    
+    .servicos-banner p{
+        padding: 10px;  
+        font-size: 1rem;
+    }
+    
+    
+    
+    /*Serviços*/
+    
+    
+    .servicos img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .servicos-titulo h2{
+        font-size: 1.3rem;
+    
+    }
+    .servicos-titulo span{
+        font-size: 1.3rem;
+    }
+    
+    .servicos-titulo p{
+        font-size: 0.7rem;
+    }
+    
+    /*Serviços tabela*/
+    #servico{
+        max-width: 905px;
+    }
+    .servicos-tabela-cont{
+        width: 70%;
+    
+    }
+    .servicos-tabela{
+        width: 100%;
+        padding: 4% 5%;
+        transform: translateX(45px);
+    }
+    .tabela{
+        display: flex;
+        margin-bottom: 10px;
+        width: 100%;
+        gap: 10px;
+    }
+    .tabela div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tabela img{
+        margin-bottom: 10px;
+        width: 25%;
+        height: 25%;
+    }
+    
+    .tabela h3{
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+    
+    .tabela p{
+        font-size: 0.8rem;
+    }
+    
+    /*#endregion Servicos*/
+    
+    /*#region Sobre*/
+    
+    /*Sobre*/
+    #sobre{
+        margin-top: 100px;
+        max-width: 905px;
+    }
+    
+    .sobre img{
+        width: 50%;
+    }
+    
+    .sobre-info h2{
+        font-size: 1.3rem;
+        margin-top: 0px;
+    }
+    .sobre-info span{
+        font-size: 1.3rem;
+    }
+    .sobre-info p{ 
+        font-size: 1rem;
+    }
+    
+    /*#endregion Sobre*/
+    
+    /*#region Portfolio*/
+    
+    /*Portfolio*/
+    #portfolio{
+        margin-top: 100px;
+    }
+    .portfolio-titulo h2{
+        font-size: 1.3rem;
+    }
+    .portfolio-titulo span{
+    
+        font-size: 1.3rem;
+    }
+    
+    
+    .portfolio div{
+        width: 250px;
+        height: 450px;
+    }
+    .portfolio div:nth-child(4){
+        display: none;
+    }
+    
+    /*#endregion Portfolio*/
+    
+    /*#region Avaliacoes*/
+    
+    /*avaliaçoes-clientes*/
+    
+    
+    
+    .clientes-titulo h2{
+        font-size: 1.3rem;
+    
+    }
+    .clientes-titulo span{
+        font-size: 1.3rem;
+    }
+    .clientes-titulo p{
+        font-size: 1rem;
+    }
+    
+    .clientes{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .clientes{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .client{
+        padding: 0.5%;
+    }
+    .client h3{
+        margin-top: 5%;
+        font-size: 1.3rem;
+    }
+    .client p{
+        font-size: 0.8rem;
+    }
+    
+    /*#endregion Avaliacoes*/ 
+    
+    /*#region Rodape*/
+    
+    /*rodape*/
+    .rodape-cont p{
+        font-size: 1rem;
+    }
+    /*#endregion Rodape*/
+    
+    
+    }
+    
+    /*#endregion Media-1270*/

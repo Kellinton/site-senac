@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,10 +8,10 @@
 
     <link
       rel="shortcut icon"
-      href="img/logos/favicon-01.svg"
+      href="img/logos/favicon-01.svg" 
       type="image/x-icon"
     />
-
+    
     <!-- Efeito letra slogan -->
     <!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
@@ -73,16 +73,19 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/estilo.css" />
-    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/aos.css">
     <!--responsivo-->
     <link rel="stylesheet" href="css/responsivo.css" />
   </head>
 
   <body>
-    <!--#region Topo-->
+    
+  <!--#region Topo-->
     <div class="topo-corpo">
+      
+    
       <header>
-        <a href="#" class="topo-btn" title="Formulário">Contratar</a>
+        <a href="contato.php"  class="topo-btn" title="Formulário">Contratar</a>
         <h1>Logo</h1>
 
         <div id="menu" class="menu-mobile">
@@ -91,15 +94,13 @@
               <a href="#" class="menu-link" title="Início">Início</a>
             </li>
             <li class="menu-item">
-              <a href="#servico" class="menu-link" title="Serviços">Serviços</a>
+              <a href="#" class="menu-link" title="Serviços">Serviços</a>
             </li>
             <li class="menu-item">
-              <a href="#sobre" class="menu-link" title="Sobre">Sobre</a>
+              <a href="#" class="menu-link" title="Sobre">Sobre</a>
             </li>
             <li class="menu-item">
-              <a href="portfolio.html" class="menu-link" title="Portfólio"
-                >Portfólio</a
-              >
+              <a href="contato.html" class="menu-link" title="Contato">Contato</a>
             </li>
           </ul>
           <div class="topo-rede-social">
@@ -117,26 +118,26 @@
         <nav class="nav-menu">
           <ul>
             <li class="menu-item">
-              <a href="#" class="ativo menu-link" title="Início">Início</a>
+              <a href="#" class="menu-link" title="Início">Início</a>
             </li>
             <li class="menu-item">
-              <a href="#servico" class="menu-link" title="Serviços">Serviços</a>
+              <a href="#"class="menu-link" title="Serviços">Serviços</a>
             </li>
             <li class="menu-item">
-              <a href="#sobre" class="menu-link" title="Sobre">Sobre</a>
+              <a href="#" class="menu-link" title="Sobre">Sobre</a>
             </li>
             <li class="menu-item">
-              <a href="portfolio.html" class="menu-link" title="Portfólio"
-                >Portfólio</a
-              >
+              <a href="contato.html" class="menu-link" title="Portfólio">Contato</a>
             </li>
           </ul>
           <div class="topo-rede-social">
             <a href="#" title="LinkedIn">LinkedIn</a>
             <a href="#" title="WhatsApp">WhatsApp</a>
-            <a href="#" title="Instagram">Instagram</a>
+            <a href="#" title="WhatsApp">Instagram</a>
           </div>
+          
         </nav>
+       
       </header>
 
       <div class="slogan-cont">
@@ -150,9 +151,26 @@
             <span>Modernos.</span>
           </div>
           <div class="slogan-btn-cont">
-            <a href="#" target="_blank" class="slogan-btn" title="Formulário"
-              >Contratar</a
-            >
+            <button id="abrirFormBtn" class="slogan-btn">Contratar</button>
+            <div id="formConteudo">
+            <button type="button" id="fecharFormBtn">X</button>
+            
+              <form id="myForm" action="">
+              
+              <img src="img/logos/logo-01.svg" alt="">       
+
+                <input type="text" id="nome" name="nome" placeholder="Seu nome:">
+              
+                <input type="email" id="email" name="email" required placeholder="Seu e-mail:">
+          
+                <input type="tel" id="tel" name="tel" placeholder="Seu número:">
+
+                <textarea name="mens" id="mens" cols="30" rows="10" placeholder="Deixe sua mensagem:"></textarea>
+
+                <input class="formBtn" type="submit" value="Enviar">
+  
+              </form>
+            </div>
           </div>
         </div>
         <!-- <div><span class="digitando-efeito"></span></div> -->
@@ -162,11 +180,11 @@
       </div>
     </div>
 
-    <!--#endregion Topo-->
-
+  <!--#endregion Topo-->
+    
     <main>
-      <!--#region Servicos-->
-
+    <!--#region Servicos-->
+    
       <!-- Serviços -->
       <section id="servicos">
         <div data-aos="fade-up" class="servicos-banner site posicionamento">
@@ -222,10 +240,7 @@
 
       <!-- Serviços/responsivo/carrousel -->
       <section id="servicos-mobile">
-        <div
-          data-aos="fade-up"
-          class="animate__backInUp servicosCarro servicos-mobile"
-        >
+        <div data-aos="fade-up" class="animate__backInUp servicosCarro servicos-mobile">
           <div class="servicos-card">
             <img src="img/servico-banner-01.svg" alt="" />
             <h2>Sites Institucionais</h2>
@@ -234,7 +249,7 @@
               única e desenhados exclusivamente para a sua marca. Tudo pensado
               por profissionais dedicados a entender e comunicar com
               assertividade para o seu público-alvo.
-            </p>
+            </p>         
           </div>
           <div class="servicos-card">
             <img src="img/servico-banner-02.svg" alt="" />
@@ -244,7 +259,7 @@
               segurança. Nossos projetos são baseados na tecnologia responsiva
               criando uma versão para cada dispositivo: celular, tablet e
               desktop.
-            </p>
+            </p>       
           </div>
           <div class="servicos-card">
             <img src="img/servico-banner-03.svg" alt="" />
@@ -274,11 +289,6 @@
                     alt="Lista"
                     class="img-tabela-oficial"
                   />
-                  <img
-                    src="img/servico-icon-04.svg"
-                    alt="Lista"
-                    class="img-tabela-responsive"
-                  />
                   <h3>Manutenção e Suporte</h3>
                   <p>
                     Oferecemos serviços de manutenção, atualização e suporte
@@ -293,11 +303,6 @@
                     alt="Marketing"
                     class="img-tabela-oficial"
                   />
-                  <img
-                    src="img/servico-icon-05.svg"
-                    alt="Lista"
-                    class="img-tabela-responsive"
-                  />
                   <h3>Marketing Digital</h3>
                   <p>
                     Orientação e suporte aos clientes em relação a estratégias
@@ -310,11 +315,6 @@
                     src="img/servico-icon-03.svg"
                     alt="Estrelas"
                     class="img-tabela-oficial"
-                  />
-                  <img
-                    src="img/servico-icon-06.svg"
-                    alt="Lista"
-                    class="img-tabela-responsive"
                   />
                   <h3>Tecnologia de ponta</h3>
                   <p>
@@ -334,18 +334,14 @@
         </div>
       </section>
 
-      <!--#endregion Servicos-->
+    <!--#endregion Servicos-->
 
-      <!--#region Sobre-->
+    <!--#region Sobre-->
 
       <!-- Sobre -->
       <section id="sobre" class="site">
-        <div class="sobre site">
-          <img
-            data-aos="fade-right"
-            src="img/sobre-img-01.png"
-            alt="Reunião de pessoas em um escritório"
-          />
+        <div  class="sobre site">
+          <img data-aos="fade-right"src="img/sobre-img-01.png" alt="Reunião de pessoas em um escritório" />
 
           <div data-aos="fade-left" class="sobre-info">
             <h2>Um pouco <span>Sobre nós</span></h2>
@@ -356,16 +352,14 @@
               soluções de alta qualidade para empresas de diversos segmentos, sempre 
               com um olhar atento às tendências e necessidades do mercado.
             </p>
-            <a href="#" class="sobre-btn" title="Botão de Saiba Mais"
-              >Confira</a
-            >
+            <a href="sobre.php" class="sobre-btn" title="Botão de Confira">Confira</a>
           </div>
         </div>
       </section>
 
-      <!--#endregion Servicos-->
+    <!--#endregion Sobre-->
 
-      <!--#region Portfolio-->
+    <!--#region Portfolio-->
 
       <!--portfolio-->
       <section id="portfolio" data-aos="fade-up">
@@ -389,20 +383,13 @@
               <img src="img/portfolio-seta.svg" alt="" />
             </div>
           </div>
-          <div>
-            <a
-              href="portfolio.html"
-              class="btnConfira"
-              title="Botão de conferir"
-              >Confira</a
-            >
-          </div>
+          
         </div>
       </section>
 
-      <!--#endregion Portfolio-->
+    <!--#endregion Portfolio-->
 
-      <!--#region Avaliacoes-->
+    <!--#region Avaliacoes-->
 
       <!--avaliaçoes-->
       <section data-aos="fade-up">
@@ -414,7 +401,6 @@
                 Veja alguns depoimentos de clientes satisfeitos com o serviço
                 prestado.
               </p>
-              <!-- <a class="clientes-btn">Ler mais</a> -->
             </div>
             <div class="clientes clientesCarro">
               <div class="client">
@@ -423,7 +409,7 @@
                   class="cliente-perfil"
                   alt="foto de perfil de um cliente do site"
                 />
-                <h3>Nome</h3>
+                <h3>Nome</h3>            
                 <p>
                   A empresa de desenvolvimento de sites foi incrível em criar um
                   site responsivo e de alta qualidade para a minha empresa.
@@ -435,7 +421,7 @@
                   class="cliente-perfil"
                   alt="foto de perfil de um cliente do site"
                 />
-                <h3>Nome</h3>
+                <h3>Nome</h3>      
                 <p>
                   A empresa de desenvolvimento de sites foi incrível em criar um
                   site responsivo e de alta qualidade para a minha empresa.
@@ -447,7 +433,7 @@
                   class="cliente-perfil"
                   alt="foto de perfil de um cliente do site"
                 />
-                <h3>Nome</h3>
+                <h3>Nome</h3>  
                 <p>
                   A empresa de desenvolvimento de sites foi incrível em criar um
                   site responsivo e de alta qualidade para a minha empresa.
@@ -459,7 +445,7 @@
                   class="cliente-perfil"
                   alt="foto de perfil de um cliente do site"
                 />
-                <h3>Nome</h3>
+                <h3>Nome</h3>            
                 <p>
                   A empresa de desenvolvimento de sites foi incrível em criar um
                   site responsivo e de alta qualidade para a minha empresa.
@@ -470,119 +456,119 @@
         </div>
       </section>
 
-      <!--#endregion Avaliacoes-->
+    <!--#endregion Avaliacoes-->
 
-   
-      <!--botão link github-->
-      <a href="https://github.com/Kellinton" id="github" title="Github" target="_blank">
-        <img class="github-icon" src="img/logos/github-icon.svg" alt="" />
-      </a>
-
-
-      <!--#region Voltar-topo-->
-      <!--botão/voltar/topo-->
-      <a href="#" id="myLink" title="Voltar para o topo">
-        <img class="seta-topo" src="img/seta-topo.svg" alt="" />
-      </a>
-      <!--#endregion Voltar-topo-->
-    </main>
-
-    <!--#region Rodape-->
-
-    <!--Rodapé-->
-    <footer>
-      <div class="site">
-        <div class="rodape-cont">
-          <div class="rodape-info">
-            <div class="rodape-1">
-              <!--1-->
-              <div>
-                <a href="" title="Web de Quebrada"
-                  ><img src="img/logos/logo-02.svg" alt=""
-                /></a>
-                <a href="https://www.senac.br/" target="_blank" title="Senac"
-                  ><img src="img/logos/senaclogo.svg" alt=""
-                /></a>
-              </div>
-              <p>
-                “Construindo sua presença online, fortalecendo causas nobres”
-              </p>
-              <div class="rodape-1-rede">
-                <a href="#" title="LinkedIn">LinkedIn</a>
-                <a href="#" title="WhatsApp">WhatsApp</a>
-                <a href="#" title="Instagram">Instagram</a>
-              </div>
+    <!--#region Mapa-->
+      <section data-aos="fade-up">
+        <div class="site">
+          <div class="map-cont">
+            <div class="map-titulo">
+              <h2>Nossa <span>Localização</span></h2>
             </div>
-            <div class="rodape-contatos">
-              <div class="rodape-2">
-                <!--2-->
-                <h3>Contato</h3>
-                <ul>
-                  <li>
-                    <a href="" title="Suporte"
-                      ><img
-                        src="img/rodape/contato-rodape.svg"
-                        alt=""
-                      />Suporte</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" title="E-mail"
-                      ><img src="img/rodape/email-rodape.svg" alt="" />E-mail</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" title="Localização - São Miguel"
-                      ><img src="img/rodape/localizacao-rodape.svg" alt="" />São
-                      Miguel</a
-                    >
-                  </li>
-                </ul>
-              </div>
-
-              <div class="rodape-3">
-                <!--3-->
-                <h3>Menu</h3>
-                <ul>
-                  <li>
-                    <a href="" title="Home"
-                      ><img src="img/rodape/home-rodape.svg" alt="" />Home</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" title="Sobre"
-                      ><img src="img/rodape/sobre-rodape.svg" alt="" />Sobre
-                      nós</a
-                    >
-                  </li>
-                  <li>
-                    <a href="" title="Serviços"
-                      ><img
-                        src="img/rodape/servicos-rodape.svg"
-                        alt=""
-                      />Serviços</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <div class="rodape-4">
-            <h3>Web de Quebrada &copy; 2023</h3>
+            <div class="map-info">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.0254648901687!2d-46.43443702536073!3d-23.495592259177787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce63dda7be6fb9%3A0xa74e7d5a53104311!2sSenac%20S%C3%A3o%20Miguel%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1691176675465!5m2!1spt-BR!2sbr" width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> 
           </div>
         </div>
+      </section>
+    <!--#endregion Mapa-->
+
+
+    <!--#region Voltar-topo-->
+      <!--botão/voltar/topo-->
+      <a href="#" id="myLink" title="Voltar para o topo">
+        <img class="seta-topo" src="img/seta-topo.svg" alt="">
+      </a>
+    <!--#endregion Voltar-topo-->
+    </main>
+
+  <!--#region Rodape-->
+
+  <footer>
+    <div class="site">
+      <div class="rodape-cont">
+        <div class="rodape-info">
+          <div class="rodape-1">
+            <!--1-->
+            <div>
+              <a href="" title="Web de Quebrada"><img src="img/logos/logo-02.svg" alt="" /></a>
+              <a href="https://www.senac.br/" target="_blank" title="Senac"><img src="img/logos/senaclogo.svg" alt=""></a>
+            </div>
+            <p>
+              “Construindo sua presença online, fortalecendo causas nobres”
+            </p>
+    
+          </div>
+          <div class="rodape-contatos">
+            <div class="rodape-2">
+              <!--2-->
+              <h3>Contato</h3>
+              <ul>
+              <li>
+                <div class="rodape-1-rede">
+                  <a href="#" title="LinkedIn">LinkedIn</a>
+                  <a href="#" title="WhatsApp">WhatsApp</a>
+                  <a href="#" title="Instagram">Instagram</a>
+                </div>
+                </li>
+                <li>
+                  <a href="mailto:webdequebrada@gmail.com" title="E-mail"
+                    ><img src="img/rodape/email-rodape.svg" alt="" />E-mail</a
+                  >
+                </li>
+     
+                <li>
+                  <a href="https://goo.gl/maps/GjmByns1WhhmeJXcA" target="_blank" title="Localização - São Miguel"
+                    ><img src="img/rodape/localizacao-rodape.svg" alt="" />São
+                    Miguel</a
+                  >
+                </li>
+       
+              </ul>
+            </div>
+
+            <div class="rodape-3">
+            <!--3-->
+            <h3>Menu</h3>
+            <ul>
+              <li>
+                <a href="index.php" title="Home"
+                  ><img src="img/rodape/home-rodape.svg" alt="" />Home</a
+                >
+              </li>
+              <li>
+                <a href="sobre.php" title="Sobre"
+                  ><img src="img/rodape/sobre-rodape.svg" alt="" />Sobre
+                  nós</a
+                >
+              </li>
+              <li>
+                <a href="servicos.php" title="Serviços"
+                  ><img
+                    src="img/rodape/servicos-rodape.svg"
+                    alt=""
+                  />Serviços</a
+                >
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+        <hr />
+        <div class="rodape-4">
+          <h3>Web de Quebrada &copy; 2023</h3>
+        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
+  <!--#endregion Rodape-->
 
-    <!--#endregion Rodape-->
-
-    <!--#region Script-->
+  <!--#region Script-->
 
     <!--pasta js-->
     <script src="./script/aos.js"></script>
     <script src="./script/javascript.js"></script>
 
-    <!--#endregion Script-->
+  <!--#endregion Script-->
   </body>
 </html>
