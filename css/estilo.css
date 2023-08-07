@@ -47,6 +47,7 @@ body{
 
 header .topo-btn{
     background-color: var(--darkblue);
+    
     display: none;
 }
 .tabela .img-tabela-responsive{
@@ -277,10 +278,11 @@ header h1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(../img/fundo.jpg);
+    background-image: url(../img/fundo.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    width: 100;
     box-sizing: border-box; 
 }
 
