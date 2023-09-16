@@ -7,7 +7,7 @@ Este repositório contém o código-fonte e os recursos do site da Agência Web 
 
 <p>
 
-<img width="400" height="800" src="/to_readme/LayoutOficialWebDeQuebradaSenac.png">
+<img width="400" height="1000" src="/to_readme/LayoutOficialWebDeQuebradaSenac.png">
 
 </p>
 
