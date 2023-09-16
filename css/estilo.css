@@ -7,6 +7,7 @@
     --white: #FFFCF9;
     --green: #31AF8B;
     --orange: #FF850A;
+    --locknav: #A3A3A9;
     --shadow-card: 5px 5px 15px rgba(0,0,0,0.1);
     --shadow-card2: 0 1px 10px 0 rgba(45, 54, 65, 0.2);
 }
@@ -88,7 +89,7 @@ header .topo-btn{
     margin-top: 10%;
     width: 300px;
     height: 60px;
-    padding: 18px;
+    padding: 11px;
     font-size: 1.2rem;  
     font-weight: 500;
 }
@@ -189,6 +190,7 @@ header .nav-menu{
     display: flex;
     justify-content: center;
     align-items: center;
+ 
    
 }
 
@@ -197,6 +199,7 @@ header .nav-menu ul{
     justify-content: center;
     align-items: center;
     margin: 0px 80px 0px 80px;
+ 
 }
 
 header .nav-menu ul a{
@@ -208,6 +211,20 @@ header .nav-menu ul a{
     color: var(--darkblue);
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+}
+header .nav-menu .menu-item:nth-child(2), 
+header .nav-menu .menu-item:nth-child(3){
+    position: relative;
+}
+header .nav-menu .menu-item:nth-child(2) .lock,
+header .nav-menu .menu-item:nth-child(3) .lock{
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+header .nav-menu .menu-item:nth-child(2) a,
+ header .nav-menu .menu-item:nth-child(3) a{
+    color: var(--locknav);
 }
 
 /*menu mobile*/
