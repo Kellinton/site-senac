@@ -734,7 +734,6 @@ button:hover .text{
     align-items: center;
 }
 .portfolio div{
-    background-image: url(../img/portfolio01.png);
     border-radius: 10px;
     width: 300px;
     height: 450px;
@@ -742,20 +741,35 @@ button:hover .text{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.7s;
+    overflow-y: hidden;
+    position: relative;
 }
 
-.portfolio div:hover{
-    background-image: url(../img/portfolio02.gif);
-    transform: translateY(-30px);
-    transition: all 0.7s;
+/*imagem do portfolio*/ 
+
+.portfolio .portfolio-img{
+    border-radius: 10px;
+    position: absolute;
+    top: 0px;
+    width: 300px;
+    transition: all 7s;
+
 }
-.portfolio div:hover img{
+.portfolio .portfolio-img:hover{
+    opacity: 1;
+    transform:translateY(-43%);
+}
+
+/*seta icone do portfolio*/
+.portfolio .portfolio-icon{
+    z-index: 2;
+}
+.portfolio div:hover .portfolio-icon{
     display: none;
 }
 
 /*seta animacao*/
-.portfolio img, #arrowposition img {
+.portfolio-icon, #arrowposition img {
     -webkit-animation: action 1s infinite  alternate;
     animation: action 1s infinite  alternate;  
 }

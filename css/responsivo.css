@@ -352,8 +352,7 @@
     /*#region Portfolio*/
     
     /*Portfolio*/
-    #portfolio{
-        
+    #portfolio{    
         display: flex;
         flex-direction: column;
         align-items: center;
