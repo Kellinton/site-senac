@@ -1,9 +1,9 @@
-## Site Web de Quebrada - SENAC 
+## Web de Quebrada  *Site* - SENAC 
 
-Este repositório contém o código-fonte e os recursos do site da Agência Web de quebrada, projeto desenvolvido no Senac.
+This repository contains the source code and resources of the website of the Web de Quebrada Agency, a project developed in Senac.
 
 
-## Layout Web de Quebrada
+## Web de Quebrada  *Layout*
 
 <p>
 
