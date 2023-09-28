@@ -11,4 +11,4 @@ This repository contains the source code and resources of the website of the Web
 
 </p>
 
-[Link do layout no FIGMA](https://www.figma.com/file/E29hwpR1J7wZH3lnLRrTKT/WebDeQuebrada-Layout-Senac?type=design&node-id=0%3A1&mode=design&t=rmPvoBBOnbZhB8ke-1)
+[FIGMA](https://www.figma.com/file/E29hwpR1J7wZH3lnLRrTKT/WebDeQuebrada-Layout-Senac?type=design&node-id=0%3A1&mode=design&t=rmPvoBBOnbZhB8ke-1)
