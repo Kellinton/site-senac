@@ -7,7 +7,7 @@ This repository contains the source code and resources of the website of the Web
 
 <p>
 
-<img width="400" height="1000" src="/to_readme/LayoutOficialWebDeQuebradaSenac.png">
+<img width="400" height="1000" src="/to_readme/webdequebradaLayout.png">
 
 </p>
 
