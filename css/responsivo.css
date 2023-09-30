@@ -352,14 +352,11 @@
     /*#region Portfolio*/
     
     /*Portfolio*/
-    #portfolio{    
+    #portfolio{
+        
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .portfolio{
-        display: flex;
-        flex-direction: column;
     }
     .portfolio-titulo{
         width: 80%;
@@ -374,22 +371,22 @@
         font-size: 0.8rem;
     }
     .portfolio-cont {
-        height: 920px;
+        height: 420px;
     }
     .portfolio{
-        width: 100%;
         padding: 2%;
     }
     .portfolio div{
+        background-image: url(../img/portfolio01.png);
         border-radius: 10px;
-        width: 100%;
-        height: 400px;
+        width: 150px;
+        height: 300px;
         margin-bottom: 20px;
     }
-    .portfolio-icon{
+    .portfolio img {
         width: 35px;
-        height: 35px; 
-    }
+
+        }
     
     .portfolio div:nth-child(3){
         display: none;
@@ -972,14 +969,11 @@
     /*#region Portfolio*/
     
     /*Portfolio*/
-    #portfolio{      
+    #portfolio{
+        
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .portfolio{
-        display: flex;
-        /* flex-direction: column; */
     }
     .portfolio-titulo{
         width: 80%;
@@ -994,21 +988,21 @@
         font-size: 1rem;
     }
     .portfolio-cont {
-        height: 520px;
+        height: 420px;
     }
     .portfolio{
-        padding: 1%;
-        width: 100%;
+        padding: 2%;
     }
     .portfolio div{
+        background-image: url(../img/portfolio01.png);
         border-radius: 10px;
-        width: 50%;
-        height: 400px;
+        width: 175px;
+        height: 300px;
         margin-bottom: 20px;
     }
-    .portfolio-icon{
-        width: 50px;
-        height: 50px; 
+    .portfolio img {
+        width: 35px;
+ 
         }
     
     
@@ -1260,10 +1254,7 @@
     }
     
     .slogan-btn{
-        margin-top: 5%;
-        width: 250px;
-        height: 45px;
-        padding: 10px;
+       display: none;
     }
     
     /*#endregion Botoes*/

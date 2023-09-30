@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*font-family: 'Poppins', sans-serif;*/
+
+:root {
+  --darkblue: #161925;
+  --lightblue: #446688;
+  --white: #fffcf9;
+  --green: #31af8b;
+  --orange: #ff850a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+caption{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2%;
+    padding: 3%;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+table{
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 1%;
+}
+th{
+    background-color: rgba(231, 230, 234, 0.8);
+    padding: 0.8rem;
+}
+td{
+    text-align: center;
+    padding: 0.8rem;
+}
+i{
+    font-size: 1.8rem;
+}
+.id{
+    font-weight: 800;
+}
+
+.ativar{
+    background-color: #31af8b;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.ativar:hover{
+    opacity: 0.9;
+}
+.ativar a{
+    background-color: #31af8b;
+    text-decoration: none;
+    font-weight: 600;
+    color: #161925;
+
+}
+.desativar{
+    background-color: red;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.desativar a{
+    text-decoration: none;
+ color: var(--darkblue)
+}
+.desativar:hover{
+    opacity: 0.9;
+}
+

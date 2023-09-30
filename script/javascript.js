@@ -250,3 +250,7 @@ document.getElementById('fecharFormBtn').addEventListener('click', function() {
     formConteudo.style.display = 'none';
   }, 300);
 });
+
+
+
+// Swal.fire('Hello, SweetAlert2!'); Alerta básico do Swal
