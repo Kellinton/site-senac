@@ -17,11 +17,8 @@ $listar = $listaPortfolio->Listar();
         <thead>
             <tr>
                 <th>ID</th>
-                <th>TÍTULO</th>
                 <th>IMAGEM</th>
-                <th>ALT</th>
-                <th>TEXTO</th>
-                <th>LINK</th>
+                <th>ALT</th>           
                 <th>STATUS</th>
                 <th>ATUALIZAR</th>
                 <th>DESATIVAR</th>
@@ -31,15 +28,12 @@ $listar = $listaPortfolio->Listar();
         <tbody>
             <?php foreach($listar as $linha):?>
             <tr>
-                <td class="id"><?php echo $linha['idServico']?></td>             
-                <td><?php echo $linha['tituloServico']?></td>             
-                <td><?php echo $linha['imgServico']?></td>             
-                <td><?php echo $linha['altServico']?></td>             
-                <td><?php echo $linha['textServico']?></td>             
-                <td><?php echo $linha['linkServico']?></td>             
-                <td><?php echo $linha['statusServico']?></td>             
-                <td class="ativar"><a href="index.php?p=servico&s=atualizar">Atualizar</a></td>
-                <td class="desativar"><a href="index.php?p=servico&s=desativar">Desativar</a></td>
+                <td class="id"><?php echo $linha['idPortfolio']?></td>                       
+                <td><?php echo '<img src="../img/' . $linha['imgPortfolio'] . '"alt="' . $linha['altPortfolio'] . '">' ?></td>      
+                <td><?php echo $linha['altPortfolio']?></td>              
+                <td class="status-ativo"><?php echo $linha['statusPortfolio']?></td>             
+                <td><a class="atualizar" title="Atualizar" href="index.php?p=portfolio&s=atualizar"><i class="ri-pencil-fill"></i></a></td>
+                <td><a class="desativar" title="Desativar" href="index.php?p=portfolio&s=desativar"><i class="ri-eye-off-line"></i></a></td>
             </tr>
             <?php endforeach?>
         </tbody>

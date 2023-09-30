@@ -101,6 +101,7 @@ header .login .btn-sair span:nth-child(2) {
 /*#endregion Topo*/
 
 /*#region Barra de navegação*/
+
 nav {
   background-color: var(--white);
   grid-column: 1 / 2;
@@ -143,6 +144,9 @@ nav .navbar ul li a .nav-title:hover {
 }
 .nav-title.ativo {
   background-color: rgba(231, 230, 234, 0.8);
+}
+nav i{
+  font-size: 1.8rem;
 }
 
 /*#endregion Barra de navegação*/
@@ -192,4 +196,27 @@ main {
   .grid-container main {
     height: 83vh;
   }
+}
+
+
+
+/*temporário*/
+nav .navbar li:nth-child(2){
+  position: relative;
+}
+nav .navbar li:nth-child(2) .lock{
+  position: absolute;
+  font-size: 1.4rem;
+  top: -5px;
+  right: -10px;
+  color: rgb(188, 187, 190);
+}
+
+nav .navbar li:nth-child(2) .nav-title{
+  position: relative;
+  color: rgb(188, 187, 190)
+}
+nav .navbar li:nth-child(2) .nav-icon{
+  position: relative;
+  color: rgb(188, 187, 190)
 }

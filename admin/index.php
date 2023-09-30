@@ -15,6 +15,10 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+
+     <!--Sweet Alert-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.12.6/dist/sweetalert2.min.css">
     <!--CSS-->
     <link rel="stylesheet" href="./css/dashboard.css">
 </head>
@@ -44,7 +48,8 @@
             <div class="navbar">
                 <ul> 
 
-                    <li><a href="index.php?p=site"><span class="nav-icon"><i class="ri-home-3-line"></i></span><span class="nav-title">Site</span></a></li>                   
+                    <li><a href="index.php?p=site"><span class="nav-icon"><i class="ri-home-3-line"></i></span><span class="nav-title">Site</span></a></li> 
+                    <li><a href="#" id="bloqueado" ><span class="nav-icon"><i class="ri-user-line"></i></span><span class="nav-title">Usuário</span></a><span class="lock"><i class="ri-lock-line lock"></i></span></li>                  
                     <li><a href="index.php?p=sobre"><span class="nav-icon"><i class="ri-building-4-line"></i></span><span class="nav-title">Sobre</span></a>
                     <li><a href="index.php?p=servico"><span class="nav-icon"><i class="ri-shake-hands-line"></i></span><span class="nav-title">Serviços</span></a>
                     <li><a href="index.php?p=contato"><span class="nav-icon"><i class="ri-contacts-book-2-line"></i></span><span class="nav-title">Contato</span></a>
@@ -116,7 +121,10 @@
         </main>
     </div>
 
-</body>
+
+<!--SweetAlert-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.12.6/dist/sweetalert2.all.min.js"></script>
+
 <script>
     const nav = document.getElementById('menu');
     const gridContainer = document.querySelector('.grid-container');
@@ -164,6 +172,23 @@
     });
 
 
+
+    //temporário
+    const bloqueio = document.getElementById('bloqueado');
+
+    bloqueio.addEventListener('click', function(){
+        // alert('Sessão Indisponível');
+        //SweetAlert
+        Swal.fire({
+        title: 'Sessão indisponível!',
+        icon: 'error', // Ícone: success, error, warning, etc.
+        confirmButtonText: 'OK'
+    });
+
+    });
+
+
 </script>
 
+</body>
 </html>

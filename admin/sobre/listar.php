@@ -17,10 +17,8 @@ $listar = $listaServico->Listar();
         <thead>
             <tr>
                 <th>ID</th>
-                <th>TÍTULO</th>
-                <th>IMG</th>
                 <th>ALT</th>
-                <th>TEXT</th>
+                <th>TEXTO</th>
                 <th>LINK</th>
                 <th>STATUS</th>
                 <th>ATUALIZAR</th>
@@ -31,15 +29,13 @@ $listar = $listaServico->Listar();
         <tbody>
             <?php foreach($listar as $linha):?>
             <tr>
-                <td><?php echo $linha['idSobre']?></td>             
-                <td><?php echo $linha['tituloSobre']?></td>             
-                <td><?php echo $linha['imgSobre']?></td>             
+                <td><?php echo $linha['idSobre']?></td>                            
                 <td><?php echo $linha['altSobre']?></td>             
                 <td><?php echo $linha['textSobre']?></td>             
-                <td><?php echo $linha['linkSobre']?></td>             
-                <td><?php echo $linha['statusSobre']?></td>             
-                <td class="ativar"><a href="index.php?p=servico&s=atualizar">Atualizar</a></td>
-                <td class="desativar"><a href="index.php?p=servico&s=desativar">Desativar</a></td>
+                <td><?php echo $linha['linkSobre']?></td>                       
+                <td class="status-ativo"><?php echo $linha['statusSobre']?></td>             
+                <td><a class="atualizar" title="Atualizar" href="index.php?p=sobre&s=atualizar"><i class="ri-pencil-fill"></i></a></td>
+                <td><a class="desativar" title="Desativar" href="index.php?p=sobre&s=desativar"><i class="ri-eye-off-line"></i></a></td>
             </tr>
             <?php endforeach?>
         </tbody>
