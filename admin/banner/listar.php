@@ -1,16 +1,14 @@
 <?php 
 
-require_once('class/portfolio.php'); //fazendo a conexão
-$listaPortfolio = new PortfolioClass();
-$listar = $listaPortfolio->Listar();
+require_once('class/banner.php'); //fazendo a conexão
+$listaBanner = new BannerClass();
+$listar = $listaBanner->Listar();
 //var_dump($listar);
 
 
 ?>
 
 <link rel="stylesheet" href="css/dashboard.css">
-
-
 
 <!--Estilo Listar-->
 
@@ -48,7 +46,7 @@ $listar = $listaPortfolio->Listar();
     table{
         background-color: var(--white);
         border-radius: 20px;
-        padding: 5%;
+        padding: 2%;
         
     }
     th{
@@ -60,16 +58,12 @@ $listar = $listaPortfolio->Listar();
         padding: 0.8rem;
     }
     tbody img{
-        width: 80px;
-        height: 150px;
+        width: 500px;
+        height: 250px;
         border-radius: 2px;
         transition: all 0.9s ease-in-out;
         cursor: pointer;
     }   
-    tbody img:hover{
-        transform: scale(3);
-        border-radius: 2px;
-    }
 
     .id{
         font-weight: 800;
@@ -100,12 +94,13 @@ $listar = $listaPortfolio->Listar();
 
 <div>
     <table>
-        <caption>Lista Portfólio</caption>
+        <caption>Listar Banner</caption>
         <thead>
             <tr>
                 <th>ID</th>
                 <th>IMAGEM</th>
-                <th>ALT</th>           
+                <th>ALT</th>
+                <th>LINK</th>
                 <th>STATUS</th>
                 <th>ATUALIZAR</th>
                 <th>DESATIVAR</th>
@@ -115,10 +110,11 @@ $listar = $listaPortfolio->Listar();
         <tbody>
             <?php foreach($listar as $linha):?>
             <tr>
-                <td class="id"><?php echo $linha['idPortfolio']?></td>                       
-                <td class="port-img"><?php echo '<img src="../img/' . $linha['imgPortfolio'] . '"alt="' . $linha['altPortfolio'] . '">' ?></td>      
-                <td><?php echo $linha['altPortfolio']?></td>              
-                <td class="status-ativo"><?php echo $linha['statusPortfolio']?></td>             
+                <td class="id"><?php echo $linha['idBanner']?></td>             
+                <td><?php echo '<img src="../img/' . $linha['imgBanner'] . '"alt="' . $linha['altBanner'] . '">' ?></td>                 
+                <td><?php echo $linha['altBanner']?></td>             
+                <td><?php echo $linha['linkBanner']?></td>             
+                <td class="status-ativo"><?php echo $linha['statusBanner']?></td>                                            
                 <td><a class="atualizar" title="Atualizar" href="index.php?p=portfolio&s=atualizar"><i class="ri-pencil-fill"></i></a></td>
                 <td><a class="desativar" title="Desativar" href="index.php?p=portfolio&s=desativar"><i class="ri-eye-off-line"></i></a></td>
             </tr>
@@ -126,4 +122,3 @@ $listar = $listaPortfolio->Listar();
         </tbody>
     </table>
 </div>
-
