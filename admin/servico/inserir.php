@@ -190,7 +190,39 @@
 
 <?php
 
+    if(isset($_POST['tituloServico'])){
 
+        require_once('class/servico.php');
+
+        $tituloServico = $_POST['tituloServico'];
+        $textServico = $_POST['textServico'];
+        $linkServico = $_POST['linkServico'];
+        $statusServico = $_POST['statusServico'];
+
+        $arquivo = $_FILES['imgServico'];
+
+        if($arquivo['error']){
+            throw new Exception('Error' . $arquivo['error']);
+        }
+
+        if(move_uploaded_file($arquivo['tmp_name'], '../img/servico' . $arquivo['name'] )){ //salvar na pasta
+            $imgServico = 'servico/' . $arquivo['name']; // gravar no banco de dados
+        }else{
+            throw new Exception('Error: Não foi possível realizar o upload da imagem');
+        }
+
+        $servico = new ServicoClass();
+
+        $servico->$tituloServico = $tituloServico;
+        $servico->$imgServico = $imgServico;
+        $servico->$altServico = $altServico;
+        $servico->$textServico = $textServico;
+        $servico->$linkServico = $linkServico;
+        $servico->$statusServico = $statusServico;
+
+        $servico->Inserir();
+
+    }
 
 
 
@@ -208,21 +240,21 @@
         <div class="form-img">
             <img src="img/dashboard/ace.svg" alt="Imagem" id="imagemExibida">
             <div>
-            <label class="enviar-arquivo" for="inputImagem">Selecionar imagem<i class="ri-download-2-fill"></i></label>
-            <input type="file" name="imgServico" id="inputImagem">
+            <label required class="enviar-arquivo" for="inputImagem">Selecionar imagem<i class="ri-download-2-fill"></i></label>
+            <input type="file" required name="imgServico" id="inputImagem">
             </div>
         </div>
 
         <div class="form-content">
-            <input type="text" id="nome" name="nome" placeholder="Informe o título">
-            <textarea name="mens" id="mens" cols="30" rows="10" required placeholder="Informe o texto"></textarea>
-            <input type="url" name="" id="" placeholder="Informe o link">
+            <input required type="text" id="nome" name="nome" placeholder="Informe o título">
+            <textarea required name="mens" id="mens" cols="30" rows="10" placeholder="Informe o texto"></textarea>
+            <input required type="url" name="" id="" placeholder="Informe o link">
             <input class="formBtn" type="submit" value="Inserir">
         </div>
 
         <div>
             
-        <input type="checkbox" name="checkbox" id="checkbox">
+        <input required type="checkbox" name="checkbox" id="checkbox" value="ATIVO">
         <label for="checkbox"></label>
         
         </div>

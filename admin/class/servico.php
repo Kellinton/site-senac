@@ -7,7 +7,7 @@ class ServicoClass
     // ATRIBUTOS
     public $idServico;
     public $tituloServico;
-    public $imgServioco;
+    public $imgServico;
     public $altServico;
     public $textServico;
     public $linkServico;
@@ -20,5 +20,13 @@ class ServicoClass
         $resultado = $conn->query($query);
         $lista = $resultado->fetchAll();
         return $lista;
+    }
+
+    public function Inserir(){
+        $query = "INSERT INTO servico (tituloServico, imgServico, altServico, textServico, linkServico, statusServico) 
+                   VALUES('".$this->tituloServico."', '".$this->imgServico."', '".$this->altServico."', '".$this->textServico."', '".$this->linkServico."', '".$this->statusServico."');";
+        $conn = Conexao::LigarConexao();
+        $conn->exec($query);
+        echo "<script>document.location='index.php?p=servico'</script>";
     }
 }
