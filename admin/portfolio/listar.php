@@ -85,7 +85,7 @@ $listar = $listaPortfolio->Listar();
         font-weight: 600;
     } 
 
-    .atualizar,
+    .inserir, .atualizar,
     .desativar{
         font-size: 1.5rem;
         text-decoration: none;
@@ -107,6 +107,7 @@ $listar = $listaPortfolio->Listar();
                 <th>IMAGEM</th>
                 <th>ALT</th>           
                 <th>STATUS</th>
+                <th>INSERIR</th>
                 <th>ATUALIZAR</th>
                 <th>DESATIVAR</th>
             </tr>
@@ -118,9 +119,10 @@ $listar = $listaPortfolio->Listar();
                 <td class="id"><?php echo $linha['idPortfolio']?></td>                       
                 <td class="port-img"><?php echo '<img src="../img/' . $linha['imgPortfolio'] . '"alt="' . $linha['altPortfolio'] . '">' ?></td>      
                 <td><?php echo $linha['altPortfolio']?></td>              
-                <td class="status-ativo"><?php echo $linha['statusPortfolio']?></td>             
-                <td><a class="atualizar" title="Atualizar" href="index.php?p=portfolio&s=atualizar"><i class="ri-pencil-fill"></i></a></td>
-                <td><a class="desativar" title="Desativar" href="index.php?p=portfolio&s=desativar"><i class="ri-eye-off-line"></i></a></td>
+                <td class="status-ativo"><?php echo $linha['statusPortfolio']?></td>
+                <td><a class="inserir" title="Inserir" href="index.php?p=portfolio&pp=inserir"><i class="ri-pencil-fill"></i></a></td>                 
+                <td><a class="atualizar" title="Atualizar" href="index.php?p=portfolio&pp=atualizar"><i class="ri-loop-left-line"></i></a></td>
+                <td><a class="desativar" title="Desativar" href="index.php?p=portfolio&pp=desativar"><i class="ri-eye-off-line"></i></a></td>
             </tr>
             <?php endforeach?>
         </tbody>

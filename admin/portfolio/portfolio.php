@@ -1,7 +1,7 @@
 <?php
 
 
-$pagina = @$_GET['s'];
+$pagina = @$_GET['pp'];
 
 if($pagina == NULL){
     require_once('listar.php');
