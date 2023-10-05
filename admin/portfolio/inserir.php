@@ -232,7 +232,7 @@
 <div class="inserir-container">
 
                                                                                                                                       
-    <form class="form-container" action="index.php?p=Portfolio&pp=Portfolio" method="POST" enctype="multipart/form-data" class="form">
+    <form class="form-container" action="index.php?p=portfolio&pp=inserir" method="POST" enctype="multipart/form-data" class="form">
 
         <div class="form-img">
             <img src="img/dashboard/ace.svg" alt="Imagem" id="imagemExibida">
@@ -249,7 +249,7 @@
 
         <div>
             
-        <input required type="checkbox" name="statusServico" id="checkbox" value="ATIVO">
+        <input required type="checkbox" name="statusPortfolio" id="checkbox" value="ATIVO">
         <label for="checkbox"></label>
         
         </div>
