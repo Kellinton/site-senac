@@ -23,7 +23,7 @@ class ServicoClass
     }
 
     public function Inserir(){
-        $query = "INSERT INTO servico (tituloServico, imgServico, altServico, textServico, linkServico, statusServico) 
+        $query = "INSERT INTO tblservico (tituloServico, imgServico, altServico, textServico, linkServico, statusServico) 
                    VALUES('".$this->tituloServico."', '".$this->imgServico."', '".$this->altServico."', '".$this->textServico."', '".$this->linkServico."', '".$this->statusServico."');";
         $conn = Conexao::LigarConexao();
         $conn->exec($query);

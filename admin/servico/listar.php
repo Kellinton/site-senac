@@ -24,6 +24,7 @@ $listar = $listaServico->Listar();
                 <th>TEXTO</th>
                 <th>LINK</th>
                 <th>STATUS</th>
+                <th>INSERIR</th>
                 <th>ATUALIZAR</th>
                 <th>DESATIVAR</th>
             </tr>
@@ -38,8 +39,9 @@ $listar = $listaServico->Listar();
                 <td><?php echo $linha['altServico']?></td>             
                 <td><?php echo $linha['textServico']?></td>             
                 <td><?php echo $linha['linkServico']?></td>             
-                <td class="status-ativo"><?php echo $linha['statusServico']?></td>             
-                <td><a class="atualizar" title="Atualizar" href="index.php?p=servico&s=atualizar"><i class="ri-pencil-fill"></i></a></td>
+                <td class="status-ativo"><?php echo $linha['statusServico']?></td>  
+                <td><a class="inserir" title="Inserir" href="index.php?p=servico&s=inserir"><i class="ri-pencil-fill"></i></a></td>           
+                <td><a class="atualizar" title="Atualizar" href="index.php?p=servico&s=atualizar"><i class="ri-loop-left-line"></i></a></td>
                 <td><a class="desativar" title="Desativar" href="index.php?p=servico&s=desativar"><i class="ri-eye-off-line"></i></a></td>
             </tr>
             <?php endforeach?>
@@ -47,8 +49,3 @@ $listar = $listaServico->Listar();
     </table>
 </div>
 
-<!-- <ul>
-    <li><a href="index.php?p=servico&s=inserir">Inserir</a></li>
-    <li><a href="index.php?p=servico&s=atualizar">Atualizar</a></li>
-    <li><a href="index.php?p=servico&s=desativar">Desativar</a></li>
-</ul> -->

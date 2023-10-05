@@ -123,7 +123,7 @@
     }
     
     input[type=checkbox] + label::before{
-        content: "Ativo";
+        content: "Inativo";
         font-weight: 500;
         color: var(--darkblue);
         position: absolute;
@@ -132,7 +132,7 @@
         justify-content: center;
         top: 0;
         right: 10px;
-        background-color: #2bee11;
+        background-color: rgb(92, 78, 78);
         box-shadow: var(--shadow-card);
         height: 60px;
         width: 110px;
@@ -147,11 +147,12 @@
         box-shadow: rgba(10px, 15px, 15px, 0.5);
     }
     input[type=checkbox]:checked + label::before{
-        content: "Inativo";
-        color: var(--darkblue);
-        background-color: rgb(92, 78, 78);
-        cursor: pointer;
+        content: "Ativo";
+        color: var(--darkblue);  
+        background-color: #2bee11;
+       
     }
+  
 
     textarea{
         background-color: rgba(231, 230, 234, 0.9);
@@ -205,7 +206,7 @@
             throw new Exception('Error' . $arquivo['error']);
         }
 
-        if(move_uploaded_file($arquivo['tmp_name'], '../img/servico' . $arquivo['name'] )){ //salvar na pasta
+        if(move_uploaded_file($arquivo['tmp_name'], '../img/servico/' . $arquivo['name'] )){ //salvar na pasta
             $imgServico = 'servico/' . $arquivo['name']; // gravar no banco de dados
         }else{
             throw new Exception('Error: Não foi possível realizar o upload da imagem');
@@ -213,12 +214,12 @@
 
         $servico = new ServicoClass();
 
-        $servico->$tituloServico = $tituloServico;
-        $servico->$imgServico = $imgServico;
-        $servico->$altServico = $altServico;
-        $servico->$textServico = $textServico;
-        $servico->$linkServico = $linkServico;
-        $servico->$statusServico = $statusServico;
+        $servico->tituloServico = $tituloServico;
+        $servico->imgServico = $imgServico;
+        $servico->altServico = $altServico;
+        $servico->textServico = $textServico;
+        $servico->linkServico = $linkServico;
+        $servico->statusServico = $statusServico;
 
         $servico->Inserir();
 
@@ -246,15 +247,15 @@
         </div>
 
         <div class="form-content">
-            <input required type="text" id="nome" name="nome" placeholder="Informe o título">
-            <textarea required name="mens" id="mens" cols="30" rows="10" placeholder="Informe o texto"></textarea>
-            <input required type="url" name="" id="" placeholder="Informe o link">
+            <input required type="text" id="tituloServico" name="tituloServico" placeholder="Informe o título: ">
+            <textarea required name="textoServico" id="textoServico" cols="30" rows="10" placeholder="Informe o texto: "></textarea>
+            <input required type="url" name="linkServico" id="linkServico" placeholder="Informe o link: ">
             <input class="formBtn" type="submit" value="Inserir">
         </div>
 
         <div>
             
-        <input required type="checkbox" name="checkbox" id="checkbox" value="ATIVO">
+        <input required type="checkbox" name="statusServico" id="checkbox" value="ATIVO">
         <label for="checkbox"></label>
         
         </div>

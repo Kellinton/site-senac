@@ -56,7 +56,7 @@ td{
     font-weight: 600;
 } 
 
-.atualizar,
+.inserir, .atualizar,
 .desativar{
     font-size: 1.5rem;
     text-decoration: none;
