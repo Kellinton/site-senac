@@ -248,7 +248,7 @@
 
         <div class="form-content">
             <input required type="text" id="tituloServico" name="tituloServico" placeholder="Informe o título: ">
-            <textarea required name="textoServico" id="textoServico" cols="30" rows="10" placeholder="Informe o texto: "></textarea>
+            <textarea required name="textServico" id="textServico" cols="30" rows="10" placeholder="Informe o texto: "></textarea>
             <input required type="url" name="linkServico" id="linkServico" placeholder="Informe o link: ">
             <input class="formBtn" type="submit" value="Inserir">
         </div>
