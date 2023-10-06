@@ -104,6 +104,7 @@ $listar = $listaPortfolio->Listar();
         <thead>
             <tr>
                 <th>ID</th>
+                <th>TÍTULO</th>
                 <th>IMAGEM</th>
                 <th>ALT</th>           
                 <th>STATUS</th>
@@ -116,7 +117,8 @@ $listar = $listaPortfolio->Listar();
         <tbody>
             <?php foreach($listar as $linha):?>
             <tr>
-                <td class="id"><?php echo $linha['idPortfolio']?></td>                       
+                <td class="id"><?php echo $linha['idPortfolio']?></td> 
+                <td><?php echo $linha['tituloPortfolio']?></td>                         
                 <td class="port-img"><?php echo '<img src="../img/' . $linha['imgPortfolio'] . '"alt="' . $linha['altPortfolio'] . '">' ?></td>      
                 <td><?php echo $linha['altPortfolio']?></td>              
                 <td class="status-ativo"><?php echo $linha['statusPortfolio']?></td>

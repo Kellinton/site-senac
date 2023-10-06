@@ -57,12 +57,12 @@
     }
     .form-container{
         width: 90%;
-        flex-direction: column;
         align-items: center;
         display: flex; 
     }
     .form-content{  
         width: 50%;
+        height: 100%;
         display: flex;  
         flex-direction: column;
         align-items: center;
@@ -137,7 +137,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        top: 0;
+        top: -42px;
         right: 10px;
         background-color: rgb(92, 78, 78);
         box-shadow: var(--shadow-card);
@@ -159,7 +159,19 @@
         background-color: #2bee11;
        
     }
-  
+
+    textarea{
+        background-color: rgba(231, 230, 234, 0.9);
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        padding: 2%;
+        border: none;
+        margin-bottom: 1%;
+        resize: none;
+        margin-bottom: 2%;
+        flex-grow: 1;
+    }
 
 
     .formBtn{
@@ -189,35 +201,37 @@
 
 <?php
 
-    if(isset($_POST['tituloPortfolio'])){
+    if(isset($_POST['textSobre'])){
 
-        require_once('class/portfolio.php');
+        require_once('class/sobre.php');
 
-        $tituloPortfolio = $_POST['tituloPortfolio'];
-        $imgPortfolio = $_POST['imgPortfolio'];
-        $altPortfolio = $_POST['altPortfolio'];
-        $statusPortfolio = $_POST['statusPortfolio'];
+        $imgSobre = $_POST['imgSobre'];
+        $altSobre = $_POST['altSobre'];
+        $textSobre = $_POST['textSobre'];
+        $linkSobre = $_POST['linkSobre'];
+        $statusSobre = $_POST['statusSobre'];
 
-        $arquivo = $_FILES['imgPortfolio'];
+        $arquivo = $_FILES['imgSobre'];
 
         if($arquivo['error']){
             throw new Exception('Error' . $arquivo['error']);
         }
 
-        if(move_uploaded_file($arquivo['tmp_name'], '../img/portfolio/' . $arquivo['name'] )){ //salvar na pasta
-            $imgPortfolio = 'portfolio/' . $arquivo['name']; // gravar no banco de dados
+        if(move_uploaded_file($arquivo['tmp_name'], '../img/sobre/' . $arquivo['name'] )){ //salvar na pasta
+            $imgSobre = 'sobre/' . $arquivo['name']; // gravar no banco de dados
         }else{
             throw new Exception('Error: Não foi possível realizar o upload da imagem');
         }
 
-        $portfolio = new PortfolioClass();
+        $sobre = new SobreClass();
 
-        $portfolio->tituloPortfolio = $tituloPortfolio;
-        $portfolio->imgPortfolio = $imgPortfolio;
-        $portfolio->altPortfolio = $altPortfolio;
-        $portfolio->statusPortfolio = $statusPortfolio;
+        $sobre->imgSobre = $imgSobre;
+        $sobre->altSobre = $altSobre;
+        $sobre->textSobre = $textSobre;
+        $sobre->linkSobre = $linkSobre;
+        $sobre->statusSobre = $statusSobre;
 
-        $portfolio->Inserir();
+        $sobre->Inserir();
 
     }
 
@@ -232,24 +246,25 @@
 <div class="inserir-container">
 
                                                                                                                                       
-    <form class="form-container" action="index.php?p=portfolio&pp=inserir" method="POST" enctype="multipart/form-data" class="form">
+    <form class="form-container" action="index.php?p=sobre&ss=inserir" method="POST" enctype="multipart/form-data" class="form">
 
         <div class="form-img">
             <img src="img/dashboard/add-photo.svg" alt="Imagem" id="imagemExibida">
             <div>
             <label required class="enviar-arquivo" for="inputImagem">Selecionar imagem<i class="ri-download-2-fill"></i></label>
-            <input type="file" required name="imgPortfolio" id="inputImagem">
+            <input type="file" required name="imgSobre" id="inputImagem">
             </div>
         </div>
 
         <div class="form-content">
-            <input required type="text" id="tituloPortfolio" name="tituloPortfolio" placeholder="Informe o título: ">
+        <textarea required name="textSobre" id="textSobre" cols="30" rows="10" placeholder="Informe o texto: "></textarea>
+            <input required type="url" name="linkSobre" id="linkSobre" placeholder="Informe o link: ">
             <input class="formBtn" type="submit" value="Inserir">
         </div>
 
         <div>
             
-        <input required type="checkbox" name="statusPortfolio" id="checkbox" value="ATIVO">
+        <input required type="checkbox" name="statusSobre" id="checkbox" value="ATIVO">
         <label for="checkbox"></label>
         
         </div>

@@ -20,4 +20,11 @@ class SobreClass
         $lista = $resultado->fetchAll();
         return $lista;
     }
+    public function Inserir(){
+        $query = "INSERT INTO tblsobre (imgSobre, altSobre, textSobre, linkSobre, statusSobre) 
+                   VALUES('".$this->imgSobre."', '".$this->altSobre."', '".$this->textSobre."', '".$this->linkSobre."', '".$this->statusSobre."');";
+        $conn = Conexao::LigarConexao();
+        $conn->exec($query);
+        echo "<script>document.location='index.php?p=sobre'</script>";
+    }
 }
