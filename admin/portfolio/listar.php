@@ -59,6 +59,9 @@ $listar = $listaPortfolio->Listar();
         text-align: center;
         padding: 0.8rem;
     }
+    tr:hover{
+    background-color: rgba(231, 230, 234, 0.4);
+   }
     tbody img{
         width: 80px;
         height: 150px;

@@ -53,6 +53,9 @@ td{
     text-align: center;
     padding: 0.8rem;
 }
+tr:hover{
+    background-color: rgba(231, 230, 234, 0.4);
+}
 
 .id{
     font-weight: 800;
