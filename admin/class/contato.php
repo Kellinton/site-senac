@@ -24,4 +24,22 @@ class ContatoClass{
         $conn = Conexao::LigarConexao();
         $conn->exec($sql);
     }
+
+
+    public function listar(){
+        $query = "SELECT * FROM tblcontato ORDER BY idContato ASC;";
+        $conn = Conexao::LigarConexao();
+        $resultado = $conn->query($query);
+        $lista = $resultado->fetchAll();
+        return $lista;
+    }
+
+    // public function Inserir(){
+    //     $query = "INSERT INTO tblcontato (nomeContato, emailContato, telefoneContato, textContato, dataContato, horaContato) 
+    //                VALUES('".$this->nomeContato."', '".$this->emailContato."', '".$this->telefoneContato."', '".$this->textContato."', '".$this->dataContato."', '".$this->horaContato."');";
+    //     $conn = Conexao::LigarConexao();
+    //     $conn->exec($query);
+    //     echo "<script>document.location='index.php?c=contato'</script>";
+    // }
+
 }
