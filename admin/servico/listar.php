@@ -20,7 +20,6 @@ $listar = $listaServico->Listar();
                 <th>ID</th>
                 <th>TÍTULO</th>
                 <th>IMAGEM</th>
-                <th>ALT</th>
                 <th>TEXTO</th>
                 <th>LINK</th>
                 <th>STATUS</th>
@@ -35,14 +34,13 @@ $listar = $listaServico->Listar();
             <tr>
                 <td class="id"><?php echo $linha['idServico']?></td>             
                 <td><?php echo $linha['tituloServico']?></td>             
-                <td><?php echo '<img src="../img/' . $linha['imgServico'] . '"alt="' . $linha['altServico'] . '">' ?></td>      
-                <td><?php echo $linha['altServico']?></td>             
+                <td><?php echo '<img src="../img/' . $linha['imgServico'] . '">' ?></td>               
                 <td><?php echo $linha['textServico']?></td>             
                 <td><?php echo $linha['linkServico']?></td>             
                 <td class="status-ativo"><?php echo $linha['statusServico']?></td>  
                 <td><a class="inserir" title="Inserir" href="index.php?p=servico&s=inserir"><i class="ri-pencil-fill"></i></a></td>           
                 <td><a class="atualizar" title="Atualizar" href="index.php?p=servico&s=atualizar&id=<?php echo $linha['idServico']?>"><i class="ri-loop-left-line"></i></a></td>
-                <td><a class="desativar" title="Desativar" href="index.php?p=servico&s=desativar"><i class="ri-eye-off-line"></i></a></td>
+                <td><a class="desativar" title="Desativar" href="index.php?p=servico&s=desativar&id=<?php echo $linha['idServico']?>"><i class="ri-eye-off-line"></i></a></td>
             </tr>
             <?php endforeach?>
         </tbody>

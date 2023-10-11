@@ -216,7 +216,6 @@
 
         $servico->tituloServico = $tituloServico;
         $servico->imgServico = $imgServico;
-        $servico->altServico = $altServico;
         $servico->textServico = $textServico;
         $servico->linkServico = $linkServico;
         $servico->statusServico = $statusServico;
@@ -239,7 +238,7 @@
     <form class="form-container" action="index.php?p=servico&s=inserir" method="POST" enctype="multipart/form-data" class="form">
 
         <div class="form-img">
-            <img src="img/dashboard/add-photo.svg" alt="Imagem" id="imagemExibida">
+            <img src="img/dashboard/add-photo.svg"  id="imagemExibida">
             <div>
             <label required class="enviar-arquivo" for="inputImagem">Selecionar imagem<i class="ri-download-2-fill"></i></label>
             <input type="file" required name="imgServico" id="inputImagem">
