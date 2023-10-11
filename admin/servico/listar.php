@@ -41,7 +41,7 @@ $listar = $listaServico->Listar();
                 <td><?php echo $linha['linkServico']?></td>             
                 <td class="status-ativo"><?php echo $linha['statusServico']?></td>  
                 <td><a class="inserir" title="Inserir" href="index.php?p=servico&s=inserir"><i class="ri-pencil-fill"></i></a></td>           
-                <td><a class="atualizar" title="Atualizar" href="index.php?p=servico&s=atualizar"><i class="ri-loop-left-line"></i></a></td>
+                <td><a class="atualizar" title="Atualizar" href="index.php?p=servico&s=atualizar&id=<?php echo $linha['idServico']?>"><i class="ri-loop-left-line"></i></a></td>
                 <td><a class="desativar" title="Desativar" href="index.php?p=servico&s=desativar"><i class="ri-eye-off-line"></i></a></td>
             </tr>
             <?php endforeach?>
