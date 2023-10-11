@@ -23,7 +23,7 @@ class ServicoClass
 
 
     public function listar(){
-        $query = "SELECT * FROM tblservico WHERE statusServico ='ATIVO' ORDER BY textServico ASC;";
+        $query = "SELECT * FROM tblservico ORDER BY textServico ASC;";
         $conn = Conexao::LigarConexao();
         $resultado = $conn->query($query); // retorna o resultado que está na query
         $lista = $resultado->fetchAll();
