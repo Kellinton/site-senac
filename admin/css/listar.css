@@ -57,7 +57,15 @@ tr:hover{
     border-radius: 5px;
     color: var(--darkblue);
     font-weight: 600;
-} 
+}
+
+.status-inativo{
+    background-color: #f20b0b;
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--darkblue);
+    font-weight: 600;
+}
 
 .inserir, .atualizar,
 .desativar{
