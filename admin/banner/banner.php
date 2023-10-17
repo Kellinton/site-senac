@@ -1,7 +1,7 @@
 <?php
 
 
-$pagina = @$_GET['s'];
+$pagina = @$_GET['b'];
 
 if($pagina == NULL){
     require_once('listar.php');
@@ -14,5 +14,8 @@ if($pagina == NULL){
     }
     if($pagina == 'desativar'){
         require_once('desativar.php');
+    }
+    if($pagina == 'ativar'){
+        require_once('ativar.php');
     }
 }

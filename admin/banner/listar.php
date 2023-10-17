@@ -78,13 +78,21 @@ $listar = $listaBanner->Listar();
         color: var(--darkblue);
         font-weight: 600;
     } 
+    
+    .status-inativo{
+    background-color: #f20b0b;
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--darkblue);
+    font-weight: 600;
+}
 
-    .atualizar,
-    .desativar{
-        font-size: 1.5rem;
-        text-decoration: none;
-        color:  var(--darkblue);
+    .inserir, .atualizar, .ativar, .desativar{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:  var(--darkblue);
     }
+
     main{
         place-items: center;
     }
@@ -94,15 +102,18 @@ $listar = $listaBanner->Listar();
 
 <div>
     <table>
-        <caption>Listar Banner</caption>
+        <caption>Lista Banner</caption>
         <thead>
             <tr>
                 <th>ID</th>
                 <th>IMAGEM</th>
                 <th>ALT</th>
+                <th>TEXTO</th>
                 <th>LINK</th>
                 <th>STATUS</th>
+                <th>INSERIR</th>
                 <th>ATUALIZAR</th>
+                <th>ATIVAR</th>
                 <th>DESATIVAR</th>
             </tr>
         </thead>
@@ -112,11 +123,14 @@ $listar = $listaBanner->Listar();
             <tr>
                 <td class="id"><?php echo $linha['idBanner']?></td>             
                 <td><?php echo '<img src="../img/' . $linha['imgBanner'] . '"alt="' . $linha['altBanner'] . '">' ?></td>                 
-                <td><?php echo $linha['altBanner']?></td>             
+                <td><?php echo $linha['altBanner']?></td> 
+                <td><?php echo $linha['textBanner']?></td>             
                 <td><?php echo $linha['linkBanner']?></td>             
-                <td class="status-ativo"><?php echo $linha['statusBanner']?></td>                                            
-                <td><a class="atualizar" title="Atualizar" href="index.php?p=portfolio&s=atualizar"><i class="ri-pencil-fill"></i></a></td>
-                <td><a class="desativar" title="Desativar" href="index.php?p=portfolio&s=desativar"><i class="ri-eye-off-line"></i></a></td>
+                <td class="<?php echo ($linha['statusBanner'] === 'ATIVO') ? 'status-ativo' : 'status-inativo'; ?>"><?php echo $linha['statusBanner']?></td>  
+                <td><a class="inserir" title="Inserir" href="index.php?p=banner&b=inserir"><i class="ri-pencil-fill"></i></a></td>                                           
+                <td><a class="atualizar" title="Atualizar" href="index.php?p=banner&b=atualizar&id=<?php echo $linha['idBanner']?>"><i class="ri-loop-left-line"></i></a></td>
+                <td><a class="ativar" title="Ativar" href="index.php?p=banner&b=ativar&id=<?php echo $linha['idBanner']?>"><i class="ri-checkbox-circle-line"></i></a></td>
+                <td><a class="desativar" title="Desativar" href="index.php?p=banner&b=desativar"><i class="ri-eye-off-line"></i></a></td>
             </tr>
             <?php endforeach?>
         </tbody>
