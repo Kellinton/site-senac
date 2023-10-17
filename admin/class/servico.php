@@ -78,4 +78,13 @@ class ServicoClass
         echo "<script>document.location='index.php?p=servico'</script>";
     }
     
+    public function Ativar(){
+        $query = "UPDATE tblservico SET 
+            statusServico = 'ATIVO' 
+        WHERE tblservico.idServico = " . $this->idServico;
+        
+        $conn = Conexao::LigarConexao();
+        $conn->exec($query);
+        echo "<script>document.location='index.php?p=servico'</script>";
+    }
 }

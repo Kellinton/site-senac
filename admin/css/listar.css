@@ -57,7 +57,7 @@ tr:hover{
     border-radius: 5px;
     color: var(--darkblue);
     font-weight: 600;
-}
+} 
 
 .status-inativo{
     background-color: #f20b0b;
@@ -67,8 +67,7 @@ tr:hover{
     font-weight: 600;
 }
 
-.inserir, .atualizar,
-.desativar{
+.inserir, .atualizar, .ativar, .desativar{
     font-size: 1.5rem;
     text-decoration: none;
     color:  var(--darkblue);

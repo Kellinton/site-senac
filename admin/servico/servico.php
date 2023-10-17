@@ -15,6 +15,9 @@ if($pagina == NULL){
     if($pagina == 'desativar'){
         require_once('desativar.php');
     }
+    if($pagina == 'ativar'){
+        require_once('ativar.php');
+    }
 }
 
 //p=servico&s=inserir passando valor para "p" e para "s" para acessar páginas
