@@ -30,6 +30,7 @@ $listar = $listaServico->Listar();
             </tr>
         </thead>
        
+
         <tbody>
             <?php foreach($listar as $linha):?>
             <tr>

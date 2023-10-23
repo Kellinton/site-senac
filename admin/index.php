@@ -1,3 +1,22 @@
+<?php
+
+ session_start(); //iniciar sessão
+
+
+ //se acessar a página admin, ele carrega a página do login por padrão
+ if(!isset($_SESSION['login'])) {//isset verifica se foi inicializado algum valor. (lógica: se não estiver logado, não existir 'login' como parâmetro)
+    header("Location:login.php"); //puxando a página do login
+ }
+
+ require_once('class/login.php');
+ $usuario = new Login();
+ $usuario->idUsuario = $_SESSION['idUser'];
+ $dadosUsuario = $usuario -> VerificarLogin();
+
+ var_dump($dadosUsuario);
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
