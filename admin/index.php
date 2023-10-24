@@ -11,7 +11,7 @@
  require_once('class/login.php');
  $usuario = new Login();
  $usuario->idUsuario = $_SESSION['idUser'];
- $dadosUsuario = $usuario -> VerificarLogin();
+ $dadosUsuario = $usuario->VerificarLogin();
 
  var_dump($dadosUsuario);
 ?>
@@ -52,9 +52,9 @@
 
             <div>
                 <div class="perfil-info">
-                    <img src="./img/dashboard/perfil-img.svg" alt="Imagem de Perfil" class="perfil-img">
+                    <?php echo '<img src="../img/' . $dadosUsuario['fotoUsuario'] . '">' ?>
                     <div class="perfil-title">
-                        <span class="perfil-nome">Kellinton</span>
+                        <span class="perfil-nome"><?php echo $dadosUsuario['nomeUsuario']?></span> 
                         <span class="perfil-cargo">Administrador</span>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                 <ul> 
 
                     <li><a href="index.php?p=site"><span class="nav-icon"><i class="ri-home-3-line"></i></span><span class="nav-title">Site</span></a></li> 
-                    <li><a href="#" id="bloqueado" ><span class="nav-icon"><i class="ri-user-line"></i></span><span class="nav-title">Usuário</span></a><span class="lock"><i class="ri-lock-line lock"></i></span></li>                  
+                    <li><a href="index.php?p=usuario"><span class="nav-icon"><i class="ri-user-line"></i></span><span class="nav-title">Usuário</span></a></li>                  
                     <li><a href="index.php?p=sobre"><span class="nav-icon"><i class="ri-building-4-line"></i></span><span class="nav-title">Sobre</span></a>
                     <li><a href="index.php?p=servico"><span class="nav-icon"><i class="ri-shake-hands-line"></i></span><span class="nav-title">Serviços</span></a>
                     <li><a href="index.php?p=contato"><span class="nav-icon"><i class="ri-contacts-book-2-line"></i></span><span class="nav-title">Contato</span></a>
@@ -94,6 +94,10 @@
                 case 'site':
                     require_once('site/site.php');
                     break;
+
+                case 'usuario':
+                    require_once('usuario/usuario.php');
+                    break;  
 
                 case 'sobre':
                     require_once('sobre/sobre.php');
@@ -193,18 +197,18 @@
 
 
     //temporário
-    const bloqueio = document.getElementById('bloqueado');
+    // const bloqueio = document.getElementById('bloqueado');
 
-    bloqueio.addEventListener('click', function(){
-        // alert('Sessão Indisponível');
-        //SweetAlert
-        Swal.fire({
-        title: 'Sessão indisponível!',
-        icon: 'error', // Ícone: success, error, warning, etc.
-        confirmButtonText: 'OK'
-    });
+    // bloqueio.addEventListener('click', function(){
+    //     // alert('Sessão Indisponível');
+    //     //SweetAlert
+    //     Swal.fire({
+    //     title: 'Sessão indisponível!',
+    //     icon: 'error', // Ícone: success, error, warning, etc.
+    //     confirmButtonText: 'OK'
+    // });
 
-    });
+    // });
 
 
 </script>

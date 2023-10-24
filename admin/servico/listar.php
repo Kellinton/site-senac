@@ -14,7 +14,7 @@ $listar = $listaServico->Listar();
 
 <div>
     <table>
-        <caption>Lista de Serviços  <span class="icon-servico"></caption>
+        <caption>Lista de Serviços</caption>
         <thead>
             <tr>
                 <th>ID</th>

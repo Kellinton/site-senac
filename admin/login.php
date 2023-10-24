@@ -19,15 +19,17 @@ if(isset($_POST['email'])){
     $login->senhaUsuario = $senha;
     $dadosLogin = $login->VerificarLogin();
 
-    //var_dump($dadosLogin);
+    var_dump($dadosLogin);
 
     if($dadosLogin == NULL){
         $msgErro = 'Erro ao fazer o login! Tente novamente.';
+        
+
     }else{
         $_SESSION['login']   = $dadosLogin['emailUsuario'];
         $_SESSION['idUser']  = $dadosLogin['idUsuario'];
-        
-        header('Location:index.php');
+
+         header('Location:index.php');
 
         exit();
     }

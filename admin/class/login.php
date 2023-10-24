@@ -28,7 +28,7 @@ class Login{
             }
         }
 
-        $query = "SELECT * FROM tblusuario WHERE emailUsuario = '".$this->emailUsuario."' AND senhaUsuario = '".$this->senhaUsuario."'";
+        // $query = "SELECT * FROM tblusuario WHERE emailUsuario = '".$this->emailUsuario."' AND senhaUsuario = '".$this->senhaUsuario."'";
 
         $conn = Conexao::LigarConexao();
         $resultado = $conn->query($query);
