@@ -1244,6 +1244,9 @@ textarea{
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 }
+#fecharFormBtn:hover{
+    background-color: red;
+}
 
 .mostrarform{
     padding: 1%;
