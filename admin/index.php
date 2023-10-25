@@ -13,7 +13,7 @@
  $usuario->idUsuario = $_SESSION['idUser'];
  $dadosUsuario = $usuario->VerificarLogin();
 
- var_dump($dadosUsuario);
+ //var_dump($dadosUsuario);
 ?>
 
 
@@ -55,7 +55,7 @@
                     <?php echo '<img src="../img/' . $dadosUsuario['fotoUsuario'] . '">' ?>
                     <div class="perfil-title">
                         <span class="perfil-nome"><?php echo $dadosUsuario['nomeUsuario']?></span> 
-                        <span class="perfil-cargo">Administrador</span>
+                        <span class="perfil-cargo"><?php echo ($dadosUsuario['nivelUsuario']) === '1' ? 'Gerente' : 'Administrador'?></span>
                     </div>
                 </div>
                 <div class="login">
