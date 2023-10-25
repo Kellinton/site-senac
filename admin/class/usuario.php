@@ -41,21 +41,23 @@ class UsuarioClass
          echo "<script>document.location='index.php?p=usuario'</script>";
      }
 
-    // public function Carregar(){
-    //     $query = "SELECT * FROM tblservico WHERE idServico = " . $this->idServico;
-    //     $conn = Conexao::LigarConexao();
-    //     $resultado = $conn->query($query); 
-    //     $lista = $resultado->fetchAll();
+    public function Carregar(){
+        $query = "SELECT * FROM tblusuario WHERE idUsuario = " . $this->idUsuario;
+         $conn = Conexao::LigarConexao();
+        $resultado = $conn->query($query); 
+       $lista = $resultado->fetchAll();
 
-    //     foreach($lista as $linha){ //objeto que contém todos os dados
+         foreach($lista as $linha){ //objeto que contém todos os dados
 
-    //         $this->tituloServico = $linha['tituloServico'];
-    //         $this->imgServico = $linha['imgServico'];
-    //         $this->textServico = $linha['textServico'];
-    //         $this->linkServico = $linha['linkServico'];
-    //         $this->statusServico = $linha['statusServico'];
-    //     }
-    // }
+           $this->nomeUsuario = $linha['nomeUsuario'];
+            $this->emailUsuario = $linha['emailUsuario'];
+            $this->senhaUsuario = $linha['senhaUsuario'];
+            $this->nivelUsuario = $linha['nivelUsuario'];
+            $this->telefoneUsuario = $linha['telefoneUsuario'];
+            $this->statusUsuario = $linha['statusUsuario'];
+            $this->fotoUsuario = $linha['fotoUsuario'];
+        }
+     }
 
     // public function Atualizar(){
     //     $query = "UPDATE tblservico SET 

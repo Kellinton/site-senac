@@ -95,7 +95,10 @@
         gap: 3%;
     }
     input[type=text],
-    input[type=url]
+    input[type=tel],
+    input[type=email],
+    input[type=password],
+    input[type=number]
     {
         background-color: rgba(231, 230, 234, 0.9);
         width: 100%;
@@ -249,17 +252,19 @@
         </div>
 
         <div class="form-content">
+
             <input required type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Informe o nome: ">
             <input required type="email" id="emailUsuario" name="emailUsuario" placeholder="Informe o e-mail: ">
-
-            <textarea required name="textServico" id="textServico" cols="30" rows="10" placeholder="Informe o texto: "></textarea>
-            <input required type="url" name="linkServico" id="linkServico" placeholder="Informe o link: ">
+            <input required type="password" id="senhaUsuario" name="senhaUsuario" placeholder="Informe a senha: ">
+            <input required type="number" id="nivelUsuario" name="nivelUsuario" placeholder="Informe o nível de acesso: ">
+            <input required type="tel" id="telefoneUsuario" name="telefoneUsuario" placeholder="Informe o telefone: ">
+           
             <input class="formBtn" type="submit" value="Inserir">
         </div>
 
         <div>
             
-        <input required type="checkbox" name="statusServico" id="checkbox" value="ATIVO">
+        <input required type="checkbox" name="statusUsuario" id="checkbox" value="ATIVO">
         <label for="checkbox"></label>
         
         </div>

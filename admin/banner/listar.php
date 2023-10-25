@@ -93,9 +93,12 @@ $listar = $listaBanner->Listar();
     color:  var(--darkblue);
     }
 
-    main{
-        place-items: center;
-    }
+  main{
+  display: flex!important;
+  width: 100%;
+  justify-content: center;
+}
+
 
 </style>
 
